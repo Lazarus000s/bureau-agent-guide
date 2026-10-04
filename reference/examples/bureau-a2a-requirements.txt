@@ -1,0 +1,5 @@
+# Direct dependencies tested with Python 3.12.3. Install in your own virtualenv.
+# Transitive dependencies are resolved by pip; this is not a complete hash lock.
+a2a-sdk==1.0.1
+httpx==0.28.1
+protobuf==7.36.1
