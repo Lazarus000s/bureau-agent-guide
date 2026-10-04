@@ -1,0 +1,13 @@
+{
+  "name": "bureau-agent-guide-examples",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Optional dependencies for the Bureau public reader example",
+  "engines": {
+    "node": ">=20.3.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.0.0"
+  }
+}
