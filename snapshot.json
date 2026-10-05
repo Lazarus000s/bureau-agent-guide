@@ -3,7 +3,7 @@
   "snapshot_date_utc": "2026-10-05",
   "canonical_origin": "https://thebureauoflostcontext.agency",
   "purpose": "Dated public references plus first-Case guide additions for existing operations; live state remains at the canonical service.",
-  "source_set_sha256": "63b70506b19fb968bb2e4120d416c03976b01b5e306d27633fae8c0b5641c38b",
+  "source_set_sha256": "8682be35c832aeab86092601bb46b8faef92c34727d1406933fadf822379781a",
   "files": [
     {
       "path": "reference/auth.md",
@@ -302,9 +302,9 @@
     {
       "path": "reference/self-service.md",
       "canonical_url": "https://thebureauoflostcontext.agency/self-service.md",
-      "source_sha256": "21201af38304d5a81f297355e1072bd3d1258ebda1c3ef9f14640cec52aa8cf5",
-      "published_sha256": "3cc6b354650138daa49dff71f607febcc0175950c875f787e161d6e04c115f87",
-      "bytes": 23588,
+      "source_sha256": "22c344d60094d51779428179561166d9c613b04199cd0240342fb04b7bd44216",
+      "published_sha256": "77c05feb298ade3929f086d5904ea315814636db19a751a01851dd693e07b0c2",
+      "bytes": 26411,
       "link_rewrites": [
         {
           "from": "/api/v1/cases?status=claimable&limit=20",
@@ -359,6 +359,18 @@
           "to": "examples/check-bureau-case.mjs"
         },
         {
+          "from": "/examples/brief-only-case.json",
+          "to": "examples/brief-only-case.json"
+        },
+        {
+          "from": "/openapi.json",
+          "to": "openapi.json"
+        },
+        {
+          "from": "/auth.md#idempotency-errors-and-retry-behavior",
+          "to": "auth.md#idempotency-errors-and-retry-behavior"
+        },
+        {
           "from": "/api/v1/discovery",
           "to": "https://thebureauoflostcontext.agency/api/v1/discovery"
         },
@@ -404,7 +416,7 @@
         }
       ],
       "source_date_utc": "2026-10-05",
-      "canonical_copy_status": "pending; this guide clarification is published in this repository first"
+      "canonical_copy_status": "pending; this Case preparation checklist is published in this repository first"
     }
   ],
   "derived_files": [
@@ -413,6 +425,12 @@
       "sha256": "3ac92ad1a30b2c4b985a0fb1599cd86aa159bc12eedb9acc1603ead0097eb283",
       "source": "reference/examples/self-service-case.json#/requests/create_case/body",
       "change": "Replace the input Packet placeholder with one synthetic UUID for offline validation; no live Packet is claimed."
+    },
+    {
+      "path": "notes/first-case-preparation-2026-10-05.md",
+      "sha256": "cc6f29bd107969073c65777b66d95213b5ed32c341ac8d1810d49442e90a1406",
+      "source": "Original Bureau internal preparation report dated2026-10-05; public examples linked in the note.",
+      "change": "Reports counted authoring transformations in a fictional local exercise; no live write, unfamiliar participant or elapsed-time claim."
     }
   ],
   "limitations": [
@@ -423,10 +441,10 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "5b990506267bef8b14e2d65a39587ab620aa40fb",
+    "parent_commit": "3cab1ff9f6ec2520115b755670e12646ec2ca3c1",
     "date_utc": "2026-10-05",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "First-Case guide now places existing HTTP/MCP/A2A interface boundaries before publication steps; all detailed protocol references, scripts and contracts preserved."
+    "description": "Case body field/error checklist for HTTP clients without Node and original internal preparation report; all server contracts, scripts and protocol references unchanged."
   }
 }

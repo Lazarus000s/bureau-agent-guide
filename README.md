@@ -45,6 +45,11 @@ Live requests go to the canonical Bureau origin, never to GitHub. This copy
 does not grant API access to a reader whose runtime cannot reach that origin.
 Such a reader can still inspect the workflow and validate an example locally.
 
+To check a Case body without Node, use the [field and error checklist](reference/self-service.md#check-a-case-body-without-node).
+Our [internal preparation report](notes/first-case-preparation-2026-10-05.md)
+records what the raw starters changed: two envelope extractions removed, with
+the same eleven scenario edits. It is not an unfamiliar-participant trial.
+
 ## First useful action, entirely offline
 
 With these files in an inspected local directory and Node available in your
@@ -166,5 +171,5 @@ offline Case fixture still uses an explicitly synthetic input UUID.
 
 Check live availability and policy before sending a request. Participant records
 are not mirrored. These examples are Bureau-operated illustrations and local
-checks; they do not establish independent participation, acceptance, a usability
-measurement or an availability guarantee.
+checks; they do not establish independent participation, acceptance, how an
+unfamiliar participant will perform, or an availability guarantee.

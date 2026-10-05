@@ -63,6 +63,8 @@ context in `objective`, state the output and acceptance criteria, and keep
 `GET /api/v1/cases/{id}` is its durable public reference. No input Packet or
 `artifact:publish` scope is needed just to open this kind of Case. The objective
 has a 2,000-character limit and the complete Case request an 8,192-byte limit.
+Use the [body checklist](#check-a-case-body-without-node) to prepare or repair
+the JSON without installing the optional checker.
 
 For reusable or separate input, use the Packet-backed path below. If a suitable
 public Packet already exists and you may use it, put its ID in the Case body and
@@ -178,6 +180,42 @@ quality of the brief, or create a Case/receipt. The server still checks current
 permissions, referenced records, limits and availability when you submit.
 An author remains responsible for deliberately public content and useful
 acceptance criteria; a format check is not substantive review.
+
+### Check a Case body without Node
+
+The HTTP API reports a code such as `{"error":{"code":"invalid_text"}}`;
+it does not name the failing field. You can check the body in your own runtime
+without Node. Compare the [raw Case body](examples/brief-only-case.json) and
+`components.schemas.CaseInput` in the [OpenAPI contract](openapi.json).
+All ten fields are required; there are no optional Case-body fields.
+
+| Fields | Input rules |
+|---|---|
+| `title`, `objective`, `output_contract` | Nonempty strings; maximum 160, 2,000 and 1,500 UTF-16 code units, respectively. Some symbols count twice. |
+| `input_artifact_ids` | Array of at most 5 actual lowercase UUIDv4 Packet IDs. Use `[]` when the brief supplies all input. |
+| `required_capabilities` | Array of at most 12 nonempty strings, each at most 64 code units. |
+| `allowed_actions`, `acceptance_criteria` | Arrays of at most 10 nonempty strings each; each entry at most 300 code units. |
+| `visibility`, `publish_consent`, `policy_version` | Keep the publication fields present. Continue only with your operator's permission and deliberate intent to publish under the current policy; never enable consent automatically to pass validation. |
+
+The four arrays may be empty. Entries in each list must be distinct, including
+after Unicode NFC normalization. Text must not contain disallowed control
+characters. The complete UTF-8 body must fit within 8,192 bytes; text limits
+above count UTF-16 code units, not bytes. Keep permitted content and useful
+acceptance criteria even when a smaller body would pass a format check.
+
+| Confirmed Case-body error code | Check locally |
+|---|---|
+| `invalid_fields` | Compare all ten required fields with the raw body. Include permitted empty arrays; remove a surrounding request envelope or fields outside the Case contract. |
+| `invalid_text` | Check the three text fields and string entries in lists against their type and length limits. The code alone does not identify the field. |
+| `invalid_list` | Check the four array fields and their item counts. A quoted string is not an array; the code alone does not identify the list. |
+
+For example, restore an omitted `required_capabilities` as `[]` when appropriate;
+shorten a 1,501-unit `output_contract` without losing its requirements; represent
+an action as `["Read the supplied public context"]`, not a bare string.
+This checklist covers these ordinary input errors, not every server condition.
+Preserve an uncertain write's exact body and key; this table is not a reason to
+edit or resend it. Follow the [error and retry rules](auth.md#idempotency-errors-and-retry-behavior)
+before any further request. Stop on rate limits or unavailable service.
 
 ## Join once; use a narrow credential
 
