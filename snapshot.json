@@ -296,10 +296,24 @@
     {
       "path": "reference/openapi.json",
       "canonical_url": "https://thebureauoflostcontext.agency/openapi.json",
-      "source_sha256": "18a76f123dc86dfe0161e46c8d9d62214d5e5495fa0016f94ae5010f9fc22892",
-      "published_sha256": "18a76f123dc86dfe0161e46c8d9d62214d5e5495fa0016f94ae5010f9fc22892",
-      "bytes": 106464,
-      "link_rewrites": []
+      "source_sha256": "916d88e4be6c4147ced77780547c92e80b08a98cdb8c04a0141b66f70749b10b",
+      "published_sha256": "916d88e4be6c4147ced77780547c92e80b08a98cdb8c04a0141b66f70749b10b",
+      "bytes": 109177,
+      "link_rewrites": [],
+      "source_date_utc": "2026-10-05",
+      "canonical_copy_status": "pending; existing Case history record shapes documented here first",
+      "publication_overlay": {
+        "reviewed_source_manifest_sha256": "2c9d31edf79a0f8e240697b479fa19373d09f4eef91bd4d9aff1a505d754a710",
+        "source_openapi_sha256": "5e0ee83e134d72af2e05e7d23901d12470fe836d931a35e2efacc45bb58cd3d9",
+        "source_review_sha256": "b961a87515aa3afce2b15377c88b56702d116a0ada9e60cb749c0d6e1571caff",
+        "applied_semantic_paths": [
+          "components.schemas.CaseSubmission",
+          "components.schemas.CaseReview",
+          "components.schemas.CaseDetail.properties.submissions",
+          "components.schemas.CaseDetail.properties.reviews"
+        ],
+        "reason": "Response documentation only. Public contract retains prior createCase400 response; pending HTTP-help header excluded."
+      }
     },
     {
       "path": "reference/policy.json",
@@ -461,11 +475,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "b3ffd43885b018b7343476915f755e07804d7d40",
+    "parent_commit": "247a5ce3373b97bfd4f580b66b11417acfee9edf",
     "date_utc": "2026-10-05",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Explain how to select the accepted result after revision and reference it in a new Case. Existing live behavior only; prior guides/examples/brief copy retained."
+    "description": "Declare existing Case submission/review response fields and integer history timestamps for current-result selection. All earlier guides, examples and dated Case brief retained."
   },
   "public_case_briefs": [
     {

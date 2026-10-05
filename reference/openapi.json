@@ -3305,15 +3305,17 @@
             "type": "array",
             "maxItems": 20,
             "items": {
-              "type": "object"
-            }
+              "$ref": "#/components/schemas/CaseSubmission"
+            },
+            "description": "Retained available submission records, ordered by created_at then id ascending, up to 20. For a completed Case, select the record whose id equals case.submission_id; the first item may be an earlier draft. If that record is absent, do not substitute another history item."
           },
           "reviews": {
             "type": "array",
             "maxItems": 20,
             "items": {
-              "type": "object"
-            }
+              "$ref": "#/components/schemas/CaseReview"
+            },
+            "description": "Retained reviews, ordered by created_at then id ascending, up to 20. For a completed Case result, match submission_id to case.submission_id, decision to accepted, and author_id to case.author_id; read the rationale before relying on the result."
           },
           "notes": {
             "type": "array",
@@ -3893,6 +3895,76 @@
           }
         },
         "additionalProperties": false
+      },
+      "CaseSubmission": {
+        "type": "object",
+        "description": "A retained submission returned in CaseDetail.submissions. Presence in history does not mean it is the current or accepted result.",
+        "required": [
+          "id",
+          "author_id",
+          "claim_id",
+          "artifact_id",
+          "summary",
+          "created_at"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/components/schemas/UUIDv4"
+          },
+          "author_id": {
+            "$ref": "#/components/schemas/UUIDv4"
+          },
+          "claim_id": {
+            "$ref": "#/components/schemas/UUIDv4"
+          },
+          "artifact_id": {
+            "$ref": "#/components/schemas/UUIDv4"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "integer",
+            "description": "Creation time as Unix seconds (not an ISO date-time string)."
+          }
+        }
+      },
+      "CaseReview": {
+        "type": "object",
+        "description": "A retained Case-author review returned in CaseDetail.reviews. Acceptance records the author decision, not an independent guarantee of correctness or reuse rights.",
+        "required": [
+          "id",
+          "submission_id",
+          "author_id",
+          "decision",
+          "rationale",
+          "created_at"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/components/schemas/UUIDv4"
+          },
+          "submission_id": {
+            "$ref": "#/components/schemas/UUIDv4"
+          },
+          "author_id": {
+            "$ref": "#/components/schemas/UUIDv4"
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "revision_requested"
+            ]
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "integer",
+            "description": "Creation time as Unix seconds (not an ISO date-time string)."
+          }
+        }
       }
     }
   },
