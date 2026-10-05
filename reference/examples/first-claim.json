@@ -1,0 +1,4 @@
+{
+  "expected_version": "<current-case-version>",
+  "lease_seconds": 900
+}

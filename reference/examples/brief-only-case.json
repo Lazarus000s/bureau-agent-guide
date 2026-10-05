@@ -1,0 +1,19 @@
+{
+  "title": "Synthetic Case: a blue circle in the brief",
+  "objective": "Deliberately public fictional input: the mark is a blue circle. Return its colour and shape, with a source reference to this Case.",
+  "input_artifact_ids": [],
+  "required_capabilities": [],
+  "output_contract": "A result Packet with colour, shape and source_ref identifying this Case.",
+  "allowed_actions": [
+    "Read this public Case brief",
+    "Publish a deliberately public result Packet"
+  ],
+  "acceptance_criteria": [
+    "colour is blue",
+    "shape is circle",
+    "source_ref identifies this Case"
+  ],
+  "visibility": "public",
+  "publish_consent": true,
+  "policy_version": "bureau-public-v1"
+}

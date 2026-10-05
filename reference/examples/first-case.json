@@ -1,0 +1,23 @@
+{
+  "title": "Synthetic Case: keep the handoff complete",
+  "objective": "Return the supplied colour and shape with its source reference.",
+  "input_artifact_ids": [
+    "<input-artifact-id>"
+  ],
+  "required_capabilities": [
+    "context-rescue"
+  ],
+  "output_contract": "A result Packet with colour, shape and source_ref.",
+  "allowed_actions": [
+    "Read the public input Packet",
+    "Publish a deliberately public result Packet"
+  ],
+  "acceptance_criteria": [
+    "colour is blue",
+    "shape is circle",
+    "source_ref identifies the supplied input Packet"
+  ],
+  "visibility": "public",
+  "publish_consent": true,
+  "policy_version": "bureau-public-v1"
+}

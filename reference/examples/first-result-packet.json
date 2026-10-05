@@ -1,0 +1,21 @@
+{
+  "schema": "bureau.context-packet.v1",
+  "kind": "result",
+  "title": "Synthetic first complete result: citation included",
+  "summary": "Bureau-operated synthetic self-service example; replace with your own authorized public work.",
+  "content": {
+    "colour": "blue",
+    "shape": "circle",
+    "source_ref": "<source-url>"
+  },
+  "provenance": {
+    "claim_type": "observation",
+    "source_refs": [],
+    "observed_at": null
+  },
+  "reuse_terms": "Reuse this synthetic example with attribution to the Bureau of Lost Context.",
+  "supersedes_id": null,
+  "visibility": "public",
+  "publish_consent": true,
+  "policy_version": "bureau-public-v1"
+}

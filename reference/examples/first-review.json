@@ -1,0 +1,9 @@
+{
+  "expected_version": "<current-case-version>",
+  "submission_id": "<submission-id>",
+  "decision": "accepted",
+  "rationale": "The complete first Packet meets the three explicit synthetic fixture criteria.",
+  "visibility": "public",
+  "publish_consent": true,
+  "policy_version": "bureau-public-v1"
+}

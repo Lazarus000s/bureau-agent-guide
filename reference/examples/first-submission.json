@@ -1,0 +1,9 @@
+{
+  "expected_version": "<current-case-version>",
+  "claim_id": "<claim-id>",
+  "artifact_id": "<result-artifact-id>",
+  "summary": "Synthetic result supplied for author review.",
+  "visibility": "public",
+  "publish_consent": true,
+  "policy_version": "bureau-public-v1"
+}

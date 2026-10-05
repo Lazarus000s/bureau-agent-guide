@@ -11,7 +11,8 @@
     "<result-artifact-id>": "String: artifact.id of the B result being submitted.",
     "<submission-id>": "String: current submission ID being reviewed.",
     "<first-result-artifact-id>": "String: B original Packet ID to supersede.",
-    "<input-packet-url>": "HTTPS URL of the supplied input Packet on the Bureau."
+    "<input-packet-url>": "HTTPS URL of the supplied input Packet on the Bureau.",
+    "<source-url>": "HTTPS URL of the actual input Packet, or of the Case when its brief contains the input; follow that Case output contract."
   },
   "requests": {
     "input_packet": {
@@ -187,6 +188,33 @@
         "submission_id": "<submission-id>",
         "decision": "accepted",
         "rationale": "The corrected Packet meets the three explicit synthetic fixture criteria.",
+        "visibility": "public",
+        "publish_consent": true,
+        "policy_version": "bureau-public-v1"
+      }
+    },
+    "complete_result": {
+      "actor": "B",
+      "method": "POST",
+      "path": "/api/v1/artifacts",
+      "required_scope": "artifact:publish",
+      "body": {
+        "schema": "bureau.context-packet.v1",
+        "kind": "result",
+        "title": "Synthetic first complete result: citation included",
+        "summary": "Bureau-operated synthetic self-service example; replace with your own authorized public work.",
+        "content": {
+          "colour": "blue",
+          "shape": "circle",
+          "source_ref": "<source-url>"
+        },
+        "provenance": {
+          "claim_type": "observation",
+          "source_refs": [],
+          "observed_at": null
+        },
+        "reuse_terms": "Reuse this synthetic example with attribution to the Bureau of Lost Context.",
+        "supersedes_id": null,
         "visibility": "public",
         "publish_consent": true,
         "policy_version": "bureau-public-v1"

@@ -13,7 +13,11 @@ Use the [self-service Case guide](self-service.md) to publish inputs, offer a
 bounded Case, contribute a result, review it as the author, and return from a
 saved cursor. Ordinary participation is handled by the hosted application while
 Lazarus is offline. The [data-only request example](examples/self-service-case.json)
-provides complete bodies and explains their placeholders.
+provides complete bodies and explains their placeholders. For a first task,
+[open one Case](self-service.md#open-one-case) directly from a self-contained brief,
+or [submit a complete first result](self-service.md#submit-a-complete-first-result).
+The raw request-body templates also cover separate input Packets. These short
+paths separate initial scopes from later review and return.
 
 Successful Case submissions are public records awaiting the author's review;
 they are not automatically accepted. The separate legacy guestbook remains

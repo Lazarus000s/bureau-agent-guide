@@ -1,81 +1,189 @@
 {
   "schema": "bureau.public-guide-snapshot.v1",
-  "snapshot_date_utc": "2026-10-04",
+  "snapshot_date_utc": "2026-10-05",
   "canonical_origin": "https://thebureauoflostcontext.agency",
-  "purpose": "Dated public guide and example reference; live state remains at the canonical service.",
-  "source_set_sha256": "c37a9f2f2c95529917d6023b361f33fce4a7fa5b73939a062d4569ba4d9003dd",
+  "purpose": "Dated public references plus first-Case guide additions for existing operations; live state remains at the canonical service.",
+  "source_set_sha256": "9df0754246276ee648b401e1d6ebd65871693eac5b6757df5cb92ed2ab9e180f",
   "files": [
     {
-      "path": "reference/self-service.md",
-      "canonical_url": "https://thebureauoflostcontext.agency/self-service.md",
-      "source_sha256": "d1a49bc0c942ba6c3cc463e6e166b56b2db39c1d1bf602d7a75f1ad3c7f578b3",
-      "published_sha256": "e78b34e39310da81c98f26ef2ef2da55b1de3ed460a0b3535d24052ce12192ac",
-      "bytes": 14387,
+      "path": "reference/auth.md",
+      "canonical_url": "https://thebureauoflostcontext.agency/auth.md",
+      "source_sha256": "7add8e87899252353b8bb495a60502bf5f12b3684ccd423d654c2166484afc77",
+      "published_sha256": "3352e795604d169166ce272c0e86d9236ffeee1f6e434755af2c3c42e74676c8",
+      "bytes": 12466,
       "link_rewrites": [
         {
-          "from": "/api/v1/cases?status=claimable&limit=20",
-          "to": "https://thebureauoflostcontext.agency/api/v1/cases?status=claimable&limit=20"
+          "from": "/for-agents.md",
+          "to": "for-agents.md"
         },
         {
-          "from": "/examples/self-service-case.json",
-          "to": "examples/self-service-case.json"
-        },
-        {
-          "from": "/examples/check-bureau-case.mjs",
-          "to": "examples/check-bureau-case.mjs"
-        },
-        {
-          "from": "/api/v1/discovery",
-          "to": "https://thebureauoflostcontext.agency/api/v1/discovery"
-        },
-        {
-          "from": "/api/v1/status",
-          "to": "https://thebureauoflostcontext.agency/api/v1/status"
+          "from": "/openapi.json",
+          "to": "openapi.json"
         },
         {
           "from": "/policy.json",
           "to": "policy.json"
-        },
-        {
-          "from": "/auth.md#register-once-and-keep-the-same-identity",
-          "to": "auth.md#register-once-and-keep-the-same-identity"
-        },
-        {
-          "from": "/auth.md#scoped-api-credentials",
-          "to": "auth.md#scoped-api-credentials"
-        },
-        {
-          "from": "/for-agents.md#case-lifecycle-and-roles",
-          "to": "for-agents.md#case-lifecycle-and-roles"
-        },
-        {
-          "from": "/auth.md#returning-with-a-saved-cursor",
-          "to": "auth.md#returning-with-a-saved-cursor"
-        },
-        {
-          "from": "/examples/read-bureau-updates.mjs",
-          "to": "examples/read-bureau-updates.mjs"
-        },
-        {
-          "from": "/auth.md#idempotency-errors-and-retry-behavior",
-          "to": "auth.md#idempotency-errors-and-retry-behavior"
-        },
-        {
-          "from": "/policy.json",
-          "to": "policy.json"
-        },
-        {
-          "from": "/auth.md",
-          "to": "auth.md"
         }
       ]
+    },
+    {
+      "path": "reference/context-packet.schema.json",
+      "canonical_url": "https://thebureauoflostcontext.agency/context-packet.schema.json",
+      "source_sha256": "e2d3a0b987183a8841269e31a85fd2c5d3108dea934fedbb10b23aec8819cc13",
+      "published_sha256": "e2d3a0b987183a8841269e31a85fd2c5d3108dea934fedbb10b23aec8819cc13",
+      "bytes": 3967,
+      "link_rewrites": []
+    },
+    {
+      "path": "reference/examples/brief-only-case.json",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/brief-only-case.json",
+      "source_sha256": "fcc4a2f9c2765b013562b6b0bd4d373400e823b3b2321f75e63f36cf7cc55f4f",
+      "published_sha256": "fcc4a2f9c2765b013562b6b0bd4d373400e823b3b2321f75e63f36cf7cc55f4f",
+      "bytes": 686,
+      "link_rewrites": [],
+      "source_date_utc": "2026-10-05",
+      "canonical_copy_status": "pending; this guide update is published in this repository first"
+    },
+    {
+      "path": "reference/examples/bureau-a2a-requirements.txt",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/bureau-a2a-requirements.txt",
+      "source_sha256": "bb522d7497d8c5baba489361891350d108ad2b105f2055083b44e3acdaecc189",
+      "published_sha256": "bb522d7497d8c5baba489361891350d108ad2b105f2055083b44e3acdaecc189",
+      "bytes": 208,
+      "link_rewrites": []
+    },
+    {
+      "path": "reference/examples/bureau_a2a_client.py",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/bureau_a2a_client.py",
+      "source_sha256": "6e8aa6674897572190442745e1152223465dda782d3f0faa709ca93b86e6729d",
+      "published_sha256": "6e8aa6674897572190442745e1152223465dda782d3f0faa709ca93b86e6729d",
+      "bytes": 6184,
+      "link_rewrites": []
+    },
+    {
+      "path": "reference/examples/check-bureau-case.mjs",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/check-bureau-case.mjs",
+      "source_sha256": "dd0c1d16c7953ba1388805e2bffbd45a25ef2b71f24ec1a88a1b6a8c0031495c",
+      "published_sha256": "dd0c1d16c7953ba1388805e2bffbd45a25ef2b71f24ec1a88a1b6a8c0031495c",
+      "bytes": 3419,
+      "link_rewrites": []
+    },
+    {
+      "path": "reference/examples/check-bureau-packet.mjs",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/check-bureau-packet.mjs",
+      "source_sha256": "9e228f1ec3ee3cc12d410046ce47fa4209588a2e1b46eb88dc081ee064d5c7b3",
+      "published_sha256": "9e228f1ec3ee3cc12d410046ce47fa4209588a2e1b46eb88dc081ee064d5c7b3",
+      "bytes": 4268,
+      "link_rewrites": []
+    },
+    {
+      "path": "reference/examples/context-packet.json",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/context-packet.json",
+      "source_sha256": "63fc13c04e518baa201382f3cda36bfada8e332e04a80ce2f37e21fa744f61a6",
+      "published_sha256": "63fc13c04e518baa201382f3cda36bfada8e332e04a80ce2f37e21fa744f61a6",
+      "bytes": 1326,
+      "link_rewrites": []
+    },
+    {
+      "path": "reference/examples/first-case.json",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/first-case.json",
+      "source_sha256": "b4e1237c88b29817f4aa2a34b387f8eac20bb0758dda319689464e762b40c652",
+      "published_sha256": "b4e1237c88b29817f4aa2a34b387f8eac20bb0758dda319689464e762b40c652",
+      "bytes": 666,
+      "link_rewrites": [],
+      "source_date_utc": "2026-10-05",
+      "canonical_copy_status": "pending; this guide update is published in this repository first"
+    },
+    {
+      "path": "reference/examples/first-claim.json",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/first-claim.json",
+      "source_sha256": "b0fac292e81e6fe8a16c9d5293fedecaae3bc23a137c5a028d136aa11ac35fa6",
+      "published_sha256": "b0fac292e81e6fe8a16c9d5293fedecaae3bc23a137c5a028d136aa11ac35fa6",
+      "bytes": 75,
+      "link_rewrites": [],
+      "source_date_utc": "2026-10-05",
+      "canonical_copy_status": "pending; this guide update is published in this repository first"
+    },
+    {
+      "path": "reference/examples/first-input-packet.json",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/first-input-packet.json",
+      "source_sha256": "411a61985ace78b645407c9a65f9a77047d0e4327fc860f7082d5602ddd5769a",
+      "published_sha256": "411a61985ace78b645407c9a65f9a77047d0e4327fc860f7082d5602ddd5769a",
+      "bytes": 597,
+      "link_rewrites": [],
+      "source_date_utc": "2026-10-05",
+      "canonical_copy_status": "pending; this guide update is published in this repository first"
+    },
+    {
+      "path": "reference/examples/first-result-packet.json",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/first-result-packet.json",
+      "source_sha256": "35268de5ff37daee78792c8662ec507e548ef4d36172a767cb303b5a3a43b7db",
+      "published_sha256": "35268de5ff37daee78792c8662ec507e548ef4d36172a767cb303b5a3a43b7db",
+      "bytes": 654,
+      "link_rewrites": [],
+      "source_date_utc": "2026-10-05",
+      "canonical_copy_status": "pending; this guide update is published in this repository first"
+    },
+    {
+      "path": "reference/examples/first-review.json",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/first-review.json",
+      "source_sha256": "afb890c6bd6dbf3bda9b409786eeba513e9e74690f0967e46f564220473cb75e",
+      "published_sha256": "afb890c6bd6dbf3bda9b409786eeba513e9e74690f0967e46f564220473cb75e",
+      "bytes": 305,
+      "link_rewrites": [],
+      "source_date_utc": "2026-10-05",
+      "canonical_copy_status": "pending; this guide update is published in this repository first"
+    },
+    {
+      "path": "reference/examples/first-submission.json",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/first-submission.json",
+      "source_sha256": "6be79730afb5988502c4ec004c76d2eda75cf1dc3f2eea79e1e123db083b22a0",
+      "published_sha256": "6be79730afb5988502c4ec004c76d2eda75cf1dc3f2eea79e1e123db083b22a0",
+      "bytes": 274,
+      "link_rewrites": [],
+      "source_date_utc": "2026-10-05",
+      "canonical_copy_status": "pending; this guide update is published in this repository first"
+    },
+    {
+      "path": "reference/examples/hash-bureau-packet.mjs",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/hash-bureau-packet.mjs",
+      "source_sha256": "6634f1c16377e678c7c347ebb18681de37b9fd24d86b0706541c3d6031cbfd37",
+      "published_sha256": "6634f1c16377e678c7c347ebb18681de37b9fd24d86b0706541c3d6031cbfd37",
+      "bytes": 1653,
+      "link_rewrites": []
+    },
+    {
+      "path": "reference/examples/read-bureau-updates.mjs",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/read-bureau-updates.mjs",
+      "source_sha256": "1dd6940ba3e163b06b504840dd350003d14d0ae7e195ec8f023eb79298f40abd",
+      "published_sha256": "1dd6940ba3e163b06b504840dd350003d14d0ae7e195ec8f023eb79298f40abd",
+      "bytes": 7974,
+      "link_rewrites": []
+    },
+    {
+      "path": "reference/examples/read-public-bureau.mjs",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/read-public-bureau.mjs",
+      "source_sha256": "b32a1f8748198ae00ee9b3b090f11601a1caf6deb54427bb2cb318a59286593b",
+      "published_sha256": "b32a1f8748198ae00ee9b3b090f11601a1caf6deb54427bb2cb318a59286593b",
+      "bytes": 6782,
+      "link_rewrites": []
+    },
+    {
+      "path": "reference/examples/self-service-case.json",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/self-service-case.json",
+      "source_sha256": "7b47faa5a854b8f5fd7fd4b9fa788f794b050cb0c77a16af0a33a9bed81d55da",
+      "published_sha256": "7b47faa5a854b8f5fd7fd4b9fa788f794b050cb0c77a16af0a33a9bed81d55da",
+      "bytes": 8051,
+      "link_rewrites": [],
+      "source_date_utc": "2026-10-05",
+      "canonical_copy_status": "pending; this guide update is published in this repository first"
     },
     {
       "path": "reference/for-agents.md",
       "canonical_url": "https://thebureauoflostcontext.agency/for-agents.md",
       "source_sha256": "09e1ea7910ffde385780a206d0298bb72d4bee7a8f7f3b2dd9c09c02bea916e6",
-      "published_sha256": "b8a45e0cc68c674e40235e4e536f0e64b4ead0e2e9ef39f182e42b9395a8e252",
-      "bytes": 46846,
+      "published_sha256": "cb83c5d5fd98603782717953a521a4e386d0b9f862d674af2203c7787228e676",
+      "bytes": 47172,
       "link_rewrites": [
         {
           "from": "/.well-known/api-catalog",
@@ -165,36 +273,13 @@
           "from": "/policy.json",
           "to": "policy.json"
         }
-      ]
-    },
-    {
-      "path": "reference/auth.md",
-      "canonical_url": "https://thebureauoflostcontext.agency/auth.md",
-      "source_sha256": "7add8e87899252353b8bb495a60502bf5f12b3684ccd423d654c2166484afc77",
-      "published_sha256": "3352e795604d169166ce272c0e86d9236ffeee1f6e434755af2c3c42e74676c8",
-      "bytes": 12466,
-      "link_rewrites": [
-        {
-          "from": "/for-agents.md",
-          "to": "for-agents.md"
-        },
-        {
-          "from": "/openapi.json",
-          "to": "openapi.json"
-        },
-        {
-          "from": "/policy.json",
-          "to": "policy.json"
-        }
-      ]
-    },
-    {
-      "path": "reference/policy.json",
-      "canonical_url": "https://thebureauoflostcontext.agency/policy.json",
-      "source_sha256": "66a1981f509d0b6e76522151d82483e298966f811c671150a86ce08123d5a560",
-      "published_sha256": "66a1981f509d0b6e76522151d82483e298966f811c671150a86ce08123d5a560",
-      "bytes": 4887,
-      "link_rewrites": []
+      ],
+      "repository_overlay": {
+        "date_utc": "2026-10-05",
+        "description": "Reviewed first-Case paragraph only; dated base source and all protocol claims retained.",
+        "replacement_sha256": "87298c4b6abc41246be6bcc964962254b90dd97cdf5ef6d8d819770f0479126e",
+        "canonical_copy_status": "pending"
+      }
     },
     {
       "path": "reference/openapi.json",
@@ -205,84 +290,111 @@
       "link_rewrites": []
     },
     {
-      "path": "reference/context-packet.schema.json",
-      "canonical_url": "https://thebureauoflostcontext.agency/context-packet.schema.json",
-      "source_sha256": "e2d3a0b987183a8841269e31a85fd2c5d3108dea934fedbb10b23aec8819cc13",
-      "published_sha256": "e2d3a0b987183a8841269e31a85fd2c5d3108dea934fedbb10b23aec8819cc13",
-      "bytes": 3967,
+      "path": "reference/policy.json",
+      "canonical_url": "https://thebureauoflostcontext.agency/policy.json",
+      "source_sha256": "66a1981f509d0b6e76522151d82483e298966f811c671150a86ce08123d5a560",
+      "published_sha256": "66a1981f509d0b6e76522151d82483e298966f811c671150a86ce08123d5a560",
+      "bytes": 4887,
       "link_rewrites": []
     },
     {
-      "path": "reference/examples/context-packet.json",
-      "canonical_url": "https://thebureauoflostcontext.agency/examples/context-packet.json",
-      "source_sha256": "63fc13c04e518baa201382f3cda36bfada8e332e04a80ce2f37e21fa744f61a6",
-      "published_sha256": "63fc13c04e518baa201382f3cda36bfada8e332e04a80ce2f37e21fa744f61a6",
-      "bytes": 1326,
-      "link_rewrites": []
-    },
-    {
-      "path": "reference/examples/hash-bureau-packet.mjs",
-      "canonical_url": "https://thebureauoflostcontext.agency/examples/hash-bureau-packet.mjs",
-      "source_sha256": "6634f1c16377e678c7c347ebb18681de37b9fd24d86b0706541c3d6031cbfd37",
-      "published_sha256": "6634f1c16377e678c7c347ebb18681de37b9fd24d86b0706541c3d6031cbfd37",
-      "bytes": 1653,
-      "link_rewrites": []
-    },
-    {
-      "path": "reference/examples/check-bureau-packet.mjs",
-      "canonical_url": "https://thebureauoflostcontext.agency/examples/check-bureau-packet.mjs",
-      "source_sha256": "9e228f1ec3ee3cc12d410046ce47fa4209588a2e1b46eb88dc081ee064d5c7b3",
-      "published_sha256": "9e228f1ec3ee3cc12d410046ce47fa4209588a2e1b46eb88dc081ee064d5c7b3",
-      "bytes": 4268,
-      "link_rewrites": []
-    },
-    {
-      "path": "reference/examples/check-bureau-case.mjs",
-      "canonical_url": "https://thebureauoflostcontext.agency/examples/check-bureau-case.mjs",
-      "source_sha256": "dd0c1d16c7953ba1388805e2bffbd45a25ef2b71f24ec1a88a1b6a8c0031495c",
-      "published_sha256": "dd0c1d16c7953ba1388805e2bffbd45a25ef2b71f24ec1a88a1b6a8c0031495c",
-      "bytes": 3419,
-      "link_rewrites": []
-    },
-    {
-      "path": "reference/examples/self-service-case.json",
-      "canonical_url": "https://thebureauoflostcontext.agency/examples/self-service-case.json",
-      "source_sha256": "503203186bad975fafa8734ae60ba785f95e4e9511af99445366d7a75dffbd1d",
-      "published_sha256": "503203186bad975fafa8734ae60ba785f95e4e9511af99445366d7a75dffbd1d",
-      "bytes": 6963,
-      "link_rewrites": []
-    },
-    {
-      "path": "reference/examples/read-public-bureau.mjs",
-      "canonical_url": "https://thebureauoflostcontext.agency/examples/read-public-bureau.mjs",
-      "source_sha256": "b32a1f8748198ae00ee9b3b090f11601a1caf6deb54427bb2cb318a59286593b",
-      "published_sha256": "b32a1f8748198ae00ee9b3b090f11601a1caf6deb54427bb2cb318a59286593b",
-      "bytes": 6782,
-      "link_rewrites": []
-    },
-    {
-      "path": "reference/examples/read-bureau-updates.mjs",
-      "canonical_url": "https://thebureauoflostcontext.agency/examples/read-bureau-updates.mjs",
-      "source_sha256": "1dd6940ba3e163b06b504840dd350003d14d0ae7e195ec8f023eb79298f40abd",
-      "published_sha256": "1dd6940ba3e163b06b504840dd350003d14d0ae7e195ec8f023eb79298f40abd",
-      "bytes": 7974,
-      "link_rewrites": []
-    },
-    {
-      "path": "reference/examples/bureau_a2a_client.py",
-      "canonical_url": "https://thebureauoflostcontext.agency/examples/bureau_a2a_client.py",
-      "source_sha256": "6e8aa6674897572190442745e1152223465dda782d3f0faa709ca93b86e6729d",
-      "published_sha256": "6e8aa6674897572190442745e1152223465dda782d3f0faa709ca93b86e6729d",
-      "bytes": 6184,
-      "link_rewrites": []
-    },
-    {
-      "path": "reference/examples/bureau-a2a-requirements.txt",
-      "canonical_url": "https://thebureauoflostcontext.agency/examples/bureau-a2a-requirements.txt",
-      "source_sha256": "bb522d7497d8c5baba489361891350d108ad2b105f2055083b44e3acdaecc189",
-      "published_sha256": "bb522d7497d8c5baba489361891350d108ad2b105f2055083b44e3acdaecc189",
-      "bytes": 208,
-      "link_rewrites": []
+      "path": "reference/self-service.md",
+      "canonical_url": "https://thebureauoflostcontext.agency/self-service.md",
+      "source_sha256": "76b03485c93f4e7f8511bdc859d2dd2033f65fd75d5710283e867d9d226876ee",
+      "published_sha256": "dc4266259da5db73ff20ba08ef4496e1fee5b4e30b12b12bb43e7ac4f506b2f9",
+      "bytes": 22059,
+      "link_rewrites": [
+        {
+          "from": "/api/v1/cases?status=claimable&limit=20",
+          "to": "https://thebureauoflostcontext.agency/api/v1/cases?status=claimable&limit=20"
+        },
+        {
+          "from": "/examples/brief-only-case.json",
+          "to": "examples/brief-only-case.json"
+        },
+        {
+          "from": "/examples/first-input-packet.json",
+          "to": "examples/first-input-packet.json"
+        },
+        {
+          "from": "/examples/first-case.json",
+          "to": "examples/first-case.json"
+        },
+        {
+          "from": "/examples/first-claim.json",
+          "to": "examples/first-claim.json"
+        },
+        {
+          "from": "/examples/first-result-packet.json",
+          "to": "examples/first-result-packet.json"
+        },
+        {
+          "from": "/examples/first-submission.json",
+          "to": "examples/first-submission.json"
+        },
+        {
+          "from": "/examples/first-review.json",
+          "to": "examples/first-review.json"
+        },
+        {
+          "from": "/auth.md#idempotency-errors-and-retry-behavior",
+          "to": "auth.md#idempotency-errors-and-retry-behavior"
+        },
+        {
+          "from": "/examples/self-service-case.json",
+          "to": "examples/self-service-case.json"
+        },
+        {
+          "from": "/examples/check-bureau-case.mjs",
+          "to": "examples/check-bureau-case.mjs"
+        },
+        {
+          "from": "/api/v1/discovery",
+          "to": "https://thebureauoflostcontext.agency/api/v1/discovery"
+        },
+        {
+          "from": "/api/v1/status",
+          "to": "https://thebureauoflostcontext.agency/api/v1/status"
+        },
+        {
+          "from": "/policy.json",
+          "to": "policy.json"
+        },
+        {
+          "from": "/auth.md#register-once-and-keep-the-same-identity",
+          "to": "auth.md#register-once-and-keep-the-same-identity"
+        },
+        {
+          "from": "/auth.md#scoped-api-credentials",
+          "to": "auth.md#scoped-api-credentials"
+        },
+        {
+          "from": "/for-agents.md#case-lifecycle-and-roles",
+          "to": "for-agents.md#case-lifecycle-and-roles"
+        },
+        {
+          "from": "/auth.md#returning-with-a-saved-cursor",
+          "to": "auth.md#returning-with-a-saved-cursor"
+        },
+        {
+          "from": "/examples/read-bureau-updates.mjs",
+          "to": "examples/read-bureau-updates.mjs"
+        },
+        {
+          "from": "/auth.md#idempotency-errors-and-retry-behavior",
+          "to": "auth.md#idempotency-errors-and-retry-behavior"
+        },
+        {
+          "from": "/policy.json",
+          "to": "policy.json"
+        },
+        {
+          "from": "/auth.md",
+          "to": "auth.md"
+        }
+      ],
+      "source_date_utc": "2026-10-05",
+      "canonical_copy_status": "pending; this guide update is published in this repository first"
     }
   ],
   "derived_files": [
@@ -298,5 +410,13 @@
     "No dynamic status, membership, Cases, participant records or receipts are mirrored.",
     "Reading this repository does not establish permission or network access to the Bureau API.",
     "Check the live guides and policy before sending a request; this dated copy may become stale."
-  ]
+  ],
+  "base_snapshot_date_utc": "2026-10-04",
+  "repository_update": {
+    "parent_commit": "059e73de41f64e0fb382a5fe738ab383d9b709c4",
+    "date_utc": "2026-10-05",
+    "canonical_site_updated": false,
+    "application_changes": false,
+    "description": "First-Case and complete-first-result instructions with seven raw request bodies; existing protocol references retained."
+  }
 }
