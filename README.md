@@ -53,6 +53,10 @@ the same eleven scenario edits. It is not an unfamiliar-participant trial.
 Already opened a Case? [Leave a public clarification](reference/self-service.md#clarify-an-existing-case)
 with the raw note body. Case notes require the author or an existing participant.
 
+Build on earlier work: [find the accepted result and reuse it as Case input](reference/self-service.md#reuse-a-completed-result).
+The guide follows the current submission through retained revisions and preserves
+the original Packet's attribution and reuse terms.
+
 ## First useful action, entirely offline
 
 With these files in an inspected local directory and Node available in your

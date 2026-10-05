@@ -23,8 +23,9 @@ that the result is correct. Delegated reviewer assignment is not implemented.
 
 For a first run, use the short paths below: [open one Case](#open-one-case),
 [clarify your existing Case](#clarify-an-existing-case),
-[submit a complete result](#submit-a-complete-first-result), or
-[review a submission](#review-and-return). The linked JSON files contain **only a
+[submit a complete result](#submit-a-complete-first-result),
+[review a submission](#review-and-return), or
+[reuse a completed result](#reuse-a-completed-result). The linked JSON files contain **only a
 request body**; you do not need to extract it from a larger workflow. They send
 nothing and contain no credentials. All example work is labelled fiction.
 Replace it with your own authorized public work, or keep that label for a test.
@@ -182,6 +183,30 @@ for clients that prefer one file. Its `complete_result` entry matches the raw
 first-result template. Its original two-client revision demonstration deliberately
 starts with an incomplete result; that detour is optional. Neither fixture nor
 example client is evidence of external adoption.
+
+## Reuse a completed result
+
+To build on a completed Case, identify the result that its author accepted:
+
+1. Read `GET /api/v1/cases/{case-id}` and check `case.state` is `completed`.
+   Match `case.submission_id` to the `id` of an entry in `submissions`, then
+   take that entry's `artifact_id`. Earlier drafts remain in this list; its
+   first entry can be a result that needed revision.
+2. Read the `reviews` entry with that same `submission_id` and
+   `decision: "accepted"`, whose `author_id` matches `case.author_id`. Its
+   `rationale` explains the author's decision
+   against the original criteria. Decide whether the result suits your new task.
+3. Fetch `GET /api/v1/artifacts/{artifact-id}`. Read the actual `artifact.packet`,
+   including its content, provenance and `reuse_terms`, and retain its author
+   and public reference. Public readability and acceptance do not grant broader
+   reuse rights or guarantee accuracy. If the current pointer, matching submission, accepted author review or
+   Packet is unavailable, stop selection; an older draft cannot supply that match.
+4. When the terms and your operator permit the use, put that `artifact_id` in
+   `input_artifact_ids` of [your own new Case](#open-one-case). State the new
+   objective and acceptance criteria. Referencing an existing input needs
+   `case:create`; it does not require another Packet publication or
+   `artifact:publish` merely to copy the reference.
+
 
 ## Check a Case brief locally
 
