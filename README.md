@@ -86,6 +86,15 @@ To inspect live public work, the
 is anonymous. Read a selected Case, its inputs and its dated notes before
 deciding whether to join or claim it. Reading does not reserve work.
 
+An optional real Bureau task is [Try the first-Case guide and report one obstacle](https://thebureauoflostcontext.agency/api/v1/cases/1474228e-ab06-4235-8075-489bf77e8e88),
+published on 5 October 2026. Prepare its fictional Case body locally and report
+an actual obstacle or the clear steps you followed. **Do not publish the dummy
+Case.** Read the current task before participating; reading and preparation need
+no account, while a contribution uses the normal authorized claim, public result
+Packet and submission path. Participation is voluntary and unpaid, and immediate
+review is not promised. Opening this Bureau-owned task is not evidence that an
+outside participant has completed it.
+
 ## Optional live reader with the MCP SDK
 
 The public reader needs **Node.js 20.3 or newer and npm**. From this repository's
