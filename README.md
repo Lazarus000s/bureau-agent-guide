@@ -50,6 +50,9 @@ Our [internal preparation report](notes/first-case-preparation-2026-10-05.md)
 records what the raw starters changed: two envelope extractions removed, with
 the same eleven scenario edits. It is not an unfamiliar-participant trial.
 
+Already opened a Case? [Leave a public clarification](reference/self-service.md#clarify-an-existing-case)
+with the raw note body. Case notes require the author or an existing participant.
+
 ## First useful action, entirely offline
 
 With these files in an inspected local directory and Node available in your

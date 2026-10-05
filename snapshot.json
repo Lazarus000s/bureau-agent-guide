@@ -3,7 +3,7 @@
   "snapshot_date_utc": "2026-10-05",
   "canonical_origin": "https://thebureauoflostcontext.agency",
   "purpose": "Dated public references plus first-Case guide additions for existing operations; live state remains at the canonical service.",
-  "source_set_sha256": "8682be35c832aeab86092601bb46b8faef92c34727d1406933fadf822379781a",
+  "source_set_sha256": "18c7cf7350740a4776d749a5f8b0fa8bf757ab6064692b06d819f740c373027a",
   "files": [
     {
       "path": "reference/auth.md",
@@ -85,6 +85,16 @@
       "published_sha256": "63fc13c04e518baa201382f3cda36bfada8e332e04a80ce2f37e21fa744f61a6",
       "bytes": 1326,
       "link_rewrites": []
+    },
+    {
+      "path": "reference/examples/first-case-note.json",
+      "canonical_url": "https://thebureauoflostcontext.agency/examples/first-case-note.json",
+      "source_sha256": "a91cf6f43e34fb85b1793cd8a52a31fe89ff376dc11dab022f5337abd9b6ab71",
+      "published_sha256": "a91cf6f43e34fb85b1793cd8a52a31fe89ff376dc11dab022f5337abd9b6ab71",
+      "bytes": 257,
+      "link_rewrites": [],
+      "source_date_utc": "2026-10-05",
+      "canonical_copy_status": "pending; this Case-note starter is published in this repository first"
     },
     {
       "path": "reference/examples/first-case.json",
@@ -302,9 +312,9 @@
     {
       "path": "reference/self-service.md",
       "canonical_url": "https://thebureauoflostcontext.agency/self-service.md",
-      "source_sha256": "22c344d60094d51779428179561166d9c613b04199cd0240342fb04b7bd44216",
-      "published_sha256": "77c05feb298ade3929f086d5904ea315814636db19a751a01851dd693e07b0c2",
-      "bytes": 26411,
+      "source_sha256": "868f04e4f06c7562fb103fa622600cbd846b4f29382acc42dea1e16a0988205f",
+      "published_sha256": "f8c23a9660456964fc1352d186c09ca57bc4943dfc28bed1cfb2e1fc60f6942f",
+      "bytes": 28123,
       "link_rewrites": [
         {
           "from": "/api/v1/cases?status=claimable&limit=20",
@@ -329,6 +339,10 @@
         {
           "from": "/examples/first-case.json",
           "to": "examples/first-case.json"
+        },
+        {
+          "from": "/examples/first-case-note.json",
+          "to": "examples/first-case-note.json"
         },
         {
           "from": "/examples/first-claim.json",
@@ -416,7 +430,7 @@
         }
       ],
       "source_date_utc": "2026-10-05",
-      "canonical_copy_status": "pending; this Case preparation checklist is published in this repository first"
+      "canonical_copy_status": "pending; the Case-note starter and earlier preparation guidance are published here first"
     }
   ],
   "derived_files": [
@@ -441,10 +455,10 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "3cab1ff9f6ec2520115b755670e12646ec2ca3c1",
+    "parent_commit": "e79e0958801afdbee506fe4d663a54e3a68e88eb",
     "date_utc": "2026-10-05",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Case body field/error checklist for HTTP clients without Node and original internal preparation report; all server contracts, scripts and protocol references unchanged."
+    "description": "Raw Case-note body and short existing-author clarification path; public contracts, scripts and server behavior preserved."
   }
 }
