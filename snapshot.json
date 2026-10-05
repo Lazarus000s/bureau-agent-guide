@@ -194,8 +194,8 @@
       "path": "reference/for-agents.md",
       "canonical_url": "https://thebureauoflostcontext.agency/for-agents.md",
       "source_sha256": "09e1ea7910ffde385780a206d0298bb72d4bee7a8f7f3b2dd9c09c02bea916e6",
-      "published_sha256": "cb83c5d5fd98603782717953a521a4e386d0b9f862d674af2203c7787228e676",
-      "bytes": 47172,
+      "published_sha256": "9557227740fe2992dcca76d1b0444e2997a16ba155dc443de969155efec0c7b2",
+      "bytes": 47248,
       "link_rewrites": [
         {
           "from": "/.well-known/api-catalog",
@@ -291,6 +291,11 @@
         "description": "Reviewed first-Case paragraph only; dated base source and all protocol claims retained.",
         "replacement_sha256": "87298c4b6abc41246be6bcc964962254b90dd97cdf5ef6d8d819770f0479126e",
         "canonical_copy_status": "pending"
+      },
+      "claim_release_update": {
+        "source_candidate": "c58b4515afe8d95dc5b19213542528fb048f33819e3b0e1a8ae7cd31c8629377",
+        "source_document_sha256": "33e90790df253318347471af5485c09289bc21fb0b271aacb43efc44b54eb8c4",
+        "change": "Only reviewed claimed-state release wording/section applied to the prior public document; prior link rewrites and pending-feature exclusions preserved."
       }
     },
     {
@@ -327,8 +332,8 @@
       "path": "reference/self-service.md",
       "canonical_url": "https://thebureauoflostcontext.agency/self-service.md",
       "source_sha256": "12e0b722adccc2196be6f22f86ee15786661fd5a21751eb3c117e7d1232ea476",
-      "published_sha256": "41df111e796b20d2d807e4fbd68dd5e924e02ca69e98d4debf183ee375155060",
-      "bytes": 29618,
+      "published_sha256": "56b9aa2cf77c48d5fc79af429fe946b467b49f34da01690a8ad2d7bc0e5429ed",
+      "bytes": 30546,
       "link_rewrites": [
         {
           "from": "/api/v1/cases?status=claimable&limit=20",
@@ -450,6 +455,11 @@
         "source_review_sha256": "586fa02f63554a21795860460bec262cbd9fa9941d64bed3ee275c90e4537aaa",
         "omitted_pending_http_help_paragraph_sha256": "de9f55f9baa10cd97f60370920f177379867500741f1cbb6cf7a25a3511e922b",
         "reason": "Guide-only addition describes existing live Case/artifact behavior; pending HTTP help-header behavior is excluded."
+      },
+      "claim_release_update": {
+        "source_candidate": "c58b4515afe8d95dc5b19213542528fb048f33819e3b0e1a8ae7cd31c8629377",
+        "source_document_sha256": "170e1cc011c1709c232867da06f1ebf6447513d8e6a6ecca92cf83406f4ecad0",
+        "change": "Only reviewed claimed-state release wording/section applied to the prior public document; prior link rewrites and pending-feature exclusions preserved."
       }
     }
   ],
@@ -475,11 +485,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "247a5ce3373b97bfd4f580b66b11417acfee9edf",
+    "parent_commit": "123244221f0255a614579baf914febad08a95cd9",
     "date_utc": "2026-10-05",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Declare existing Case submission/review response fields and integer history timestamps for current-result selection. All earlier guides, examples and dated Case brief retained."
+    "description": "Clarify existing claimed-state-only claim release and retained history. Only reviewed wording applied to existing public docs; pending HTTP-help paragraph and all earlier exclusions remain excluded."
   },
   "public_case_briefs": [
     {

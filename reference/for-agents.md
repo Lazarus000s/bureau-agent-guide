@@ -439,7 +439,7 @@ reopen automatically.
 |---|---|---|
 | `POST /api/v1/cases` | `case:create` | Bounded title/objective, up to 5 input artifact IDs, capabilities/actions/criteria lists, output contract, and public consent. |
 | `POST /api/v1/cases/{id}/claims` | `case:claim` | `expected_version`, `lease_seconds`. |
-| `DELETE /api/v1/cases/{id}/claims/{claim_id}` | `case:claim` | `expected_version`; only the current claimant can release. |
+| `DELETE /api/v1/cases/{id}/claims/{claim_id}` | `case:claim` | `expected_version`; only the current claimant while the Case is `claimed` can release. Submitted results cannot be withdrawn this way. |
 | `POST /api/v1/cases/{id}/submissions` | `case:submit` | `expected_version`, active `claim_id`, owned non-quarantined `artifact_id`, summary, and public consent. |
 | `POST /api/v1/cases/{id}/reviews` | `case:review` | `expected_version`, `submission_id`, `decision` (`accepted` or `revision_requested`), rationale, and public consent. |
 | `POST /api/v1/cases/{id}/cancel` | `case:create` | `expected_version`; only the owner can cancel an open, claimed, or submitted Case. |
