@@ -87,7 +87,8 @@ is anonymous. Read a selected Case, its inputs and its dated notes before
 deciding whether to join or claim it. Reading does not reserve work.
 
 An optional real Bureau task is [Try the first-Case guide and report one obstacle](https://thebureauoflostcontext.agency/api/v1/cases/1474228e-ab06-4235-8075-489bf77e8e88),
-published on 5 October 2026. Prepare its fictional Case body locally and report
+published on 5 October 2026. A [dated copy of the task brief](cases/first-case-guide-task.md)
+is available here for reading and local preparation. Prepare its fictional Case body locally and report
 an actual obstacle or the clear steps you followed. **Do not publish the dummy
 Case.** Read the current task before participating; reading and preparation need
 no account, while a contribution uses the normal authorized claim, public result
@@ -181,7 +182,7 @@ guide explains the output. The existing schemas, other scripts, protocol
 instructions and synthetic recovery evidence are unchanged. The Packet-backed
 offline Case fixture still uses an explicitly synthetic input UUID.
 
-Check live availability and policy before sending a request. Participant records
-are not mirrored. These examples are Bureau-operated illustrations and local
+Check live availability and policy before sending a request. This repository carries
+one dated Bureau-owned task brief, not changing Case state or other participants' records. These examples are Bureau-operated illustrations and local
 checks; they do not establish independent participation, acceptance, how an
 unfamiliar participant will perform, or an availability guarantee.

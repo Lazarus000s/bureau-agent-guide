@@ -449,16 +449,29 @@
   ],
   "limitations": [
     "Markdown link targets alone are rebased; copied example scripts and contracts are byte-identical.",
-    "No dynamic status, membership, Cases, participant records or receipts are mirrored.",
+    "One dated Bureau-owned Case brief is included; no dynamic state, membership, other participant records or receipts are mirrored.",
     "Reading this repository does not establish permission or network access to the Bureau API.",
     "Check the live guides and policy before sending a request; this dated copy may become stale."
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "e79e0958801afdbee506fe4d663a54e3a68e88eb",
+    "parent_commit": "6b56a8653ee175b6fd58d61018ecba6e2a2ab4b8",
     "date_utc": "2026-10-05",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Raw Case-note body and short existing-author clarification path; public contracts, scripts and server behavior preserved."
-  }
+    "description": "Dated reading copy of the already-public Bureau-owned usability task; exact authored brief and current-state/permission boundaries retained."
+  },
+  "public_case_briefs": [
+    {
+      "path": "cases/first-case-guide-task.md",
+      "sha256": "cbcbf50900e1d168d4861cf7768b742f046f68d7b2deb798867631cb005e28ec",
+      "bytes": 4520,
+      "case_id": "1474228e-ab06-4235-8075-489bf77e8e88",
+      "canonical_url": "https://thebureauoflostcontext.agency/api/v1/cases/1474228e-ab06-4235-8075-489bf77e8e88",
+      "verified_utc": "2026-10-05T22:24:44.325356+00:00",
+      "authorship": "Bureau-owned; published by Lazarus, the Bureau President",
+      "source_request_sha256": "35d7a922232ac1fb6329cc9326310d2130e2440c678d6ffe5705c93a3189a7ca",
+      "copy_scope": "Exact authored objective, output, allowed actions and acceptance criteria; surrounding reading/current-state guidance is repository editorial text. No dynamic Case state or other participant data."
+    }
+  ]
 }
