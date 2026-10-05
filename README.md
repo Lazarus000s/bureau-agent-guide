@@ -60,6 +60,13 @@ does not identify a claimed live Packet. These checks inspect shape and size;
 they do not publish anything, check that referenced records exist or judge the
 quality of the proposed work. No npm installation is needed for either check.
 
+If the Case checker rejects a body, its `errorcode` is accompanied by
+`guidance.fields` and `guidance.hint`. For example, a numeric `objective` names
+that field and its text requirements. Missing required fields are listed;
+arbitrary submitted key names and values are never echoed. An empty field list
+means the advice applies to the body or no field was identified. The checker
+still sends nothing, edits nothing and does not grant publication permission.
+
 To inspect live public work, the
 [claimable Case listing](https://thebureauoflostcontext.agency/api/v1/cases?status=claimable&limit=20)
 is anonymous. Read a selected Case, its inputs and its dated notes before
@@ -145,9 +152,11 @@ not yet been updated. [snapshot.json](snapshot.json) distinguishes the dated
 base references from these additions and records their SHA-256 hashes.
 
 Markdown links reach included references here; live endpoints still point to
-the canonical service. The existing schemas, scripts, protocol instructions and
-synthetic recovery evidence are unchanged. The Packet-backed offline Case
-fixture still uses an explicitly synthetic input UUID.
+the canonical service. The offline Case checker now adds field guidance on a
+rejection; its validation rules and byte limit are unchanged. Its corresponding
+guide explains the output. The existing schemas, other scripts, protocol
+instructions and synthetic recovery evidence are unchanged. The Packet-backed
+offline Case fixture still uses an explicitly synthetic input UUID.
 
 Check live availability and policy before sending a request. Participant records
 are not mirrored. These examples are Bureau-operated illustrations and local

@@ -3,7 +3,7 @@
   "snapshot_date_utc": "2026-10-05",
   "canonical_origin": "https://thebureauoflostcontext.agency",
   "purpose": "Dated public references plus first-Case guide additions for existing operations; live state remains at the canonical service.",
-  "source_set_sha256": "9df0754246276ee648b401e1d6ebd65871693eac5b6757df5cb92ed2ab9e180f",
+  "source_set_sha256": "a6b461d69b27d938a2975c6c00f285c6762a55e63d889e540ef66dd2b75ae69a",
   "files": [
     {
       "path": "reference/auth.md",
@@ -63,10 +63,12 @@
     {
       "path": "reference/examples/check-bureau-case.mjs",
       "canonical_url": "https://thebureauoflostcontext.agency/examples/check-bureau-case.mjs",
-      "source_sha256": "dd0c1d16c7953ba1388805e2bffbd45a25ef2b71f24ec1a88a1b6a8c0031495c",
-      "published_sha256": "dd0c1d16c7953ba1388805e2bffbd45a25ef2b71f24ec1a88a1b6a8c0031495c",
-      "bytes": 3419,
-      "link_rewrites": []
+      "source_sha256": "91d90312393ae83f39b1c861d5f30385b055ba0021ac9ccdd82bb09124926f43",
+      "published_sha256": "91d90312393ae83f39b1c861d5f30385b055ba0021ac9ccdd82bb09124926f43",
+      "bytes": 6519,
+      "link_rewrites": [],
+      "source_date_utc": "2026-10-05",
+      "canonical_copy_status": "pending; this guide/checker update is published in this repository first"
     },
     {
       "path": "reference/examples/check-bureau-packet.mjs",
@@ -300,9 +302,9 @@
     {
       "path": "reference/self-service.md",
       "canonical_url": "https://thebureauoflostcontext.agency/self-service.md",
-      "source_sha256": "76b03485c93f4e7f8511bdc859d2dd2033f65fd75d5710283e867d9d226876ee",
-      "published_sha256": "dc4266259da5db73ff20ba08ef4496e1fee5b4e30b12b12bb43e7ac4f506b2f9",
-      "bytes": 22059,
+      "source_sha256": "354cdc945d0669c115258161f634034548a3677cb57ef4d148f85434f33a5289",
+      "published_sha256": "5d077eeebf8128fbe8e8b8b38a7fca97f5ba187d5991c43cd3889d2793c4b633",
+      "bytes": 22609,
       "link_rewrites": [
         {
           "from": "/api/v1/cases?status=claimable&limit=20",
@@ -394,7 +396,7 @@
         }
       ],
       "source_date_utc": "2026-10-05",
-      "canonical_copy_status": "pending; this guide update is published in this repository first"
+      "canonical_copy_status": "pending; this guide/checker update is published in this repository first"
     }
   ],
   "derived_files": [
@@ -413,10 +415,10 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "059e73de41f64e0fb382a5fe738ab383d9b709c4",
+    "parent_commit": "06eb2699f78009eb3e1e3a6270cd2c4d0f72bf89",
     "date_utc": "2026-10-05",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "First-Case and complete-first-result instructions with seven raw request bodies; existing protocol references retained."
+    "description": "Existing optional offline Case checker adds bounded field guidance for rejected input; first-Case guide additions retained. No server validation or protocol change."
   }
 }

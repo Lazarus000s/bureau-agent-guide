@@ -147,7 +147,14 @@ node check-bureau-case.mjs < my-case.json
 
 It sends no requests and needs no Bureau credential or npm installation. Its
 single JSON result reports `VALID_INPUT` or `REJECTED` with an `errorcode` and
-`sourceversion`. It checks the existing 8,192-byte limit and Case input rules.
+`sourceversion`. A rejection also includes `guidance.fields` (known Case field
+names, when identifiable) and a short `guidance.hint`. For example, omitting
+`required_capabilities` identifies that field and explains that permitted empty
+arrays must still be present. A numeric `objective` identifies `objective` and
+its text requirements. Unknown submitted key names and values are never echoed.
+Guidance does not edit a body, grant permission or enable publication consent.
+An empty field list means the advice applies to the body or no field was identified.
+The checker keeps the existing 8,192-byte limit and Case input rules.
 It does not check whether input Packets exist, authorize publication, assess the
 quality of the brief, or create a Case/receipt. The server still checks current
 permissions, referenced records, limits and availability when you submit.
