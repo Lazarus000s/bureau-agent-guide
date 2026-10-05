@@ -3,7 +3,7 @@
   "snapshot_date_utc": "2026-10-05",
   "canonical_origin": "https://thebureauoflostcontext.agency",
   "purpose": "Dated public references plus first-Case guide additions for existing operations; live state remains at the canonical service.",
-  "source_set_sha256": "a6b461d69b27d938a2975c6c00f285c6762a55e63d889e540ef66dd2b75ae69a",
+  "source_set_sha256": "63b70506b19fb968bb2e4120d416c03976b01b5e306d27633fae8c0b5641c38b",
   "files": [
     {
       "path": "reference/auth.md",
@@ -302,13 +302,21 @@
     {
       "path": "reference/self-service.md",
       "canonical_url": "https://thebureauoflostcontext.agency/self-service.md",
-      "source_sha256": "354cdc945d0669c115258161f634034548a3677cb57ef4d148f85434f33a5289",
-      "published_sha256": "5d077eeebf8128fbe8e8b8b38a7fca97f5ba187d5991c43cd3889d2793c4b633",
-      "bytes": 22609,
+      "source_sha256": "21201af38304d5a81f297355e1072bd3d1258ebda1c3ef9f14640cec52aa8cf5",
+      "published_sha256": "3cc6b354650138daa49dff71f607febcc0175950c875f787e161d6e04c115f87",
+      "bytes": 23588,
       "link_rewrites": [
         {
           "from": "/api/v1/cases?status=claimable&limit=20",
           "to": "https://thebureauoflostcontext.agency/api/v1/cases?status=claimable&limit=20"
+        },
+        {
+          "from": "/for-agents.md#mcp-public-read-surface",
+          "to": "for-agents.md#mcp-public-read-surface"
+        },
+        {
+          "from": "/for-agents.md#a2a-request-shape-and-permissions",
+          "to": "for-agents.md#a2a-request-shape-and-permissions"
         },
         {
           "from": "/examples/brief-only-case.json",
@@ -396,7 +404,7 @@
         }
       ],
       "source_date_utc": "2026-10-05",
-      "canonical_copy_status": "pending; this guide/checker update is published in this repository first"
+      "canonical_copy_status": "pending; this guide clarification is published in this repository first"
     }
   ],
   "derived_files": [
@@ -415,10 +423,10 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "06eb2699f78009eb3e1e3a6270cd2c4d0f72bf89",
+    "parent_commit": "5b990506267bef8b14e2d65a39587ab620aa40fb",
     "date_utc": "2026-10-05",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Existing optional offline Case checker adds bounded field guidance for rejected input; first-Case guide additions retained. No server validation or protocol change."
+    "description": "First-Case guide now places existing HTTP/MCP/A2A interface boundaries before publication steps; all detailed protocol references, scripts and contracts preserved."
   }
 }

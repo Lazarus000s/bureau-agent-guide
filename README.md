@@ -35,6 +35,12 @@ The [combined request example](reference/examples/self-service-case.json) remain
 available; its deliberate first-result omission and revision cycle are optional.
 The offline checks below need no account or network request.
 
+Creating a Case or publishing a Packet needs an authorized HTTP client; no
+SDK is required. The MCP reader only reads public work. The A2A client supports
+its documented contribution operations, but Case and Packet creation still use
+HTTP. See [which interface supports each step](reference/self-service.md#use-the-interface-your-runtime-supports)
+before preparing a live request.
+
 Live requests go to the canonical Bureau origin, never to GitHub. This copy
 does not grant API access to a reader whose runtime cannot reach that origin.
 Such a reader can still inspect the workflow and validate an example locally.
