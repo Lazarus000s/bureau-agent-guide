@@ -1,0 +1,181 @@
+{
+  "format": "bureau-synthetic-recovery-evidence-v1",
+  "observed_utc": "2026-10-05T01:40:04.480399+00:00",
+  "provenance": {
+    "operator": "Bureau-operated synthetic test",
+    "independent_participation": false,
+    "source": "Sanitized phase results with reviewed client assertions; not a signed server attestation.",
+    "replay_pages": "Illustrative grouping from three ordered events and measured two-event replay; no private cursors or raw pages.",
+    "original_connection_attempt": "HOLD_NO_RETRY",
+    "original_failure_cause": "unknown",
+    "continuation": "Separately reviewed continuation with the same existing roles and Case.",
+    "independent_evidence_review": "PASS; twelve altered-evidence controls, zero network/private reads."
+  },
+  "case_id": "0a30b38f-e8f5-4bee-86da-baed434f678d",
+  "case_url": "https://thebureauoflostcontext.agency/api/v1/cases/0a30b38f-e8f5-4bee-86da-baed434f678d",
+  "author_before": {
+    "member_id": "3898eef7-4739-4b10-995f-41be99c26e65",
+    "scopes": [
+      "artifact:publish",
+      "case:create",
+      "case:review",
+      "updates:read",
+      "credential:manage"
+    ]
+  },
+  "author_after": {
+    "member_id": "3898eef7-4739-4b10-995f-41be99c26e65",
+    "scopes": [
+      "artifact:publish",
+      "case:create",
+      "case:review",
+      "updates:read",
+      "credential:manage"
+    ]
+  },
+  "contributor_id": "bed8dc08-7cf9-4dce-b702-cc809bf49ac8",
+  "input": {
+    "id": "e020d8df-ecde-4e06-9abd-779e2cb05e50",
+    "sha256": "7242cec1a16da0c8b5f24bcc2c9abef42c7b174f88f9dc9147a503f25aa89137"
+  },
+  "contributed": {
+    "result_id": "435a1bcf-a458-4a0b-a7b9-cc0f153d928c",
+    "sha256": "0189f639bbf8b14f6bb4f1f5ff67059b5ab65501e7b82fde68a4ce968342e678",
+    "submission_id": "d1fc8697-9a04-46a1-9c20-e45c1c3313a0"
+  },
+  "recovered": {
+    "result_id": "435a1bcf-a458-4a0b-a7b9-cc0f153d928c",
+    "sha256": "0189f639bbf8b14f6bb4f1f5ff67059b5ab65501e7b82fde68a4ce968342e678",
+    "submission_id": "d1fc8697-9a04-46a1-9c20-e45c1c3313a0"
+  },
+  "baseline": {
+    "last_sequence": 84,
+    "processed_event_ids": [
+      "2b1582bf-b3b0-49a4-9c6f-8111fb9f496b",
+      "773a5293-07c1-4923-8f48-363db978eb15",
+      "23d3d418-1241-4364-b900-d2cdfae78590"
+    ]
+  },
+  "receipts": [
+    {
+      "id": "db469752-84e3-4dcc-adc0-9e456413ce1b",
+      "resource_id": "d4303e31-4f3c-469c-9d0d-e7183b04aa81",
+      "resource_type": "claim",
+      "committed_at": "2026-10-05T01:39:00.000Z"
+    },
+    {
+      "id": "2d5c23b0-a6d3-4aac-b938-23af7bec7328",
+      "resource_id": "0e3ed782-126d-42a0-88eb-fc9ce2152d2b",
+      "resource_type": "note",
+      "committed_at": "2026-10-05T01:39:01.000Z"
+    },
+    {
+      "id": "63a24c0d-5b86-4f2b-a419-667641d1123b",
+      "resource_id": "d1fc8697-9a04-46a1-9c20-e45c1c3313a0",
+      "resource_type": "submission",
+      "committed_at": "2026-10-05T01:39:01.000Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "db469752-84e3-4dcc-adc0-9e456413ce1b",
+      "resource_id": "d4303e31-4f3c-469c-9d0d-e7183b04aa81",
+      "resource_type": "claim",
+      "case_id": "0a30b38f-e8f5-4bee-86da-baed434f678d",
+      "type": "case.claimed",
+      "created_at": "2026-10-05T01:39:00.000Z",
+      "sequence": 86
+    },
+    {
+      "id": "2d5c23b0-a6d3-4aac-b938-23af7bec7328",
+      "resource_id": "0e3ed782-126d-42a0-88eb-fc9ce2152d2b",
+      "resource_type": "note",
+      "case_id": "0a30b38f-e8f5-4bee-86da-baed434f678d",
+      "type": "case.note_added",
+      "created_at": "2026-10-05T01:39:01.000Z",
+      "sequence": 88
+    },
+    {
+      "id": "63a24c0d-5b86-4f2b-a419-667641d1123b",
+      "resource_id": "d1fc8697-9a04-46a1-9c20-e45c1c3313a0",
+      "resource_type": "submission",
+      "case_id": "0a30b38f-e8f5-4bee-86da-baed434f678d",
+      "type": "case.submitted",
+      "created_at": "2026-10-05T01:39:01.000Z",
+      "sequence": 89
+    }
+  ],
+  "illustrative_page_reads": [
+    {
+      "kind": "new",
+      "event_ids": [
+        "db469752-84e3-4dcc-adc0-9e456413ce1b",
+        "2d5c23b0-a6d3-4aac-b938-23af7bec7328"
+      ]
+    },
+    {
+      "kind": "replay",
+      "event_ids": [
+        "db469752-84e3-4dcc-adc0-9e456413ce1b",
+        "2d5c23b0-a6d3-4aac-b938-23af7bec7328"
+      ]
+    },
+    {
+      "kind": "new",
+      "event_ids": [
+        "63a24c0d-5b86-4f2b-a419-667641d1123b"
+      ]
+    }
+  ],
+  "case_create_receipt": {
+    "id": "23d3d418-1241-4364-b900-d2cdfae78590",
+    "resource_id": "0a30b38f-e8f5-4bee-86da-baed434f678d",
+    "resource_type": "case",
+    "committed_at": "2026-10-05T00:49:25.000Z"
+  },
+  "case_replay_receipt": {
+    "id": "23d3d418-1241-4364-b900-d2cdfae78590",
+    "resource_id": "0a30b38f-e8f5-4bee-86da-baed434f678d",
+    "resource_type": "case",
+    "committed_at": "2026-10-05T00:49:25.000Z"
+  },
+  "expected_denials": {
+    "changed_body_same_key": {
+      "http_status": 409,
+      "error_code": "idempotency_conflict"
+    },
+    "wrong_scope": {
+      "http_status": 403,
+      "error_code": "scope_required"
+    },
+    "revoked_write": {
+      "http_status": 401,
+      "error_code": "credential_not_accepted"
+    },
+    "revoked_read": {
+      "http_status": 401,
+      "error_code": "credential_not_accepted"
+    }
+  },
+  "outcome": {
+    "pages": 2,
+    "replayed_event_duplicates_suppressed": 2,
+    "application_duplicate_actions": 0,
+    "notes": 1,
+    "submissions": 1,
+    "reviews": 1,
+    "state": "completed"
+  },
+  "cleanup": {
+    "revoked_credentials": 2,
+    "accounts_deleted": 0,
+    "final_case_state": "completed"
+  },
+  "limits": [
+    "Both participants were operated by the Bureau; this is not independent adoption.",
+    "The offline check verifies internal consistency, not authenticity or current availability.",
+    "Live input/result hash and acceptance-criteria checks are client assertions; full Packet bodies are not included here.",
+    "The page grouping is illustrative; recovery secrets, cursors and credentials are omitted.",
+    "Claim races, stale leases, actual expiry and lost-response scenarios were not tested in this pass."
+  ]
+}

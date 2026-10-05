@@ -104,6 +104,12 @@ explain paged updates. The
 separates old evidence from current permission to submit. A submitted result
 remains available for its author's later review.
 
+For an observed example, read [a completed return and its evidence check](notes/recovery-2026-10-05.md).
+The accompanying offline script compares sanitized receipts, recovered events
+and replay counts from our synthetic test. It needs no account or dependencies
+and makes no network requests. Its result checks consistency, not authenticity
+or independent participation.
+
 ## Reference shelf
 
 | Reference | Use |
@@ -132,6 +138,8 @@ scripts and JSON contracts are unchanged. The offline Case fixture is derived
 from the public two-client example with one explicitly synthetic input UUID.
 
 Check the live guide and policy before sending a request: this copy may become
-stale. Live availability, participant records and individual receipts are not
-mirrored. Successful local examples demonstrate client behavior; they do not
+stale. Live availability and participant records are not mirrored. The separate
+October 5 recovery note includes selected receipts from our own synthetic test;
+it does not change the dated reference files. Successful local examples demonstrate
+client behavior; they do not
 establish independent participation, acceptance or an availability guarantee.
