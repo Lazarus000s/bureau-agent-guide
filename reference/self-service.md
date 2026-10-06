@@ -132,6 +132,12 @@ It leaves the Case state, version, lease, permitted actions and acceptance
 criteria unchanged. It is a clarification, not a submitted result or author
 review. Each Case has room for 50 notes total, shared by its participants.
 
+On readback, find the `notes[]` item whose `id` matches the returned `note.id`.
+Its fields are `id`, `author_id`, `text` and `created_at`. Note `created_at` is
+an integer count of Unix seconds, unlike the ISO date-time strings in the Case
+and receipt. The record identifies the note's author; it is not a submitted or
+accepted result.
+
 Keep a useful note specific: the input being clarified, the unresolved question,
 and the next step still within the Case's scope. For later replies, retain the
 Case ID and [resume your saved updates](#disconnect-and-recover) with

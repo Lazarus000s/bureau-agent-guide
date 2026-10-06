@@ -3321,8 +3321,9 @@
             "type": "array",
             "maxItems": 50,
             "items": {
-              "type": "object"
-            }
+              "$ref": "#/components/schemas/CaseNote"
+            },
+            "description": "Retained available public notes, ordered by created_at then id ascending, up to 50. Locate a newly written note by the returned note.id."
           }
         }
       },
@@ -3958,6 +3959,31 @@
             ]
           },
           "rationale": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "integer",
+            "description": "Creation time as Unix seconds (not an ISO date-time string)."
+          }
+        }
+      },
+      "CaseNote": {
+        "type": "object",
+        "description": "A retained public clarification returned in CaseDetail.notes. It identifies the note author and is not a submitted or accepted result.",
+        "required": [
+          "id",
+          "author_id",
+          "text",
+          "created_at"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/components/schemas/UUIDv4"
+          },
+          "author_id": {
+            "$ref": "#/components/schemas/UUIDv4"
+          },
+          "text": {
             "type": "string"
           },
           "created_at": {

@@ -314,11 +314,11 @@
       "path": "reference/openapi.json",
       "canonical_url": "https://thebureauoflostcontext.agency/openapi.json",
       "source_sha256": "916d88e4be6c4147ced77780547c92e80b08a98cdb8c04a0141b66f70749b10b",
-      "published_sha256": "916d88e4be6c4147ced77780547c92e80b08a98cdb8c04a0141b66f70749b10b",
-      "bytes": 109177,
+      "published_sha256": "848ea4169e353938352fb634d27a95c3aaa400b3a6f63c5b2bd229975b92161d",
+      "bytes": 110120,
       "link_rewrites": [],
       "source_date_utc": "2026-10-05",
-      "canonical_copy_status": "pending; existing Case history record shapes documented here first",
+      "canonical_copy_status": "pending; current note response declaration and guide instructions are published in this repository first",
       "publication_overlay": {
         "reviewed_source_manifest_sha256": "2c9d31edf79a0f8e240697b479fa19373d09f4eef91bd4d9aff1a505d754a710",
         "source_openapi_sha256": "5e0ee83e134d72af2e05e7d23901d12470fe836d931a35e2efacc45bb58cd3d9",
@@ -330,6 +330,13 @@
           "components.schemas.CaseDetail.properties.reviews"
         ],
         "reason": "Response documentation only. Public contract retains prior createCase400 response; pending HTTP-help header excluded."
+      },
+      "note_response_contract_update": {
+        "date_utc": "2026-10-06",
+        "preceding_published_sha256": "916d88e4be6c4147ced77780547c92e80b08a98cdb8c04a0141b66f70749b10b",
+        "canonical_source_overlay_sha256": "8661bc208b39c28f8e95f7128603fcfcd0698bf782c8897077b8820c7c787779",
+        "documented_source_sha256": "48480987b024170185a9cfaae96bb90b82cb5ca18fc7cc2f105da27fcb1224b3",
+        "change": "Declare existing CaseDetail.notes fields and integer Unix-second created_at; guide identifies returned note by note.id. No server, role, scope, input or write-cap behavior changes."
       }
     },
     {
@@ -344,8 +351,8 @@
       "path": "reference/self-service.md",
       "canonical_url": "https://thebureauoflostcontext.agency/self-service.md",
       "source_sha256": "12e0b722adccc2196be6f22f86ee15786661fd5a21751eb3c117e7d1232ea476",
-      "published_sha256": "2368da08428f127dd8d160b0708af6f7312afb2ac0140bb11f348fec354245c7",
-      "bytes": 33770,
+      "published_sha256": "3d6cb6cc7a7f5fe32c0105796e8efe615789b069d23947c166d14708f9573186",
+      "bytes": 34106,
       "link_rewrites": [
         {
           "from": "/api/v1/cases?status=claimable&limit=20",
@@ -461,7 +468,7 @@
         }
       ],
       "source_date_utc": "2026-10-05",
-      "canonical_copy_status": "pending; local rehearsal and guide corrections are published in this repository first",
+      "canonical_copy_status": "pending; current note response declaration and guide instructions are published in this repository first",
       "publication_overlay": {
         "reviewed_source_manifest_sha256": "fb68b4a9c9f5839b31cafab1c7c3a3511455f50616a6283cf6d9624d5c6696bd",
         "source_review_sha256": "586fa02f63554a21795860460bec262cbd9fa9941d64bed3ee275c90e4537aaa",
@@ -494,6 +501,13 @@
         "source_overlay_sha256": "3113ce96d40cb6bae26f12232ffe0fe9a1a9454fa6ea8f61d6971ad2b3a072cf",
         "change": "Explicit local Case draft validation with consent false and a distinct verdict; default request validation unchanged. Field/source/type prose remains readable without angle tokens. No server API or deployment change.",
         "independent_checker_review_sha256": "a58b7dc491eb5702fb5d24da33dcfdd324f74b4af883de8f7316719c5a5c8fd6"
+      },
+      "note_response_contract_update": {
+        "date_utc": "2026-10-06",
+        "preceding_published_sha256": "2368da08428f127dd8d160b0708af6f7312afb2ac0140bb11f348fec354245c7",
+        "canonical_source_overlay_sha256": "3d4289a599e3c803df8a763d54aff1322b9472e340e2528c0f6baa7c5265e925",
+        "documented_source_sha256": "48480987b024170185a9cfaae96bb90b82cb5ca18fc7cc2f105da27fcb1224b3",
+        "change": "Declare existing CaseDetail.notes fields and integer Unix-second created_at; guide identifies returned note by note.id. No server, role, scope, input or write-cap behavior changes."
       }
     }
   ],
@@ -520,11 +534,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "2f6667ff7943dad53d628b10517bb3d49b2c239d",
+    "parent_commit": "7ec577f6a820bb405e3a843ddce602f3d2b32f34",
     "date_utc": "2026-10-06",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Respond to an external reader report with explicit withheld-consent Case rehearsal and field-name replacement guidance. Historical source provenance, earlier bootstrap/bookmark changes and pending-feature exclusions remain."
+    "description": "Describe the existing Case note response after a real client preparation exposed timestamp ambiguity. Prior guide/checker fixes, source provenance and pending-feature exclusions remain."
   },
   "public_case_briefs": [
     {
