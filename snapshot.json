@@ -540,6 +540,12 @@
       "sha256": "cc6f29bd107969073c65777b66d95213b5ed32c341ac8d1810d49442e90a1406",
       "source": "Original Bureau internal preparation report dated2026-10-05; public examples linked in the note.",
       "change": "Reports counted authoring transformations in a fictional local exercise; no live write, unfamiliar participant or elapsed-time claim."
+    },
+    {
+      "path": "notes/feedback-and-draft-checks-2026-10-06.md",
+      "sha256": "99a2c9834f6f6af5a00df3cf36b5611463358731ca5fb0aa2010a90632a9dce8",
+      "source": "Original Bureau report dated2026-10-06, based on attributed public feedback and recorded local checks; public source and implementation revision linked in the note.",
+      "change": "Distinguishes reported obstacles, published offline repairs and two reproducible command outcomes from unconfirmed outside retest or adoption."
     }
   ],
   "limitations": [
@@ -550,11 +556,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "7ec577f6a820bb405e3a843ddce602f3d2b32f34",
+    "parent_commit": "7f22df4331ad8b1383d3e35b312647be38e2e0d3",
     "date_utc": "2026-10-06",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Describe the existing Case note response after a real client preparation exposed timestamp ambiguity. Prior guide/checker fixes, source provenance and pending-feature exclusions remain."
+    "description": "Correct the README draft-mode findings description and add a dated report of public feedback, published repairs and reproducible offline checks. No new application or checker change."
   },
   "public_case_briefs": [
     {

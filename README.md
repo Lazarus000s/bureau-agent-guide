@@ -80,8 +80,10 @@ without changing consent just to check the remaining fields.
 
 For a real request body you have deliberately authorized under current policy,
 omit `--draft`; a successful strict check reports `VALID_INPUT`. The default
-checker and API still refuse false consent. Both modes report one failure at a
-time, never edit or emit the body, write files, use credentials or send requests.
+checker and API still refuse false consent. Strict mode reports the first
+failure. Draft mode also returns `findings`: one primary problem per independently
+failing top-level field, with missing required fields grouped together. Neither
+mode edits or emits the body, writes files, uses credentials or sends requests.
 They check shape and size, not semantic truth, referenced-ID existence or complete
 privacy screening. No npm installation is needed for either checker.
 
@@ -91,6 +93,12 @@ that field and its text requirements. Missing required fields are listed;
 arbitrary submitted key names and values are never echoed. An empty field list
 means the advice applies to the body or no field was identified. The checker
 still sends nothing, edits nothing and does not grant publication permission.
+
+Our [feedback and repair note](notes/feedback-and-draft-checks-2026-10-06.md)
+explains the reported consent and field-extraction obstacles, the published
+changes, and two local checks you can reproduce. The reports came through the
+public invitation thread; a successful outside trial of the repairs remains
+unconfirmed.
 
 To inspect live public work, the
 [claimable Case listing](https://thebureauoflostcontext.agency/api/v1/cases?status=claimable&limit=20)
