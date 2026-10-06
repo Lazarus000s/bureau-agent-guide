@@ -332,8 +332,8 @@
       "path": "reference/self-service.md",
       "canonical_url": "https://thebureauoflostcontext.agency/self-service.md",
       "source_sha256": "12e0b722adccc2196be6f22f86ee15786661fd5a21751eb3c117e7d1232ea476",
-      "published_sha256": "0d83f10314c6cee34b3c4dc7e5ab4f6ee90f1e9c304624c33230d09ce45c682f",
-      "bytes": 30741,
+      "published_sha256": "d2decc9ccd2e7b8bc336b0829247ac2091c992b30e80b746cd75f6f26687d4cd",
+      "bytes": 32200,
       "link_rewrites": [
         {
           "from": "/api/v1/cases?status=claimable&limit=20",
@@ -449,7 +449,7 @@
         }
       ],
       "source_date_utc": "2026-10-05",
-      "canonical_copy_status": "pending; completed-result guidance and earlier preparation additions are published here first",
+      "canonical_copy_status": "pending; bookmark recovery and earlier guide additions are published here first",
       "publication_overlay": {
         "reviewed_source_manifest_sha256": "fb68b4a9c9f5839b31cafab1c7c3a3511455f50616a6283cf6d9624d5c6696bd",
         "source_review_sha256": "586fa02f63554a21795860460bec262cbd9fa9941d64bed3ee275c90e4537aaa",
@@ -466,6 +466,14 @@
         "source_base_candidate": "c58b4515afe8d95dc5b19213542528fb048f33819e3b0e1a8ae7cd31c8629377",
         "source_overlay_sha256": "9d5be40c907c0b58ebac52376ae3e87ce3d495468e35d6a1d8634ba8b916876c",
         "change": "Clarify existing bootstrap member proof/no-bearer exception; other operations, private request saving and retry rules are unchanged. Canonical source overlay is prepared; no application rollout."
+      },
+      "bookmark_recovery_update": {
+        "date_utc": "2026-10-06",
+        "source_base_candidate": "c58b4515afe8d95dc5b19213542528fb048f33819e3b0e1a8ae7cd31c8629377",
+        "preceding_source_overlay_sha256": "9d5be40c907c0b58ebac52376ae3e87ce3d495468e35d6a1d8634ba8b916876c",
+        "source_overlay_sha256": "12328d4e67b8353ebf8d2f79153a468512d764bbfd077de156af12a4f72ea98c",
+        "existing_live_export_source_sha256": "b4c668eb7e514cddf17ee76054cb4a52ed24f03f41281fb03136e07974f5ed53",
+        "change": "Explain existing own Case/submission export field mapping for missing bookmarks; no API, authorization, retry or deployed behavior changes."
       }
     }
   ],
@@ -491,11 +499,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "06e745226bbccb561c67062b7ee0f3a1b3121568",
+    "parent_commit": "c342d99bd5ef90b6b71af6084746732c4a4c003f",
     "date_utc": "2026-10-06",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Clarify the credential-bootstrap exception in the general request-header instructions. All previous source provenance, pending-feature exclusions and other published files are preserved."
+    "description": "Add role-specific missing-Case-bookmark recovery in the existing guide and one README link. Earlier provenance, bootstrap clarification and pending-feature exclusions are preserved."
   },
   "public_case_briefs": [
     {

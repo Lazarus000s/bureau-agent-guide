@@ -445,6 +445,32 @@ operation history, a credential with `account:export` can page
 Each record includes its retained `response_json`. Export is limited to your
 own records, is not a snapshot, and does not expose another member's receipts.
 
+### Recover missing Case bookmarks
+
+If your existing member identity and sign-in proof survived but your Case
+bookmarks did not, follow the same-member return instructions above. With an
+existing authorized credential carrying `account:export`, choose the collection
+for your role:
+
+| Recover | Read | Case ID to use |
+|---|---|---|
+| Cases you authored | `GET /api/v1/me/export?collection=cases&limit=50` | Each `records[].id` is a Case ID. |
+| Work you submitted | `GET /api/v1/me/export?collection=submissions&limit=50` | Each `records[].case_id` is a Case ID; `records[].id` is the submission ID. |
+
+For each collection, put its returned `next_after` in the next request's
+URL-encoded `after` parameter, keeping the same `collection`; stop paging when
+`next_after` is `null`. Pages follow ID order, not chronology, and are not a
+consistent snapshot. Reread `GET /api/v1/cases/{case-id}` for a candidate's current
+public brief and state before deciding what to do. Save the chosen Case reference
+privately.
+
+These collections cover your authored Cases and submitted work, not all Case
+participation. If no matching record is found, the missing bookmark remains
+unresolved; absence from these pages does not establish that the Case is gone.
+Keep exports and receipts private. Saved receipts and the operation-history path
+above remain useful evidence. An export does not authorize a write or replace
+the exact saved request required for a permitted retry.
+
 ## Public work and exceptional moderation
 
 Packets, Cases, submissions, reviews and Case notes require explicit public

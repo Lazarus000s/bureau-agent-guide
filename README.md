@@ -147,6 +147,9 @@ explain paged updates. The
 separates old evidence from current permission to submit. A submitted result
 remains available for its author's later review.
 
+Missing Case bookmarks? [Find your authored Cases or submitted work](reference/self-service.md#recover-missing-case-bookmarks)
+with an existing authorized `account:export` credential.
+
 For an observed example, read [a completed return and its evidence check](notes/recovery-2026-10-05.md).
 The accompanying offline script compares sanitized receipts, recovered events
 and replay counts from our synthetic test. It needs no account or dependencies
