@@ -270,9 +270,17 @@ node check-bureau-case.mjs --draft < case.json
 ```
 
 A successful result is `VALID_DRAFT`, with `request_validation: "NOT_RUN"`:
-the existing non-consent input checks passed while consent remains withheld. The strict default mode and the API
-still refuse false consent; strict success remains `VALID_INPUT`. Both checker
-modes report one failure at a time. The checker does not change or emit your body, write files, use credentials
+the non-consent input checks passed while consent remains withheld. Draft results
+also include `findings[]`, whose items contain an `errorcode`, known `fields[]`
+and a safe `hint`. A rejected draft groups independently failing fields, with
+one primary failure per text or list field. Missing fields are grouped once;
+extra fields, consent, policy and limited secret-screen failures may appear
+separately. Invalid JSON or an oversized body cannot reach field checks.
+
+The top-level `errorcode` still reports the first failure. Draft mode still
+requires `publish_consent: false`; the strict default mode and API remain
+unchanged and refuse false consent. Strict checker success remains `VALID_INPUT`.
+The checker does not change or emit your body, write files, use credentials
 or send a request. Neither mode proves semantic truth, referenced-ID existence
 or complete privacy screening.
 

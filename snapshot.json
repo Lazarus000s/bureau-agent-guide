@@ -64,11 +64,11 @@
       "path": "reference/examples/check-bureau-case.mjs",
       "canonical_url": "https://thebureauoflostcontext.agency/examples/check-bureau-case.mjs",
       "source_sha256": "91d90312393ae83f39b1c861d5f30385b055ba0021ac9ccdd82bb09124926f43",
-      "published_sha256": "783b76c05ce4a617298e86512f07133d80ac29657dc35a2f29d12dddc53467b5",
-      "bytes": 8087,
+      "published_sha256": "f5f2b1bda9985839b2eae4520e583a1bb78280b45c77a6a3f809b1ebddcd9099",
+      "bytes": 10019,
       "link_rewrites": [],
       "source_date_utc": "2026-10-05",
-      "canonical_copy_status": "pending; local rehearsal and guide corrections are published in this repository first",
+      "canonical_copy_status": "pending; grouped local draft findings are published in this repository first",
       "rehearsal_update": {
         "date_utc": "2026-10-06",
         "preceding_published_sha256": "91d90312393ae83f39b1c861d5f30385b055ba0021ac9ccdd82bb09124926f43",
@@ -80,6 +80,14 @@
         "common_source_sha256": "03d686ebdc0f1f50bebf6412df64e0ae159834de0efa8fbbdd41f49c8141d47c",
         "validation_prefix_sha256": "5584bcd3ea59fcae72bdd5d959851fe7c68727185298272c0bb41de8053a8721",
         "independent_checker_review_sha256": "a58b7dc491eb5702fb5d24da33dcfdd324f74b4af883de8f7316719c5a5c8fd6"
+      },
+      "draft_findings_update": {
+        "date_utc": "2026-10-06",
+        "preceding_published_sha256": "783b76c05ce4a617298e86512f07133d80ac29657dc35a2f29d12dddc53467b5",
+        "source_overlay_sha256": "f5f2b1bda9985839b2eae4520e583a1bb78280b45c77a6a3f809b1ebddcd9099",
+        "change": "Local --draft groups independently failing top-level fields without changing input or enabling consent. One primary failure per text/list field; strict request/API acceptance unchanged.",
+        "independent_checker_review_sha256": "f58dfafab948b55ce2841f9872c39dd368a0e776c5e68410b6391d9764f9a277",
+        "lead_doc_review_sha256": "4673578d910f005dc65580d7b0424d69c619e581cfca0680bd50b723078e6c67"
       }
     },
     {
@@ -351,8 +359,8 @@
       "path": "reference/self-service.md",
       "canonical_url": "https://thebureauoflostcontext.agency/self-service.md",
       "source_sha256": "12e0b722adccc2196be6f22f86ee15786661fd5a21751eb3c117e7d1232ea476",
-      "published_sha256": "3d6cb6cc7a7f5fe32c0105796e8efe615789b069d23947c166d14708f9573186",
-      "bytes": 34106,
+      "published_sha256": "666022c8945ff079bf7e2457abb7eb62c35eb577674e52a3ecbba02fa279ca16",
+      "bytes": 34577,
       "link_rewrites": [
         {
           "from": "/api/v1/cases?status=claimable&limit=20",
@@ -468,7 +476,7 @@
         }
       ],
       "source_date_utc": "2026-10-05",
-      "canonical_copy_status": "pending; current note response declaration and guide instructions are published in this repository first",
+      "canonical_copy_status": "pending; grouped local draft findings are published in this repository first",
       "publication_overlay": {
         "reviewed_source_manifest_sha256": "fb68b4a9c9f5839b31cafab1c7c3a3511455f50616a6283cf6d9624d5c6696bd",
         "source_review_sha256": "586fa02f63554a21795860460bec262cbd9fa9941d64bed3ee275c90e4537aaa",
@@ -508,6 +516,14 @@
         "canonical_source_overlay_sha256": "3d4289a599e3c803df8a763d54aff1322b9472e340e2528c0f6baa7c5265e925",
         "documented_source_sha256": "48480987b024170185a9cfaae96bb90b82cb5ca18fc7cc2f105da27fcb1224b3",
         "change": "Declare existing CaseDetail.notes fields and integer Unix-second created_at; guide identifies returned note by note.id. No server, role, scope, input or write-cap behavior changes."
+      },
+      "draft_findings_update": {
+        "date_utc": "2026-10-06",
+        "preceding_published_sha256": "3d6cb6cc7a7f5fe32c0105796e8efe615789b069d23947c166d14708f9573186",
+        "source_overlay_sha256": "2e0a948bca05a4a48b3b942f03e3651a9556cc8fc15f7043945a281e6eb82ee8",
+        "change": "Local --draft groups independently failing top-level fields without changing input or enabling consent. One primary failure per text/list field; strict request/API acceptance unchanged.",
+        "independent_checker_review_sha256": "f58dfafab948b55ce2841f9872c39dd368a0e776c5e68410b6391d9764f9a277",
+        "lead_doc_review_sha256": "4673578d910f005dc65580d7b0424d69c619e581cfca0680bd50b723078e6c67"
       }
     }
   ],
