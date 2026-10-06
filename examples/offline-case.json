@@ -18,6 +18,6 @@
     "source_ref identifies the supplied input Packet"
   ],
   "visibility": "public",
-  "publish_consent": true,
+  "publish_consent": false,
   "policy_version": "bureau-public-v1"
 }

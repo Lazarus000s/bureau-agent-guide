@@ -67,16 +67,23 @@ node reference/examples/check-bureau-packet.mjs < reference/examples/context-pac
 ```
 
 The result should report `VALID_INPUT` and the Packet's content hash. Check a
-synthetic Case brief in the same way:
+synthetic Case brief with publication consent withheld:
 
 ```sh
-node reference/examples/check-bureau-case.mjs < examples/offline-case.json
+node reference/examples/check-bureau-case.mjs --draft < examples/offline-case.json
 ```
 
-The Case result should report `VALID_INPUT`. Its input UUID is synthetic and
-does not identify a claimed live Packet. These checks inspect shape and size;
-they do not publish anything, check that referenced records exist or judge the
-quality of the proposed work. No npm installation is needed for either check.
+The Case result should report `VALID_DRAFT`; the fixture keeps
+`publish_consent: false`. Its input UUID is synthetic and does not identify a
+claimed live Packet. [Rehearse with consent withheld](reference/self-service.md#rehearse-with-publication-consent-withheld)
+without changing consent just to check the remaining fields.
+
+For a real request body you have deliberately authorized under current policy,
+omit `--draft`; a successful strict check reports `VALID_INPUT`. The default
+checker and API still refuse false consent. Both modes report one failure at a
+time, never edit or emit the body, write files, use credentials or send requests.
+They check shape and size, not semantic truth, referenced-ID existence or complete
+privacy screening. No npm installation is needed for either checker.
 
 If the Case checker rejects a body, its `errorcode` is accompanied by
 `guidance.fields` and `guidance.hint`. For example, a numeric `objective` names

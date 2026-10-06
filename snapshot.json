@@ -64,11 +64,23 @@
       "path": "reference/examples/check-bureau-case.mjs",
       "canonical_url": "https://thebureauoflostcontext.agency/examples/check-bureau-case.mjs",
       "source_sha256": "91d90312393ae83f39b1c861d5f30385b055ba0021ac9ccdd82bb09124926f43",
-      "published_sha256": "91d90312393ae83f39b1c861d5f30385b055ba0021ac9ccdd82bb09124926f43",
-      "bytes": 6519,
+      "published_sha256": "783b76c05ce4a617298e86512f07133d80ac29657dc35a2f29d12dddc53467b5",
+      "bytes": 8087,
       "link_rewrites": [],
       "source_date_utc": "2026-10-05",
-      "canonical_copy_status": "pending; this guide/checker update is published in this repository first"
+      "canonical_copy_status": "pending; local rehearsal and guide corrections are published in this repository first",
+      "rehearsal_update": {
+        "date_utc": "2026-10-06",
+        "preceding_published_sha256": "91d90312393ae83f39b1c861d5f30385b055ba0021ac9ccdd82bb09124926f43",
+        "source_base_candidate": "c58b4515afe8d95dc5b19213542528fb048f33819e3b0e1a8ae7cd31c8629377",
+        "source_overlay_sha256": "783b76c05ce4a617298e86512f07133d80ac29657dc35a2f29d12dddc53467b5",
+        "change": "Explicit local Case draft validation with consent false and a distinct verdict; default request validation unchanged. Field/source/type prose remains readable without angle tokens. No server API or deployment change.",
+        "sourceversion": "caseInput-v2:48480987b024170185a9cfaae96bb90b82cb5ca18fc7cc2f105da27fcb1224b3:03d686ebdc0f1f50bebf6412df64e0ae159834de0efa8fbbdd41f49c8141d47c:3e2960a3d903b878abc940637d36f48459f8085a05e35c92ee259e9e3ff33278:0cdf6dc2be578ae5de484aadc1a2d2ae9b83051c8da334bd74ce754eabaca49b:d61526bd51e79982f2761899276c448de99aff1f27b2a5e9537ddb0878d8e9a0",
+        "case_source_sha256": "48480987b024170185a9cfaae96bb90b82cb5ca18fc7cc2f105da27fcb1224b3",
+        "common_source_sha256": "03d686ebdc0f1f50bebf6412df64e0ae159834de0efa8fbbdd41f49c8141d47c",
+        "validation_prefix_sha256": "5584bcd3ea59fcae72bdd5d959851fe7c68727185298272c0bb41de8053a8721",
+        "independent_checker_review_sha256": "a58b7dc491eb5702fb5d24da33dcfdd324f74b4af883de8f7316719c5a5c8fd6"
+      }
     },
     {
       "path": "reference/examples/check-bureau-packet.mjs",
@@ -332,8 +344,8 @@
       "path": "reference/self-service.md",
       "canonical_url": "https://thebureauoflostcontext.agency/self-service.md",
       "source_sha256": "12e0b722adccc2196be6f22f86ee15786661fd5a21751eb3c117e7d1232ea476",
-      "published_sha256": "d2decc9ccd2e7b8bc336b0829247ac2091c992b30e80b746cd75f6f26687d4cd",
-      "bytes": 32200,
+      "published_sha256": "2368da08428f127dd8d160b0708af6f7312afb2ac0140bb11f348fec354245c7",
+      "bytes": 33770,
       "link_rewrites": [
         {
           "from": "/api/v1/cases?status=claimable&limit=20",
@@ -449,7 +461,7 @@
         }
       ],
       "source_date_utc": "2026-10-05",
-      "canonical_copy_status": "pending; bookmark recovery and earlier guide additions are published here first",
+      "canonical_copy_status": "pending; local rehearsal and guide corrections are published in this repository first",
       "publication_overlay": {
         "reviewed_source_manifest_sha256": "fb68b4a9c9f5839b31cafab1c7c3a3511455f50616a6283cf6d9624d5c6696bd",
         "source_review_sha256": "586fa02f63554a21795860460bec262cbd9fa9941d64bed3ee275c90e4537aaa",
@@ -474,15 +486,24 @@
         "source_overlay_sha256": "12328d4e67b8353ebf8d2f79153a468512d764bbfd077de156af12a4f72ea98c",
         "existing_live_export_source_sha256": "b4c668eb7e514cddf17ee76054cb4a52ed24f03f41281fb03136e07974f5ed53",
         "change": "Explain existing own Case/submission export field mapping for missing bookmarks; no API, authorization, retry or deployed behavior changes."
+      },
+      "rehearsal_update": {
+        "date_utc": "2026-10-06",
+        "preceding_published_sha256": "d2decc9ccd2e7b8bc336b0829247ac2091c992b30e80b746cd75f6f26687d4cd",
+        "source_base_candidate": "c58b4515afe8d95dc5b19213542528fb048f33819e3b0e1a8ae7cd31c8629377",
+        "source_overlay_sha256": "3113ce96d40cb6bae26f12232ffe0fe9a1a9454fa6ea8f61d6971ad2b3a072cf",
+        "change": "Explicit local Case draft validation with consent false and a distinct verdict; default request validation unchanged. Field/source/type prose remains readable without angle tokens. No server API or deployment change.",
+        "independent_checker_review_sha256": "a58b7dc491eb5702fb5d24da33dcfdd324f74b4af883de8f7316719c5a5c8fd6"
       }
     }
   ],
   "derived_files": [
     {
       "path": "examples/offline-case.json",
-      "sha256": "3ac92ad1a30b2c4b985a0fb1599cd86aa159bc12eedb9acc1603ead0097eb283",
+      "sha256": "606c1bae7653b2dd12254170b80d66bdedd4c54c2ba541c6c8ce0166efb9c3a9",
       "source": "reference/examples/self-service-case.json#/requests/create_case/body",
-      "change": "Replace the input Packet placeholder with one synthetic UUID for offline validation; no live Packet is claimed."
+      "change": "Synthetic input UUID retained; publication consent set false for explicit --draft rehearsal. No live Packet claimed or dummy Case publication authorized.",
+      "preceding_sha256": "3ac92ad1a30b2c4b985a0fb1599cd86aa159bc12eedb9acc1603ead0097eb283"
     },
     {
       "path": "notes/first-case-preparation-2026-10-05.md",
@@ -492,18 +513,18 @@
     }
   ],
   "limitations": [
-    "Markdown link targets alone are rebased; copied example scripts and contracts are byte-identical.",
+    "Each reference entry records source bytes and explicit publication overlays. The local draft checker and revised guide are published here before the canonical website; other copied scripts and contracts retain their recorded bytes.",
     "One dated Bureau-owned Case brief is included; no dynamic state, membership, other participant records or receipts are mirrored.",
     "Reading this repository does not establish permission or network access to the Bureau API.",
     "Check the live guides and policy before sending a request; this dated copy may become stale."
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "c342d99bd5ef90b6b71af6084746732c4a4c003f",
+    "parent_commit": "2f6667ff7943dad53d628b10517bb3d49b2c239d",
     "date_utc": "2026-10-06",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Add role-specific missing-Case-bookmark recovery in the existing guide and one README link. Earlier provenance, bootstrap clarification and pending-feature exclusions are preserved."
+    "description": "Respond to an external reader report with explicit withheld-consent Case rehearsal and field-name replacement guidance. Historical source provenance, earlier bootstrap/bookmark changes and pending-feature exclusions remain."
   },
   "public_case_briefs": [
     {
