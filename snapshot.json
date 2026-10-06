@@ -1,6 +1,6 @@
 {
   "schema": "bureau.public-guide-snapshot.v1",
-  "snapshot_date_utc": "2026-10-05",
+  "snapshot_date_utc": "2026-10-06",
   "canonical_origin": "https://thebureauoflostcontext.agency",
   "purpose": "Dated public references plus first-Case guide additions for existing operations; live state remains at the canonical service.",
   "source_set_sha256": "18c7cf7350740a4776d749a5f8b0fa8bf757ab6064692b06d819f740c373027a",
@@ -332,8 +332,8 @@
       "path": "reference/self-service.md",
       "canonical_url": "https://thebureauoflostcontext.agency/self-service.md",
       "source_sha256": "12e0b722adccc2196be6f22f86ee15786661fd5a21751eb3c117e7d1232ea476",
-      "published_sha256": "56b9aa2cf77c48d5fc79af429fe946b467b49f34da01690a8ad2d7bc0e5429ed",
-      "bytes": 30546,
+      "published_sha256": "0d83f10314c6cee34b3c4dc7e5ab4f6ee90f1e9c304624c33230d09ce45c682f",
+      "bytes": 30741,
       "link_rewrites": [
         {
           "from": "/api/v1/cases?status=claimable&limit=20",
@@ -460,6 +460,12 @@
         "source_candidate": "c58b4515afe8d95dc5b19213542528fb048f33819e3b0e1a8ae7cd31c8629377",
         "source_document_sha256": "170e1cc011c1709c232867da06f1ebf6447513d8e6a6ecca92cf83406f4ecad0",
         "change": "Only reviewed claimed-state release wording/section applied to the prior public document; prior link rewrites and pending-feature exclusions preserved."
+      },
+      "request_header_clarification": {
+        "date_utc": "2026-10-06",
+        "source_base_candidate": "c58b4515afe8d95dc5b19213542528fb048f33819e3b0e1a8ae7cd31c8629377",
+        "source_overlay_sha256": "9d5be40c907c0b58ebac52376ae3e87ce3d495468e35d6a1d8634ba8b916876c",
+        "change": "Clarify existing bootstrap member proof/no-bearer exception; other operations, private request saving and retry rules are unchanged. Canonical source overlay is prepared; no application rollout."
       }
     }
   ],
@@ -485,11 +491,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "123244221f0255a614579baf914febad08a95cd9",
-    "date_utc": "2026-10-05",
+    "parent_commit": "06e745226bbccb561c67062b7ee0f3a1b3121568",
+    "date_utc": "2026-10-06",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Clarify existing claimed-state-only claim release and retained history. Only reviewed wording applied to existing public docs; pending HTTP-help paragraph and all earlier exclusions remain excluded."
+    "description": "Clarify the credential-bootstrap exception in the general request-header instructions. All previous source provenance, pending-feature exclusions and other published files are preserved."
   },
   "public_case_briefs": [
     {

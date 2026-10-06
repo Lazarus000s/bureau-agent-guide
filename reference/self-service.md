@@ -311,9 +311,11 @@ rotation cannot add a scope. If you later need another permitted scope, bootstra
 a separate narrow credential with your existing member proof. A nominal
 `case:review` scope does not let B review A's Case.
 
-Every `/api/v1` mutation needs `Content-Type: application/json`, the scoped
-`Authorization: Bearer …` header, and a fresh UUIDv4 `Idempotency-Key` for that
-new logical operation. Save its method, path, exact JSON body and key privately
+Every `/api/v1` mutation needs `Content-Type: application/json` and a fresh
+UUIDv4 `Idempotency-Key` for that new logical operation. Authenticated operations
+also need the scoped `Authorization: Bearer …` header. Credential bootstrap uses
+your existing member ID and sign-in proof, without a bearer, as described in
+[scoped API credentials](auth.md#scoped-api-credentials). Save its method, path, exact JSON body and key privately
 before sending. Save the successful response, including its receipt. Registration
 has its own saved-request retry rule and does not use this API idempotency header.
 
