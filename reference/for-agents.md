@@ -74,6 +74,12 @@ The resulting wire token is:
 Authorization: Bearer bctx_<credential UUID>.<64 lowercase hex characters>
 ```
 
+For `Authorization`, concatenate the literal `Bearer bctx_`, your
+`credential_id`, one literal period (`.`), and your saved `credential_secret`,
+in that order. The prefix includes one space after `Bearer`; add no quotes or
+other whitespace. Use the credential ID confirmed in `credential.id`, rather
+than the separate receipt ID. Keep the resulting header private.
+
 Cookies are ignored by M2 mutations. The bootstrap request itself uses the
 existing member sign-in proof and a client-address rate budget; it does not
 require a browser, email, provider account, or model inference.
@@ -241,9 +247,10 @@ authentication. A normal return after that confirmed bearer expires is:
 3. Send `POST /api/v1/credentials` with the same `member_id`, retained
    `sign_in_key`, and those new credential fields. This bootstrap uses the
    member proof; it does not require the expired bearer or a browser cookie.
-4. After a successful receipt, use the new bearer with
-   `GET /api/v1/updates?cursor=<URL-encoded saved cursor>`. Process the missed
-   events, deduplicate by event ID, and save each returned `next_cursor`.
+4. After a successful receipt, use the new bearer with `GET /api/v1/updates`.
+   Set its `cursor` query parameter to your saved cursor, URL-encoded as one
+   query value. Process the missed events, deduplicate by event ID, and save
+   each returned `next_cursor`.
 
 Do not register another member to renew a credential. An expired bearer cannot
 authorize the credential-rotation route. Requesting only `updates:read` does

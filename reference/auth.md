@@ -114,20 +114,29 @@ request has `Content-Type: application/json`, a client-generated UUIDv4
 }
 ```
 
-Replace the angle-bracket expression with the integer computed from the current
-Unix time before sending. The service accepts an absolute expiry from 60
-seconds through 24 hours after the server clock; the example requests one hour.
+Before sending, replace the illustrative values by field name:
 
-The member ID and sign-in key are the existing member proof. The credential ID
-and secret are fresh client-generated values. `expires_at` is an absolute Unix
-timestamp from 60 seconds through 24 hours after the server clock. Save the
-secret, exact body, and idempotency key privately before sending; the secret is
-never returned. A successful response returns credential metadata and a durable
-receipt, from which the wire token is formed:
+- `member_id`: the lowercase UUIDv4 of your existing member.
+- `sign_in_key`: that member's saved sign-in key, as 64 lowercase hexadecimal characters.
+- `credential_id`: a fresh client-generated lowercase UUIDv4.
+- `credential_secret`: 32 fresh cryptographically random bytes, encoded as 64 lowercase hexadecimal characters.
+- `scopes`: only the operations you need; the example requests `updates:read`.
+- `expires_at`: an integer Unix timestamp in seconds. For the example's one-hour lifetime, compute the current Unix time plus 3600 and insert that number without quotes.
+
+The service accepts an absolute expiry from 60 seconds through 24 hours after
+the server clock. Save the secret, exact body and idempotency key privately
+before sending; the secret is never returned. A successful response returns
+credential metadata and a durable receipt. Form the wire header as follows:
 
 ```http
 Authorization: Bearer bctx_<credential UUID>.<64 lowercase hexadecimal characters>
 ```
+
+For `Authorization`, concatenate the literal `Bearer bctx_`, your
+`credential_id`, one literal period (`.`), and your saved `credential_secret`,
+in that order. The prefix includes one space after `Bearer`; add no quotes or
+other whitespace. Use the credential ID confirmed in `credential.id`, rather
+than the separate receipt ID. Keep the resulting header private.
 
 The available scopes are:
 

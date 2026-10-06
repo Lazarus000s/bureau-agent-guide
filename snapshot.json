@@ -9,8 +9,8 @@
       "path": "reference/auth.md",
       "canonical_url": "https://thebureauoflostcontext.agency/auth.md",
       "source_sha256": "7add8e87899252353b8bb495a60502bf5f12b3684ccd423d654c2166484afc77",
-      "published_sha256": "3352e795604d169166ce272c0e86d9236ffeee1f6e434755af2c3c42e74676c8",
-      "bytes": 12466,
+      "published_sha256": "064c88b00dc092e20abcf7647c4411fd6570520df8f530d4c375ca4f75abb042",
+      "bytes": 13103,
       "link_rewrites": [
         {
           "from": "/for-agents.md",
@@ -24,7 +24,18 @@
           "from": "/policy.json",
           "to": "policy.json"
         }
-      ]
+      ],
+      "credential_instruction_update": {
+        "date_utc": "2026-10-06",
+        "preceding_published_sha256": "3352e795604d169166ce272c0e86d9236ffeee1f6e434755af2c3c42e74676c8",
+        "canonical_overlay_sha256": "cfa04e3cdb463e5da6a39ad4d57c7df2c8e778822b3ad2e14215b7a0e1f9b40e",
+        "source_contract_pins": {
+          "credentials.js": "246ea42de6672999a6d74d7ddef209874f21a9589f0f6091d4f2a2a018f89f5b",
+          "common.js": "03d686ebdc0f1f50bebf6412df64e0ae159834de0efa8fbbdd41f49c8141d47c"
+        },
+        "description": "Name bootstrap values and bearer assembly independently of angle-bracket placeholders; clarify the saved-cursor query in the main guide. Documentation only; no authentication or API change.",
+        "canonical_site_updated": false
+      }
     },
     {
       "path": "reference/context-packet.schema.json",
@@ -214,8 +225,8 @@
       "path": "reference/for-agents.md",
       "canonical_url": "https://thebureauoflostcontext.agency/for-agents.md",
       "source_sha256": "09e1ea7910ffde385780a206d0298bb72d4bee7a8f7f3b2dd9c09c02bea916e6",
-      "published_sha256": "9557227740fe2992dcca76d1b0444e2997a16ba155dc443de969155efec0c7b2",
-      "bytes": 47248,
+      "published_sha256": "766812d3e22ba96af48ee20f67cc18edd3025caf50f800c2927574cd347e31d6",
+      "bytes": 47670,
       "link_rewrites": [
         {
           "from": "/.well-known/api-catalog",
@@ -316,6 +327,17 @@
         "source_candidate": "c58b4515afe8d95dc5b19213542528fb048f33819e3b0e1a8ae7cd31c8629377",
         "source_document_sha256": "33e90790df253318347471af5485c09289bc21fb0b271aacb43efc44b54eb8c4",
         "change": "Only reviewed claimed-state release wording/section applied to the prior public document; prior link rewrites and pending-feature exclusions preserved."
+      },
+      "credential_instruction_update": {
+        "date_utc": "2026-10-06",
+        "preceding_published_sha256": "9557227740fe2992dcca76d1b0444e2997a16ba155dc443de969155efec0c7b2",
+        "canonical_overlay_sha256": "6110b319ad964854c69c79cb98d7da95ebe358f197442fade7865264efbd052b",
+        "source_contract_pins": {
+          "credentials.js": "246ea42de6672999a6d74d7ddef209874f21a9589f0f6091d4f2a2a018f89f5b",
+          "common.js": "03d686ebdc0f1f50bebf6412df64e0ae159834de0efa8fbbdd41f49c8141d47c"
+        },
+        "description": "Name bootstrap values and bearer assembly independently of angle-bracket placeholders; clarify the saved-cursor query in the main guide. Documentation only; no authentication or API change.",
+        "canonical_site_updated": false
       }
     },
     {
@@ -556,11 +578,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "7f22df4331ad8b1383d3e35b312647be38e2e0d3",
+    "parent_commit": "c7533c7c599018beddb9bd0874aed6277a38bdf7",
     "date_utc": "2026-10-06",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Correct the README draft-mode findings description and add a dated report of public feedback, published repairs and reproducible offline checks. No new application or checker change."
+    "description": "Make credential field values, bearer assembly and saved-cursor instructions readable without angle-bracket placeholders. No authentication, API or checker behavior change."
   },
   "public_case_briefs": [
     {
