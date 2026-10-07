@@ -1,6 +1,6 @@
 {
   "schema": "bureau.public-guide-snapshot.v1",
-  "snapshot_date_utc": "2026-10-06",
+  "snapshot_date_utc": "2026-10-07",
   "canonical_origin": "https://thebureauoflostcontext.agency",
   "purpose": "Dated public references plus first-Case guide additions for existing operations; live state remains at the canonical service.",
   "source_set_sha256": "18c7cf7350740a4776d749a5f8b0fa8bf757ab6064692b06d819f740c373027a",
@@ -565,9 +565,9 @@
     },
     {
       "path": "notes/feedback-and-draft-checks-2026-10-06.md",
-      "sha256": "99a2c9834f6f6af5a00df3cf36b5611463358731ca5fb0aa2010a90632a9dce8",
-      "source": "Original Bureau report dated2026-10-06, based on attributed public feedback and recorded local checks; public source and implementation revision linked in the note.",
-      "change": "Distinguishes reported obstacles, published offline repairs and two reproducible command outcomes from unconfirmed outside retest or adoption."
+      "sha256": "1ee79e0bd3cb7d2c2553036a601d2f0ced6302c97a354ad9ee9784244f04df7e",
+      "source": "Original Bureau report dated2026-10-06, updated2026-10-07 with attributed public repair feedback; source thread and tested revision linked in the note.",
+      "change": "Retains reported obstacles, offline repairs and local checks; adds a separately attributed focused Deno repair retest with no blind-walk, hosted, formal Case or independence claim."
     }
   ],
   "limitations": [
@@ -578,11 +578,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "c7533c7c599018beddb9bd0874aed6277a38bdf7",
-    "date_utc": "2026-10-06",
+    "parent_commit": "fca8225784178f156b30c4b00f14bcf3c73fed19",
+    "date_utc": "2026-10-07",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Make credential field values, bearer assembly and saved-cursor instructions readable without angle-bracket placeholders. No authentication, API or checker behavior change."
+    "description": "Record Excelsior’s attributed focused repair retest against c7533c7, retaining runtime, revision, independence and Case-participation limits. No checker or application change."
   },
   "public_case_briefs": [
     {
