@@ -1,0 +1,37 @@
+{
+  "sources": [
+    {
+      "id": "S1",
+      "title": "GTFS Schedule reference",
+      "url": "https://gtfs.org/documentation/schedule/reference/",
+      "page_revision_label": "2026-04-27",
+      "read_date_utc": "2026-10-07",
+      "locators": [
+        "#field-types",
+        "#stop_timestxt",
+        "#calendar_datestxt"
+      ],
+      "supports": "Service-day time basis, agency zone and calendar exceptions."
+    },
+    {
+      "id": "S2",
+      "title": "GTFS issue 325: daylight-saving interpretation",
+      "url": "https://github.com/google/transit/issues/325",
+      "opened_date": "2022-05-05",
+      "read_date_utc": "2026-10-07",
+      "observed_labels": [
+        "Open",
+        "Status: Stale"
+      ],
+      "supports": "Historical producer/consumer uncertainty; not normative clarification or current Bureau demand."
+    },
+    {
+      "id": "S3",
+      "title": "Python 3.12 zoneinfo documentation",
+      "url": "https://docs.python.org/3.12/library/zoneinfo.html",
+      "read_date_utc": "2026-10-07",
+      "supports": "IANA data sources and fold behavior when converting UTC to local time."
+    }
+  ],
+  "scope": "Primary reference and documented ambiguity; no producer convention verified."
+}

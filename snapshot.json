@@ -650,6 +650,42 @@
       "sha256": "259213a2c3c158187f3dcf665db9f6b8f16f277e9c29caeed853c2b0a6de8831",
       "source": "Original Bureau analysis of Gutenberg41445/42324, retrieved2026-10-07; exact source URLs/hashes and normalized-passage evidence in chapter-evidence.json.",
       "change": "47 numbered chapter headings,24 passage correspondences, explicit split and no fabricated chapter fragments. Locator only; no full collation, print pagination, outside request or acceptance."
+    },
+    {
+      "path": "samples/overnight-timetable/README.md",
+      "sha256": "b624b481632f236b9190d85c6efce533ba6ab1fe7d9999a5007a122d3764948e",
+      "source": "Original Bureau constructed transit examples; primary source map and local calculation limits retained in the sample.",
+      "change": "Preserve service day, original time, zone and activity assumptions in ten conversions and five unresolved/inactive examples. No actual feed, live Case, outside customer or acceptance."
+    },
+    {
+      "path": "samples/overnight-timetable/input.json",
+      "sha256": "0fe40a2634260f10b2865358d4427c24a270b7e19b0efc129546429eb3ec9a2c",
+      "source": "Original Bureau constructed transit examples; primary source map and local calculation limits retained in the sample.",
+      "change": "Preserve service day, original time, zone and activity assumptions in ten conversions and five unresolved/inactive examples. No actual feed, live Case, outside customer or acceptance."
+    },
+    {
+      "path": "samples/overnight-timetable/request-draft.json",
+      "sha256": "324504f05b5d0f21843c2bd178656d7fee45d3675b28441255217eb41f922171",
+      "source": "Original Bureau constructed transit examples; primary source map and local calculation limits retained in the sample.",
+      "change": "Preserve service day, original time, zone and activity assumptions in ten conversions and five unresolved/inactive examples. No actual feed, live Case, outside customer or acceptance."
+    },
+    {
+      "path": "samples/overnight-timetable/result-packet.json",
+      "sha256": "63061a0b6c50ff73ad5e291d390e5738dcb7172693bc329e0f0796e172fa3aa9",
+      "source": "Original Bureau constructed transit examples; primary source map and local calculation limits retained in the sample.",
+      "change": "Preserve service day, original time, zone and activity assumptions in ten conversions and five unresolved/inactive examples. No actual feed, live Case, outside customer or acceptance."
+    },
+    {
+      "path": "samples/overnight-timetable/result.csv",
+      "sha256": "304631d8df738fc73f57140916649e877b0fc1f866c8bfae76d7a44fe36b0fc0",
+      "source": "Original Bureau constructed transit examples; primary source map and local calculation limits retained in the sample.",
+      "change": "Preserve service day, original time, zone and activity assumptions in ten conversions and five unresolved/inactive examples. No actual feed, live Case, outside customer or acceptance."
+    },
+    {
+      "path": "samples/overnight-timetable/sources.json",
+      "sha256": "9775af08861935f79f14244bc38a3806ea3213389773d39367ca06f1070102fe",
+      "source": "Original Bureau constructed transit examples; primary source map and local calculation limits retained in the sample.",
+      "change": "Preserve service day, original time, zone and activity assumptions in ten conversions and five unresolved/inactive examples. No actual feed, live Case, outside customer or acceptance."
     }
   ],
   "limitations": [
@@ -660,11 +696,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "9893433cfd3a1f97061a9699db02e5f0bfb5cc19",
+    "parent_commit": "e3137d82290796203886429d9798ea3d2044f763",
     "date_utc": "2026-10-07",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Add a source-linked two-witness Frankenstein chapter locator with explicit first-chapter split, exact captured-source hashes and bounded passage evidence."
+    "description": "Add a constructed overnight transit handoff with complete source-linked result Packet, retained service-day context and explicit unresolved cases."
   },
   "public_case_briefs": [
     {

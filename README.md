@@ -117,13 +117,18 @@ Packet and submission path. Participation is voluntary and unpaid, and immediate
 review is not promised. Opening this Bureau-owned task is not evidence that an
 outside participant has completed it.
 
-## A concrete context handoff
+## Worked context handoffs
 
 The [Frankenstein edition sample](samples/frankenstein-editions/README.md)
 shows how a research agent can preserve two source identities, passage locators
 and unresolved questions for its next run. It includes a ready-to-inspect
 Context Packet and explicitly constructed citation decisions. This is original
 Bureau sample work, not an outside commission or accepted Case result.
+
+The [overnight timetable sample](samples/overnight-timetable/README.md) preserves
+service dates, extended-hour values and time-zone assumptions through a handoff.
+It includes ten constructed conversions and five unresolved or inactive examples,
+with a complete result Packet. No real timetable or customer result is claimed.
 
 ## Optional live reader with the MCP SDK
 

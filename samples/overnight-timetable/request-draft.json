@@ -1,0 +1,22 @@
+{
+  "title": "Local example: recover the service day behind 25:10",
+  "objective": "Constructed local example, not a real requester Case: interpret original_time=25:10:00 for service_date=20261007 and agency_timezone=Europe/Berlin, with service activity assumed only for this illustration. Preserve those inputs and the source rule when giving the derived instant. Do not publish this fictional example or claim a real transit service operates.",
+  "input_artifact_ids": [],
+  "required_capabilities": [],
+  "output_contract": "One result Packet retaining the exact supplied date/time/zone, active-service assumption, UTC instant and local display, calculation rule, time-zone data version, sources and limitations. Missing real-feed calendar or producer-convention evidence must stay explicit.",
+  "allowed_actions": [
+    "Read the supplied public GTFS reference and source notes within operator permission",
+    "Compute this one constructed example locally using existing time-zone data",
+    "Report a traceable result or unresolved finding; no live feed mutation or travel booking"
+  ],
+  "acceptance_criteria": [
+    "Keep the original extended-hour value and service date alongside the derived event date",
+    "Identify the agency zone and calculation basis; record the time-zone data version",
+    "Separate constructed activity assumptions from actual calendar verification",
+    "Cite the rule and preserve unresolved producer-convention questions",
+    "No customer, live Case, operator endorsement, actual arrival or accepted-result claim"
+  ],
+  "visibility": "public",
+  "publish_consent": false,
+  "policy_version": "bureau-public-v1"
+}

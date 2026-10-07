@@ -1,0 +1,144 @@
+{
+  "schema": "bureau.transit-handoff-example.v1",
+  "constructed": true,
+  "real_feed": false,
+  "scope": "Independent illustrative events, not trips or a complete GTFS feed. No real service availability asserted.",
+  "cases": [
+    {
+      "id": "T01",
+      "service_date": "20261007",
+      "original_time": "23:50:00",
+      "agency_timezone": "Europe/Berlin",
+      "field_kind": "GTFS_Time",
+      "service_active": true,
+      "activity_basis": "Constructed assumption; no real calendar evaluated."
+    },
+    {
+      "id": "T02",
+      "service_date": "20261007",
+      "original_time": "24:10:00",
+      "agency_timezone": "Europe/Berlin",
+      "field_kind": "GTFS_Time",
+      "service_active": true,
+      "activity_basis": "Constructed assumption; no real calendar evaluated."
+    },
+    {
+      "id": "T03",
+      "service_date": "20261007",
+      "original_time": "25:10:00",
+      "agency_timezone": "Europe/Berlin",
+      "field_kind": "GTFS_Time",
+      "service_active": true,
+      "activity_basis": "Constructed assumption; no real calendar evaluated."
+    },
+    {
+      "id": "T04",
+      "service_date": "20260329",
+      "original_time": "01:30:00",
+      "agency_timezone": "Europe/Berlin",
+      "field_kind": "GTFS_Time",
+      "service_active": true,
+      "activity_basis": "Constructed assumption; no real calendar evaluated."
+    },
+    {
+      "id": "T05",
+      "service_date": "20260329",
+      "original_time": "02:30:00",
+      "agency_timezone": "Europe/Berlin",
+      "field_kind": "GTFS_Time",
+      "service_active": true,
+      "activity_basis": "Constructed assumption; no real calendar evaluated."
+    },
+    {
+      "id": "T06",
+      "service_date": "20260329",
+      "original_time": "03:30:00",
+      "agency_timezone": "Europe/Berlin",
+      "field_kind": "GTFS_Time",
+      "service_active": true,
+      "activity_basis": "Constructed assumption; no real calendar evaluated."
+    },
+    {
+      "id": "T07",
+      "service_date": "20261024",
+      "original_time": "26:30:00",
+      "agency_timezone": "Europe/Berlin",
+      "field_kind": "GTFS_Time",
+      "service_active": true,
+      "activity_basis": "Constructed assumption; no real calendar evaluated."
+    },
+    {
+      "id": "T08",
+      "service_date": "20261025",
+      "original_time": "01:30:00",
+      "agency_timezone": "Europe/Berlin",
+      "field_kind": "GTFS_Time",
+      "service_active": true,
+      "activity_basis": "Constructed assumption; no real calendar evaluated."
+    },
+    {
+      "id": "T09",
+      "service_date": "20261025",
+      "original_time": "02:30:00",
+      "agency_timezone": "Europe/Berlin",
+      "field_kind": "GTFS_Time",
+      "service_active": true,
+      "activity_basis": "Constructed assumption; no real calendar evaluated."
+    },
+    {
+      "id": "T10",
+      "service_date": "20261024",
+      "original_time": "27:30:00",
+      "agency_timezone": "Europe/Berlin",
+      "field_kind": "GTFS_Time",
+      "service_active": true,
+      "activity_basis": "Constructed assumption; no real calendar evaluated."
+    },
+    {
+      "id": "U01",
+      "service_date": null,
+      "original_time": "25:10:00",
+      "agency_timezone": "Europe/Berlin",
+      "field_kind": "GTFS_Time",
+      "service_active": true,
+      "activity_basis": "Constructed assumption; no real calendar evaluated."
+    },
+    {
+      "id": "U02",
+      "service_date": "20261007",
+      "original_time": "25:10:00",
+      "agency_timezone": null,
+      "field_kind": "GTFS_Time",
+      "service_active": true,
+      "activity_basis": "Constructed assumption; no real calendar evaluated.",
+      "stop_timezone": "Europe/Berlin"
+    },
+    {
+      "id": "U03",
+      "service_date": "20261007",
+      "original_time": "25:10:00",
+      "agency_timezone": "Europe/Berlin",
+      "field_kind": "GTFS_Time",
+      "service_active": null,
+      "activity_basis": "No calendar evidence supplied."
+    },
+    {
+      "id": "U04",
+      "service_date": "20261007",
+      "original_time": "25:10:00",
+      "agency_timezone": "Europe/Berlin",
+      "field_kind": "GTFS_Time",
+      "service_active": false,
+      "activity_basis": "Constructed calendar_dates removal: service_id DEMO, date=20261007, exception_type=2."
+    },
+    {
+      "id": "U05",
+      "service_date": "20261025",
+      "original_time": "02:30:00",
+      "agency_timezone": "Europe/Berlin",
+      "field_kind": "wall_clock_unspecified_fold",
+      "service_active": true,
+      "activity_basis": "Constructed assumption; no real calendar evaluated."
+    }
+  ]
+}
