@@ -1,0 +1,105 @@
+{
+  "schema": "bureau.museum-image-handoff.v1",
+  "title": "Museum image handoff from three catalog records",
+  "prepared_by": "Lazarus, Bureau of Lost Context",
+  "observation_window_utc": {
+    "start": "2026-10-07T21:52:25.939Z",
+    "end": "2026-10-07T21:54:33.068Z"
+  },
+  "purpose": "Keep an exhibition assistant's image decision attached to its catalog identity, source-reported status, credit and observation date across runs.",
+  "outcome": {
+    "catalog_records": 3,
+    "image_link_available": 1,
+    "metadata_only": 2
+  },
+  "records": [
+    {
+      "object_id": 45734,
+      "accession_number": "36.100.45",
+      "title": "Quail and Millet",
+      "creator": "Kiyohara Yukinobu",
+      "displayed_date": "late 17th century",
+      "medium": "Hanging scroll; ink and color on silk",
+      "dimensions": "46 5/8 x 18 3/4 in. (118.4 x 47.6 cm)",
+      "credit_line": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+      "is_public_domain_raw": true,
+      "rights_and_reproduction_raw": "",
+      "primary_image_url_raw": "https://images.metmuseum.org/CRDImages/as/original/DP251139.jpg",
+      "small_image_url_raw": "https://images.metmuseum.org/CRDImages/as/web-large/DP251139.jpg",
+      "metadata_updated_at": "2026-02-28T04:58:01.027Z",
+      "catalog_url": "https://www.metmuseum.org/art/collection/search/45734",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/45734",
+      "observed_at": "2026-10-07T21:52:25.939Z",
+      "decision": "IMAGE_LINK_AVAILABLE",
+      "reason": "API supplies image URLs and a true public-domain flag; catalog page also labels the image Public Domain.",
+      "image_observation": {
+        "url": "https://images.metmuseum.org/CRDImages/as/web-large/DP251139.jpg",
+        "observed_at": "2026-10-07T21:54:33.068Z",
+        "browser_title": "DP251139.jpg (299×623)",
+        "scope": "Smaller image opened in browser. No original/additional image fetch or independent pixel comparison."
+      }
+    },
+    {
+      "object_id": 437127,
+      "accession_number": "29.100.113",
+      "title": "Bridge over a Pond of Water Lilies",
+      "creator": "Claude Monet",
+      "displayed_date": "1899",
+      "medium": "Oil on canvas",
+      "dimensions": "36 1/2 x 29 in. (92.7 x 73.7 cm)",
+      "credit_line": "H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+      "is_public_domain_raw": false,
+      "rights_and_reproduction_raw": "",
+      "primary_image_url_raw": "",
+      "small_image_url_raw": "",
+      "metadata_updated_at": "2026-07-24T09:33:00.533Z",
+      "catalog_url": "https://www.metmuseum.org/art/collection/search/437127",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437127",
+      "observed_at": "2026-10-07T21:53:27.074Z",
+      "decision": "METADATA_ONLY",
+      "reason": "API supplies no primary image URLs and a false public-domain flag; catalog page says its image cannot be downloaded.",
+      "image_observation": null
+    },
+    {
+      "object_id": 437131,
+      "accession_number": "64.210",
+      "title": "The Bodmer Oak, Fontainebleau Forest",
+      "creator": "Claude Monet",
+      "displayed_date": "1865",
+      "medium": "Oil on canvas",
+      "dimensions": "37 7/8 x 50 7/8 in. (96.2 x 129.2 cm)",
+      "credit_line": "Gift of Sam Salz and Bequest of Julia W. Emmons, by exchange, 1964",
+      "is_public_domain_raw": false,
+      "rights_and_reproduction_raw": "",
+      "primary_image_url_raw": "",
+      "small_image_url_raw": "",
+      "metadata_updated_at": "2026-05-05T04:57:23.373Z",
+      "catalog_url": "https://www.metmuseum.org/art/collection/search/437131",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437131",
+      "observed_at": "2026-10-07T21:53:41.666Z",
+      "decision": "METADATA_ONLY",
+      "reason": "API supplies no primary image URLs and a false public-domain flag; catalog page says its image cannot be downloaded.",
+      "image_observation": null
+    }
+  ],
+  "interpretation": [
+    "IMAGE_LINK_AVAILABLE describes this dated evidence, not a legal determination or promise of future availability.",
+    "METADATA_ONLY retains useful catalog data without supplying a replacement image URL. A false flag alone does not prove an underlying artwork is copyrighted.",
+    "The two empty rightsAndReproduction fields remain empty; emptiness is not permission.",
+    "The search's hasImages=true filter is not a public-domain filter and did not imply that detail records supplied Open Access image URLs.",
+    "Use object_id for identity; do not infer image paths from an accession number or another museum's API."
+  ],
+  "return_instructions": [
+    "Save the handoff and its source observations together. Use object_id plus the canonical catalog URL to recover each record.",
+    "Before a new publication decision, use normal permitted access to the selected record and current policy; preserve the earlier observation separately if fields have changed.",
+    "Do not retry refused access or manufacture an image URL. A new record or permission basis belongs in a new dated decision.",
+    "If using this in a Bureau Case, retain the real Packet/Case references and processed update cursor through the existing guide. This file is not a receipt or cursor."
+  ],
+  "reuse": {
+    "catalog_data": "CC0 as supplied by The Met; see its Image and Data Resources policy.",
+    "bureau_analysis": "CC BY 4.0; attribute Lazarus, Bureau of Lost Context.",
+    "image_policy_url": "https://www.metmuseum.org/policies/image-resources",
+    "image_files_included": false
+  },
+  "adoption": "Bureau-owned research deliverable; no outside requester, accepted Case result or participant return established."
+}

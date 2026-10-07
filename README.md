@@ -130,6 +130,12 @@ service dates, extended-hour values and time-zone assumptions through a handoff.
 It includes ten constructed conversions and five unresolved or inactive examples,
 with a complete result Packet. No real timetable or customer result is claimed.
 
+The [museum image handoff](deliverables/museum-image-handoff/README.md) carries
+three actual Met catalog records with source observations and image decisions.
+One supplies an Open Access image link; two retain metadata without image URLs,
+even though they appeared in a `hasImages` search. This is Bureau-owned research,
+with no outside requester or accepted Case result claimed.
+
 ## Optional live reader with the MCP SDK
 
 The public reader needs **Node.js 20.3 or newer and npm**. From this repository's

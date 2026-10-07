@@ -686,6 +686,36 @@
       "sha256": "9775af08861935f79f14244bc38a3806ea3213389773d39367ca06f1070102fe",
       "source": "Original Bureau constructed transit examples; primary source map and local calculation limits retained in the sample.",
       "change": "Preserve service day, original time, zone and activity assumptions in ten conversions and five unresolved/inactive examples. No actual feed, live Case, outside customer or acceptance."
+    },
+    {
+      "path": "deliverables/museum-image-handoff/README.md",
+      "sha256": "1765c34bca91b8c37788d4aa16153454a767f4f51b1b0355c8eb5aab23d5ed8e",
+      "source": "Three public Met API records, catalog-page comparisons, one bounded search and museum policy; selected observations and timestamps in sources.json.",
+      "change": "Actual dated catalog/image handoff: one available image link, two metadata-only records. No proxy Case, outside customer, acceptance, image copying or legal determination."
+    },
+    {
+      "path": "deliverables/museum-image-handoff/handoff.json",
+      "sha256": "2ba1bc3bba0fcdab39e67f03846b31d08735a7b17c91ad7d528e16eb581a99ad",
+      "source": "Three public Met API records, catalog-page comparisons, one bounded search and museum policy; selected observations and timestamps in sources.json.",
+      "change": "Actual dated catalog/image handoff: one available image link, two metadata-only records. No proxy Case, outside customer, acceptance, image copying or legal determination."
+    },
+    {
+      "path": "deliverables/museum-image-handoff/records.csv",
+      "sha256": "3633ebd7871719e93eec748d8b1f08e85cefff0abfc1bf1bb506a2b3c98784aa",
+      "source": "Three public Met API records, catalog-page comparisons, one bounded search and museum policy; selected observations and timestamps in sources.json.",
+      "change": "Actual dated catalog/image handoff: one available image link, two metadata-only records. No proxy Case, outside customer, acceptance, image copying or legal determination."
+    },
+    {
+      "path": "deliverables/museum-image-handoff/result-packet.json",
+      "sha256": "7396fba0828e37dcd57d58f73956b79bb9fede4c82188ea298fcb2fb75a629ab",
+      "source": "Three public Met API records, catalog-page comparisons, one bounded search and museum policy; selected observations and timestamps in sources.json.",
+      "change": "Actual dated catalog/image handoff: one available image link, two metadata-only records. No proxy Case, outside customer, acceptance, image copying or legal determination."
+    },
+    {
+      "path": "deliverables/museum-image-handoff/sources.json",
+      "sha256": "5b001476ff24c990a3bbd3c723c69524f997a94a116114e1e8ecb68ab701259e",
+      "source": "Three public Met API records, catalog-page comparisons, one bounded search and museum policy; selected observations and timestamps in sources.json.",
+      "change": "Actual dated catalog/image handoff: one available image link, two metadata-only records. No proxy Case, outside customer, acceptance, image copying or legal determination."
     }
   ],
   "limitations": [
@@ -696,11 +726,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "e3137d82290796203886429d9798ea3d2044f763",
+    "parent_commit": "4ae3d247eb78745ae0975ca506cfa830379c9460",
     "date_utc": "2026-10-07",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Add a constructed overnight transit handoff with complete source-linked result Packet, retained service-day context and explicit unresolved cases."
+    "description": "Add a source-preserving handoff from three real museum records and the observed search-to-image limitation."
   },
   "public_case_briefs": [
     {

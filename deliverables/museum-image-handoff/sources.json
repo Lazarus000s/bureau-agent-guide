@@ -1,0 +1,161 @@
+{
+  "schema": "bureau.museum-source-observations.v1",
+  "scope": "Dated public metadata observations. No museum endorsement, requester commission or legal clearance.",
+  "api_observations": [
+    {
+      "source_id": "MET-45734",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/45734",
+      "observed_at": "2026-10-07T21:52:25.939Z",
+      "capture_method": "JSON parsed from public browser accessibility text; not raw HTTP bytes.",
+      "selected_fields": {
+        "objectID": 45734,
+        "accessionNumber": "36.100.45",
+        "title": "Quail and Millet",
+        "artistDisplayName": "Kiyohara Yukinobu",
+        "objectDate": "late 17th century",
+        "medium": "Hanging scroll; ink and color on silk",
+        "dimensions": "46 5/8 x 18 3/4 in. (118.4 x 47.6 cm)",
+        "creditLine": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+        "isPublicDomain": true,
+        "rightsAndReproduction": "",
+        "primaryImage": "https://images.metmuseum.org/CRDImages/as/original/DP251139.jpg",
+        "primaryImageSmall": "https://images.metmuseum.org/CRDImages/as/web-large/DP251139.jpg",
+        "metadataDate": "2026-02-28T04:58:01.027Z",
+        "objectURL": "https://www.metmuseum.org/art/collection/search/45734"
+      },
+      "selected_fields_sha256": "ef84bf9ef5a853000f7abea0852925d75327e9e0dd399bf24a999862296d5ed5",
+      "hash_method": "SHA-256 of UTF-8 JSON, sorted keys, compact separators, no final newline; a local integrity marker, not source authentication.",
+      "catalog_page": {
+        "url": "https://www.metmuseum.org/art/collection/search/45734",
+        "checked_date_utc": "2026-10-07",
+        "observation": "Public Domain label and Download Image action visible.",
+        "fields_compared": [
+          "title",
+          "artistDisplayName",
+          "objectDate",
+          "medium",
+          "dimensions",
+          "creditLine",
+          "accessionNumber"
+        ],
+        "fields_match": true
+      }
+    },
+    {
+      "source_id": "MET-437127",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437127",
+      "observed_at": "2026-10-07T21:53:27.074Z",
+      "capture_method": "JSON parsed from public browser accessibility text; not raw HTTP bytes.",
+      "selected_fields": {
+        "objectID": 437127,
+        "accessionNumber": "29.100.113",
+        "title": "Bridge over a Pond of Water Lilies",
+        "artistDisplayName": "Claude Monet",
+        "objectDate": "1899",
+        "medium": "Oil on canvas",
+        "dimensions": "36 1/2 x 29 in. (92.7 x 73.7 cm)",
+        "creditLine": "H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+        "isPublicDomain": false,
+        "rightsAndReproduction": "",
+        "primaryImage": "",
+        "primaryImageSmall": "",
+        "metadataDate": "2026-07-24T09:33:00.533Z",
+        "objectURL": "https://www.metmuseum.org/art/collection/search/437127"
+      },
+      "selected_fields_sha256": "69b4a0cfd6e113537f3262aee869f74fd1d2541ba4d4fa19b0074fa335903b52",
+      "hash_method": "SHA-256 of UTF-8 JSON, sorted keys, compact separators, no final newline; a local integrity marker, not source authentication.",
+      "catalog_page": {
+        "url": "https://www.metmuseum.org/art/collection/search/437127",
+        "checked_date_utc": "2026-10-07",
+        "observation": "Page states the image cannot be enlarged, viewed full screen, or downloaded.",
+        "fields_compared": [
+          "title",
+          "artistDisplayName",
+          "objectDate",
+          "medium",
+          "dimensions",
+          "creditLine",
+          "accessionNumber"
+        ],
+        "fields_match": true
+      }
+    },
+    {
+      "source_id": "MET-437131",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437131",
+      "observed_at": "2026-10-07T21:53:41.666Z",
+      "capture_method": "JSON parsed from public browser accessibility text; not raw HTTP bytes.",
+      "selected_fields": {
+        "objectID": 437131,
+        "accessionNumber": "64.210",
+        "title": "The Bodmer Oak, Fontainebleau Forest",
+        "artistDisplayName": "Claude Monet",
+        "objectDate": "1865",
+        "medium": "Oil on canvas",
+        "dimensions": "37 7/8 x 50 7/8 in. (96.2 x 129.2 cm)",
+        "creditLine": "Gift of Sam Salz and Bequest of Julia W. Emmons, by exchange, 1964",
+        "isPublicDomain": false,
+        "rightsAndReproduction": "",
+        "primaryImage": "",
+        "primaryImageSmall": "",
+        "metadataDate": "2026-05-05T04:57:23.373Z",
+        "objectURL": "https://www.metmuseum.org/art/collection/search/437131"
+      },
+      "selected_fields_sha256": "626051de0eacbe669b401123a6cfab5482206bd9a6438ce1fc837cd70f8011dc",
+      "hash_method": "SHA-256 of UTF-8 JSON, sorted keys, compact separators, no final newline; a local integrity marker, not source authentication.",
+      "catalog_page": {
+        "url": "https://www.metmuseum.org/art/collection/search/437131",
+        "checked_date_utc": "2026-10-07",
+        "observation": "Page states the image cannot be enlarged, viewed full screen, or downloaded.",
+        "fields_compared": [
+          "title",
+          "artistDisplayName",
+          "objectDate",
+          "medium",
+          "dimensions",
+          "creditLine",
+          "accessionNumber"
+        ],
+        "fields_match": true
+      }
+    }
+  ],
+  "selection": {
+    "45734": "Real object used in The Met API documentation; separately fetched as current data.",
+    "437127_and_437131": {
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1.1/search?artistOrCulture=true&hasImages=true&isHighlight=true&limit=2&offset=0&q=Monet",
+      "observed_at": "2026-10-07T21:52:56.398Z",
+      "returned_json": {
+        "total": 4,
+        "objectIDs": [
+          437127,
+          437131
+        ]
+      },
+      "scope": "First two results only; no pagination. hasImages=true was not treated as open-image permission."
+    }
+  },
+  "references": [
+    {
+      "url": "https://metmuseum.github.io/",
+      "checked_date_utc": "2026-10-07",
+      "supports": "Object ID, accession, public-domain flag, image URL, credit and metadata-date field meanings. September 4 update describes the paginated v1.1 search used here."
+    },
+    {
+      "url": "https://www.metmuseum.org/policies/image-resources",
+      "checked_date_utc": "2026-10-07",
+      "supports": "Selected catalog data is CC0; image availability and rights are evaluated separately."
+    },
+    {
+      "url": "https://www.metmuseum.org/policies/terms-and-conditions",
+      "checked_date_utc": "2026-10-07",
+      "supports": "OA scope, preservation of notices, and no implied endorsement or guarantee about third-party rights."
+    }
+  ],
+  "image_observation": {
+    "url": "https://images.metmuseum.org/CRDImages/as/web-large/DP251139.jpg",
+    "observed_at": "2026-10-07T21:54:33.068Z",
+    "browser_title": "DP251139.jpg (299×623)",
+    "scope": "Smaller image opened in browser. No original/additional image fetch or independent pixel comparison."
+  }
+}
