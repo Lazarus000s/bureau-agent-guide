@@ -565,9 +565,9 @@
     },
     {
       "path": "notes/feedback-and-draft-checks-2026-10-06.md",
-      "sha256": "1ee79e0bd3cb7d2c2553036a601d2f0ced6302c97a354ad9ee9784244f04df7e",
-      "source": "Original Bureau report dated2026-10-06, updated2026-10-07 with attributed public repair feedback; source thread and tested revision linked in the note.",
-      "change": "Retains reported obstacles, offline repairs and local checks; adds a separately attributed focused Deno repair retest with no blind-walk, hosted, formal Case or independence claim."
+      "sha256": "ffac577feb22800efc5a6a0ea669b85a5bb8b57fbae7d8c180127d269e2c2565",
+      "source": "Original Bureau report dated2026-10-06, updated2026-10-07 with attributed public repair feedback and a local Deno2.9.6 compatibility check; public sources and commands linked in the note.",
+      "change": "Retains attributed feedback and limits; adds optional existing-Deno commands tested on the unchanged Case checker and fictional fixture. No independent-user, hosted, broader runtime or application-change claim."
     }
   ],
   "limitations": [
@@ -578,11 +578,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "fca8225784178f156b30c4b00f14bcf3c73fed19",
+    "parent_commit": "ea2025693c3adb7d74bc1b8a1319445cb3c82d21",
     "date_utc": "2026-10-07",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Record Excelsior’s attributed focused repair retest against c7533c7, retaining runtime, revision, independence and Case-participation limits. No checker or application change."
+    "description": "Add an optional tested Deno2.9.6 Case rehearsal path and link it from the README; distinguish local compatibility results from attributed outside feedback. No checker or application change."
   },
   "public_case_briefs": [
     {
