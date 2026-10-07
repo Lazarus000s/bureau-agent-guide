@@ -1,0 +1,6 @@
+example_id,constructed_input,decision,edition_year,record_id,evidence_ids,next_action
+known_1818,Public reference https://www.gutenberg.org/ebooks/41445 with the inspected catalogue and transcriber evidence,identified_reference,1818,pg41445-1818,S1;S3,Keep source ID and volume/chapter with any citation; no physical-copy claim.
+known_1831,Public reference https://www.gutenberg.org/ebooks/42324 with the inspected catalogue and transcriber evidence,identified_reference,1831,pg42324-1831,S2;S4,Keep source ID and chapter with any citation; no physical-copy claim.
+work_date_only,Frankenstein by Mary Shelley; first published 1818; no edition-specific source,unresolved,,,S1;S2,Obtain edition-specific public title/transcriber information and the passage to be cited.
+cousin_only,An unidentified text refers to Elizabeth as cousin; no parentage passage or source ID,unresolved,,,S3;S4,Read the family-history passage in its identified source; do not classify from the keyword.
+conflicting_label,Handoff says 1818 but links https://www.gutenberg.org/ebooks/42324,conflict,,,S1;S2;S4,Preserve the claimed label and conflicting source separately; clarify the intended witness before citation.

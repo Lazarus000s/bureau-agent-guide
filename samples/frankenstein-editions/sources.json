@@ -1,0 +1,97 @@
+{
+  "observed_at": "2026-10-07T18:55:39Z",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.gutenberg.org/ebooks/41445",
+      "source_type": "publisher_catalogue",
+      "observed_date": "2026-10-07",
+      "locator": "About this eBook: Original Publication, Note, eBook-No., Release Date, Last Update",
+      "observed_facts": {
+        "ebook_id": "41445",
+        "edition_year": 1818,
+        "ebook_release_date": "2012-11-23",
+        "digital_update_label": "2026-10-06",
+        "reciprocal_other_edition_id": "42324"
+      },
+      "limits": "Catalogue metadata, not a physical-copy examination. Ignore generated synopsis for edition identification."
+    },
+    {
+      "id": "S2",
+      "url": "https://www.gutenberg.org/ebooks/42324",
+      "source_type": "publisher_catalogue",
+      "observed_date": "2026-10-07",
+      "locator": "About this eBook: Original Publication, Note, eBook-No., Release Date, Last Update",
+      "observed_facts": {
+        "ebook_id": "42324",
+        "edition_year": 1831,
+        "ebook_release_date": "2013-03-13",
+        "digital_update_label": "2024-10-23",
+        "reciprocal_other_edition_id": "41445"
+      },
+      "limits": "Generated synopsis mentions 1818 at work level; the edition-specific catalogue field says 1831."
+    },
+    {
+      "id": "S3",
+      "url": "https://www.gutenberg.org/cache/epub/41445/pg41445-images.html",
+      "source_type": "digital_transcription",
+      "observed_date": "2026-10-07",
+      "observations": [
+        {
+          "locator": "Transcriber note before title page",
+          "finding": "The stated basis is a photo-reprint of the 1818 edition."
+        },
+        {
+          "locator": "Volume I, Chapter I; Elizabeth family-history paragraph",
+          "finding": "Elizabeth is the child of Victor's paternal aunt.",
+          "short_locator_quote": "the only child of his deceased sister"
+        },
+        {
+          "locator": "Volume II, Chapter I; first paragraph",
+          "finding": "The shared opening is located here.",
+          "short_locator_quote": "Nothing is more painful to the human mind"
+        }
+      ],
+      "limits": "Compared selected passages only. No full collation or scan verification. No HTML anchor or page number inferred."
+    },
+    {
+      "id": "S4",
+      "url": "https://www.gutenberg.org/cache/epub/42324/pg42324-images.html",
+      "source_type": "digital_transcription",
+      "observed_date": "2026-10-07",
+      "observations": [
+        {
+          "locator": "Transcriber note and title page",
+          "finding": "The stated basis is a photo-reprint of the 1831 edition."
+        },
+        {
+          "locator": "Chapter I; peasant woman's account of Elizabeth",
+          "finding": "Her father is described as a Milanese nobleman, followed by placement in the Frankenstein household.",
+          "short_locator_quote": "the daughter of a Milanese nobleman"
+        },
+        {
+          "locator": "Chapter I; final family-description paragraph",
+          "finding": "The familiar use of cousin still occurs in this text.",
+          "short_locator_quote": "We called each other familiarly by the name of cousin."
+        },
+        {
+          "locator": "Chapter IX; first paragraph",
+          "finding": "The same opening used for the selected passage comparison occurs here."
+        }
+      ],
+      "limits": "The parentage passage distinguishes these two witnesses; cousin alone does not. No general rule for every modern edition."
+    },
+    {
+      "id": "S5",
+      "url": "https://frankensteinvariorum.org/about",
+      "source_type": "scholarly_project_description",
+      "observed_date": "2026-10-07",
+      "locator": "About the texts in the Variorum; opening discussion and diagram explanation",
+      "observed_facts": {
+        "textual_states_compared": 5
+      },
+      "finding": "The project explains a more complex version history than a universal two-edition choice.",
+      "limits": "Supports research relevance and the limited scope of this sample; no request, partnership, endorsement or Bureau demand."
+    }
+  ]
+}

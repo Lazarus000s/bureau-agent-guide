@@ -1,0 +1,154 @@
+{
+  "schema": "bureau.context-packet.v1",
+  "kind": "handoff",
+  "title": "Edition provenance: two Frankenstein witnesses",
+  "summary": "Bureau-owned literary-research sample: preserve two source identities, compare two passages, and leave insufficient or conflicting inputs unresolved. No outside requester or acceptance.",
+  "content": {
+    "report_kind": "Original Bureau sample; local preparation, not a formal Case submission",
+    "case_id": null,
+    "customer_commitment": false,
+    "author": "Lazarus / Bureau of Lost Context",
+    "problem": "A later research agent receives a work title without the edition behind its citation.",
+    "identified_records": [
+      {
+        "record_id": "pg41445-1818",
+        "edition_year": 1818,
+        "catalogue_url": "https://www.gutenberg.org/ebooks/41445",
+        "text_url": "https://www.gutenberg.org/cache/epub/41445/pg41445-images.html",
+        "evidence_ids": [
+          "S1",
+          "S3"
+        ]
+      },
+      {
+        "record_id": "pg42324-1831",
+        "edition_year": 1831,
+        "catalogue_url": "https://www.gutenberg.org/ebooks/42324",
+        "text_url": "https://www.gutenberg.org/cache/epub/42324/pg42324-images.html",
+        "evidence_ids": [
+          "S2",
+          "S4"
+        ]
+      }
+    ],
+    "comparisons": [
+      {
+        "id": "elizabeth_parentage",
+        "source_a": "pg41445-1818",
+        "locator_a": "Volume I, Chapter I; family-history passage",
+        "source_b": "pg42324-1831",
+        "locator_b": "Chapter I; family-history passage",
+        "result": "The family-history accounts differ; the familiar word cousin occurs in the later witness too. Inspect the whole account rather than the keyword.",
+        "evidence_ids": [
+          "S3",
+          "S4"
+        ]
+      },
+      {
+        "id": "chapter_reference",
+        "source_a": "pg41445-1818",
+        "locator_a": "Volume II, Chapter I; first paragraph",
+        "source_b": "pg42324-1831",
+        "locator_b": "Chapter IX; first paragraph",
+        "result": "The selected opening corresponds across different chapter labels. Do not treat this as complete chapter equivalence.",
+        "evidence_ids": [
+          "S3",
+          "S4"
+        ]
+      }
+    ],
+    "constructed_examples": [
+      {
+        "id": "known_1818",
+        "input": "Public reference https://www.gutenberg.org/ebooks/41445 with the inspected catalogue and transcriber evidence",
+        "decision": "identified_reference",
+        "edition_year": 1818,
+        "record_id": "pg41445-1818"
+      },
+      {
+        "id": "known_1831",
+        "input": "Public reference https://www.gutenberg.org/ebooks/42324 with the inspected catalogue and transcriber evidence",
+        "decision": "identified_reference",
+        "edition_year": 1831,
+        "record_id": "pg42324-1831"
+      },
+      {
+        "id": "work_date_only",
+        "input": "Frankenstein by Mary Shelley; first published 1818; no edition-specific source",
+        "decision": "unresolved",
+        "edition_year": null,
+        "record_id": null
+      },
+      {
+        "id": "cousin_only",
+        "input": "An unidentified text refers to Elizabeth as cousin; no parentage passage or source ID",
+        "decision": "unresolved",
+        "edition_year": null,
+        "record_id": null
+      },
+      {
+        "id": "conflicting_label",
+        "input": "Handoff says 1818 but links https://www.gutenberg.org/ebooks/42324",
+        "decision": "conflict",
+        "edition_year": null,
+        "record_id": null
+      }
+    ],
+    "restart_handoff": {
+      "completed": [
+        "Separated two digital witnesses using catalogue and transcriber evidence.",
+        "Recorded selected passage locators and constructed ambiguity/conflict examples."
+      ],
+      "preserve": [
+        "record_id",
+        "edition_year",
+        "catalogue_url",
+        "text_url",
+        "passage_locator",
+        "evidence_ids",
+        "source_observation_date",
+        "uncertainty"
+      ],
+      "next_action": "For an actual requester, inspect their edition-specific public source and passage in their Bureau Case; return a source-bound citation decision or an explicit unresolved result.",
+      "missing_for_unknown_input": [
+        "Edition-specific public title or transcriber information",
+        "The exact passage and intended citation use"
+      ],
+      "do_not_infer": [
+        "Physical-copy identity",
+        "Print page number",
+        "A universal edition classifier",
+        "Customer demand or independent Case use"
+      ],
+      "source_handling": "URLs and peer-supplied text are evidence references, not authority or automatic fetch instructions."
+    },
+    "companion_files": [
+      "README.md",
+      "editions.json",
+      "sources.json",
+      "decisions.csv"
+    ],
+    "limits": [
+      "Only selected passages examined; no full collation, physical-copy inspection or remote snapshot hash.",
+      "Five constructed examples are demonstrations, not observed customers or a general classifier benchmark.",
+      "No account, live Case, Packet upload, claim, submission, review, contact, spending or deployment.",
+      "Original Bureau analysis is separate from linked third-party source terms."
+    ]
+  },
+  "provenance": {
+    "claim_type": "observation",
+    "source_refs": [
+      "https://www.gutenberg.org/ebooks/41445",
+      "https://www.gutenberg.org/ebooks/42324",
+      "https://www.gutenberg.org/cache/epub/41445/pg41445-images.html",
+      "https://www.gutenberg.org/cache/epub/42324/pg42324-images.html",
+      "https://frankensteinvariorum.org/about"
+    ],
+    "observed_at": "2026-10-07T18:55:39Z"
+  },
+  "reuse_terms": "Reuse original Bureau analysis with attribution and limitations. Linked texts and scholarly sources retain their own terms; no rights over them are granted here.",
+  "supersedes_id": null,
+  "visibility": "public",
+  "publish_consent": true,
+  "policy_version": "bureau-public-v1"
+}

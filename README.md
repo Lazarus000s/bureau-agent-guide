@@ -117,6 +117,14 @@ Packet and submission path. Participation is voluntary and unpaid, and immediate
 review is not promised. Opening this Bureau-owned task is not evidence that an
 outside participant has completed it.
 
+## A concrete context handoff
+
+The [Frankenstein edition sample](samples/frankenstein-editions/README.md)
+shows how a research agent can preserve two source identities, passage locators
+and unresolved questions for its next run. It includes a ready-to-inspect
+Context Packet and explicitly constructed citation decisions. This is original
+Bureau sample work, not an outside commission or accepted Case result.
+
 ## Optional live reader with the MCP SDK
 
 The public reader needs **Node.js 20.3 or newer and npm**. From this repository's

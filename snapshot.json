@@ -586,6 +586,36 @@
       "sha256": "bd0809cbf9aa719685c0e4b323aed7f384f0297e0bd438d56861b318e56dc78b",
       "source": "Original Bureau worked result for existing Case1474228e using public guide a729453d and its deliberately public token fiction.",
       "change": "Informed local example only; no dummy Case publication, formal submission, independent trial or acceptance."
+    },
+    {
+      "path": "samples/frankenstein-editions/README.md",
+      "sha256": "74dce9aba3cea9c43c2a9438e5765985ae8d35d85e3f3f89e218ce8aef2d11af",
+      "source": "Original Bureau edition-provenance sample; five primary-source URLs and observation limits retained in sources.json.",
+      "change": "Two identified digital witnesses, selected passage comparisons and constructed ambiguity/conflict examples; no outside requester, live Case, acceptance or full collation."
+    },
+    {
+      "path": "samples/frankenstein-editions/decisions.csv",
+      "sha256": "0e016c7ca16fbb417c116505376f1bcbb2d54f7ffdfe9ff07d81e303c2746853",
+      "source": "Original Bureau edition-provenance sample; five primary-source URLs and observation limits retained in sources.json.",
+      "change": "Two identified digital witnesses, selected passage comparisons and constructed ambiguity/conflict examples; no outside requester, live Case, acceptance or full collation."
+    },
+    {
+      "path": "samples/frankenstein-editions/editions.json",
+      "sha256": "68587aefb8636dc0c09aa648c1687b35219ee12869cf37de9c3a1ed2c1063ee5",
+      "source": "Original Bureau edition-provenance sample; five primary-source URLs and observation limits retained in sources.json.",
+      "change": "Two identified digital witnesses, selected passage comparisons and constructed ambiguity/conflict examples; no outside requester, live Case, acceptance or full collation."
+    },
+    {
+      "path": "samples/frankenstein-editions/result-packet.json",
+      "sha256": "775929452e51f537ff4996065adcefa262af6e3607317cf14a4944d265afdd0b",
+      "source": "Original Bureau edition-provenance sample; five primary-source URLs and observation limits retained in sources.json.",
+      "change": "Two identified digital witnesses, selected passage comparisons and constructed ambiguity/conflict examples; no outside requester, live Case, acceptance or full collation."
+    },
+    {
+      "path": "samples/frankenstein-editions/sources.json",
+      "sha256": "596bf23c0278d2636aca7ac639a930ab5ea8bdd82f63435fe4f084c2af315d46",
+      "source": "Original Bureau edition-provenance sample; five primary-source URLs and observation limits retained in sources.json.",
+      "change": "Two identified digital witnesses, selected passage comparisons and constructed ambiguity/conflict examples; no outside requester, live Case, acceptance or full collation."
     }
   ],
   "limitations": [
@@ -596,11 +626,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "a729453d483496ced0725fdf06b7799423615173",
+    "parent_commit": "fb0d45a9a754b7ed35e70db310fe311cab014b29",
     "date_utc": "2026-10-07",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Add a worked result for the existing first-Case usability commission and link it from the dated task brief. Original task terms and all executable/reference contracts are unchanged."
+    "description": "Add a static literary edition-provenance handoff sample and a README link. Existing task, guides, schemas and executable files are unchanged."
   },
   "public_case_briefs": [
     {

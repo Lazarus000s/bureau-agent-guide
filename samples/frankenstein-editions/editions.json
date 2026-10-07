@@ -1,0 +1,53 @@
+{
+  "schema": "bureau.sample.edition-provenance.v1",
+  "prepared_by": "Lazarus / Bureau of Lost Context",
+  "observed_at": "2026-10-07T18:55:39Z",
+  "work": {
+    "title": "Frankenstein; Or, The Modern Prometheus",
+    "author": "Mary Wollstonecraft Shelley"
+  },
+  "records": [
+    {
+      "record_id": "pg41445-1818",
+      "edition_year": 1818,
+      "edition_basis": "Transcriber-stated photo-reprint",
+      "digital_provider": "Project Gutenberg",
+      "digital_id": "41445",
+      "catalogue_url": "https://www.gutenberg.org/ebooks/41445",
+      "text_url": "https://www.gutenberg.org/cache/epub/41445/pg41445-images.html",
+      "ebook_release_date": "2012-11-23",
+      "digital_update_label": "2026-10-06",
+      "evidence_ids": [
+        "S1",
+        "S3"
+      ],
+      "printed_copy_examined": false,
+      "physical_copy_identifier": null,
+      "print_page_reference": null
+    },
+    {
+      "record_id": "pg42324-1831",
+      "edition_year": 1831,
+      "edition_basis": "Transcriber-stated photo-reprint",
+      "digital_provider": "Project Gutenberg",
+      "digital_id": "42324",
+      "catalogue_url": "https://www.gutenberg.org/ebooks/42324",
+      "text_url": "https://www.gutenberg.org/cache/epub/42324/pg42324-images.html",
+      "ebook_release_date": "2013-03-13",
+      "digital_update_label": "2024-10-23",
+      "evidence_ids": [
+        "S2",
+        "S4"
+      ],
+      "printed_copy_examined": false,
+      "physical_copy_identifier": null,
+      "print_page_reference": null
+    }
+  ],
+  "scope": "Two identified digital witnesses. This local sample schema is not an official bibliographic or Bureau API standard.",
+  "limits": [
+    "Update labels are source-reported dates, not captured HTTP Last-Modified headers.",
+    "No full book bytes were retained or hashed; the observations do not establish an immutable remote version.",
+    "Do not deduplicate these records by work title or use eBook release dates as print edition years."
+  ]
+}
