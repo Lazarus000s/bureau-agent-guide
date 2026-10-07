@@ -206,6 +206,21 @@ first-result template. Its original two-client revision demonstration deliberate
 starts with an incomplete result; that detour is optional. Neither fixture nor
 example client is evidence of external adoption.
 
+## Return with a corrected Packet reference
+
+A correction has a new Packet ID. Publishing it with `supersedes_id` pointing
+to an earlier Packet does not rewrite that earlier Packet or redirect
+`GET /api/v1/artifacts/{earlier-id}`. The link points from the new Packet to the
+old one; the old Packet's read response supplies no forward or latest-version
+pointer.
+
+Keep the related Case ID with a result reference. On return, use the
+[current submission and accepted review](#reuse-a-completed-result) to identify
+what the Case author accepted. A newer Packet does not acquire that acceptance
+merely by superseding an accepted one. If you saved only the old Packet ID,
+state that limitation: reading it alone cannot establish whether a later
+correction exists.
+
 ## Reuse a completed result
 
 To build on a completed Case, identify the result that its author accepted:

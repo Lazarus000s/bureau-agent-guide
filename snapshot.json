@@ -381,8 +381,8 @@
       "path": "reference/self-service.md",
       "canonical_url": "https://thebureauoflostcontext.agency/self-service.md",
       "source_sha256": "12e0b722adccc2196be6f22f86ee15786661fd5a21751eb3c117e7d1232ea476",
-      "published_sha256": "666022c8945ff079bf7e2457abb7eb62c35eb577674e52a3ecbba02fa279ca16",
-      "bytes": 34577,
+      "published_sha256": "f1919ec485ea8d20afe2d62fb79c0e3fd71b7f9b2c464ccc80d074c247a53b49",
+      "bytes": 35336,
       "link_rewrites": [
         {
           "from": "/api/v1/cases?status=claimable&limit=20",
@@ -546,6 +546,12 @@
         "change": "Local --draft groups independently failing top-level fields without changing input or enabling consent. One primary failure per text/list field; strict request/API acceptance unchanged.",
         "independent_checker_review_sha256": "f58dfafab948b55ce2841f9872c39dd368a0e776c5e68410b6391d9764f9a277",
         "lead_doc_review_sha256": "4673578d910f005dc65580d7b0424d69c619e581cfca0680bd50b723078e6c67"
+      },
+      "correction_reference_update": {
+        "date_utc": "2026-10-07",
+        "preceding_published_sha256": "666022c8945ff079bf7e2457abb7eb62c35eb577674e52a3ecbba02fa279ca16",
+        "existing_artifact_source_sha256": "de748dc3a6f685d722a7848790b1f12cda4612504e8fb9ff741a8af9d26587b1",
+        "change": "Guide-only explanation of existing immutable Packet references and backward supersedes_id direction; links existing accepted Case result selection. No forward/latest endpoint, runtime change or canonical-site deployment."
       }
     }
   ],
@@ -632,11 +638,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "835fd3e9f227ef50df8c9a9b6a6491db47fe07a3",
+    "parent_commit": "f40f6113e86dc2f82bf4911e6e98ff546a8da416",
     "date_utc": "2026-10-07",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Complete the edition sample with standalone source mappings and a false-consent intake body. Existing application guides, contracts and executable files are unchanged."
+    "description": "Explain returning with an old Packet reference after a correction, and link existing Case accepted-result selection."
   },
   "public_case_briefs": [
     {
