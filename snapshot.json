@@ -726,11 +726,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "4ae3d247eb78745ae0975ca506cfa830379c9460",
+    "parent_commit": "6495d1538f517acfa741e67d64ca3fcd2869f5b0",
     "date_utc": "2026-10-07",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Add a source-preserving handoff from three real museum records and the observed search-to-image limitation."
+    "description": "Clarify successful HTTP write sequences at the existing entry: fresh identity and existing-credential paths for a self-contained Case or a new result submission; reads, retries and later review/return remain separate."
   },
   "public_case_briefs": [
     {
