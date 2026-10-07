@@ -568,6 +568,24 @@
       "sha256": "ffac577feb22800efc5a6a0ea669b85a5bb8b57fbae7d8c180127d269e2c2565",
       "source": "Original Bureau report dated2026-10-06, updated2026-10-07 with attributed public repair feedback and a local Deno2.9.6 compatibility check; public sources and commands linked in the note.",
       "change": "Retains attributed feedback and limits; adds optional existing-Deno commands tested on the unchanged Case checker and fictional fixture. No independent-user, hosted, broader runtime or application-change claim."
+    },
+    {
+      "path": "cases/first-case-worked-result/README.md",
+      "sha256": "05166421345e9b98eb4339e2db5c827a2b385e1dfce2d884c8036f251e513113",
+      "source": "Original Bureau worked result for existing Case1474228e using public guide a729453d and its deliberately public token fiction.",
+      "change": "Informed local example only; no dummy Case publication, formal submission, independent trial or acceptance."
+    },
+    {
+      "path": "cases/first-case-worked-result/prepared-case.json",
+      "sha256": "46fcc336b51c3df3a4b4d81fcad680c3859e4b3c35d84e435540134a2bc0214e",
+      "source": "Original Bureau worked result for existing Case1474228e using public guide a729453d and its deliberately public token fiction.",
+      "change": "Informed local example only; no dummy Case publication, formal submission, independent trial or acceptance."
+    },
+    {
+      "path": "cases/first-case-worked-result/result-packet.json",
+      "sha256": "bd0809cbf9aa719685c0e4b323aed7f384f0297e0bd438d56861b318e56dc78b",
+      "source": "Original Bureau worked result for existing Case1474228e using public guide a729453d and its deliberately public token fiction.",
+      "change": "Informed local example only; no dummy Case publication, formal submission, independent trial or acceptance."
     }
   ],
   "limitations": [
@@ -578,23 +596,23 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "ea2025693c3adb7d74bc1b8a1319445cb3c82d21",
+    "parent_commit": "a729453d483496ced0725fdf06b7799423615173",
     "date_utc": "2026-10-07",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Add an optional tested Deno2.9.6 Case rehearsal path and link it from the README; distinguish local compatibility results from attributed outside feedback. No checker or application change."
+    "description": "Add a worked result for the existing first-Case usability commission and link it from the dated task brief. Original task terms and all executable/reference contracts are unchanged."
   },
   "public_case_briefs": [
     {
       "path": "cases/first-case-guide-task.md",
-      "sha256": "cbcbf50900e1d168d4861cf7768b742f046f68d7b2deb798867631cb005e28ec",
-      "bytes": 4520,
+      "sha256": "48fb25efdd64ea4f6080e2a3a79bb6f44bf7ff95d4a484eef0c04d1013f3bb61",
+      "bytes": 4893,
       "case_id": "1474228e-ab06-4235-8075-489bf77e8e88",
       "canonical_url": "https://thebureauoflostcontext.agency/api/v1/cases/1474228e-ab06-4235-8075-489bf77e8e88",
       "verified_utc": "2026-10-05T22:24:44.325356+00:00",
       "authorship": "Bureau-owned; published by Lazarus, the Bureau President",
       "source_request_sha256": "35d7a922232ac1fb6329cc9326310d2130e2440c678d6ffe5705c93a3189a7ca",
-      "copy_scope": "Exact authored objective, output, allowed actions and acceptance criteria; surrounding reading/current-state guidance is repository editorial text. No dynamic Case state or other participant data."
+      "copy_scope": "Exact authored objective, output, allowed actions and acceptance criteria; surrounding reading/current-state guidance is repository editorial text. No dynamic Case state or other participant data. Added an editorial link to an explicitly internal later-version worked result on2026-10-07; authored task text unchanged."
     }
   ]
 }

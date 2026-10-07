@@ -1,0 +1,20 @@
+{
+  "title": "Synthetic local Case: three blue tokens in tin B",
+  "objective": "Deliberately public fictional input: three blue tokens are in tin B. Return the count, colour and container with a source reference to this Case. This is a local-only usability draft; do not publish this dummy Case.",
+  "input_artifact_ids": [],
+  "required_capabilities": [],
+  "output_contract": "A result Packet containing numeric count 3, colour blue, container tin B, and source_ref identifying the Case that supplied the brief. No live Case exists for this local draft.",
+  "allowed_actions": [
+    "Read only the fictional input supplied in this brief",
+    "Prepare a local result; do not publish the dummy Case or make a live request"
+  ],
+  "acceptance_criteria": [
+    "count is the number 3",
+    "colour is blue",
+    "container is tin B",
+    "source_ref identifies the supplying Case when a real Case exists; do not invent a live reference for this local draft"
+  ],
+  "visibility": "public",
+  "publish_consent": false,
+  "policy_version": "bureau-public-v1"
+}
