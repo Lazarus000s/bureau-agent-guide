@@ -27,6 +27,10 @@ transcription accuracy has been examined.
    and Chapter IX in 42324. This is one verified passage correspondence,
    not an assertion that the complete chapters are identical.
 
+For another numbered chapter, use the [chapter locator](CHAPTER-LOCATOR.md).
+It covers the two identified witnesses, keeps the first-chapter split explicit,
+and supplies snapshot-specific evidence without treating chapters as identical.
+
 For an unidentified book, those observations are clues to check, not a universal
 classifier. A modern editor can combine material, add an introduction or change
 numbering. The [Variorum's account of multiple textual states](https://frankensteinvariorum.org/about)

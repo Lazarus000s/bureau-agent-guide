@@ -595,9 +595,13 @@
     },
     {
       "path": "samples/frankenstein-editions/README.md",
-      "sha256": "131661e66a0f5cb7126c0f917d9f97fa2261dc148445e2accbbaf470644ff5a9",
+      "sha256": "c9677b4fb44f11c0d8d235e8fc11b17de285155530e9aa20304ae4049adebf93",
       "source": "Original Bureau edition-provenance sample; five primary-source URLs and observation limits retained in sources.json.",
-      "change": "Standalone source-ID mapping and a linked false-consent constructed intake example; no live Case, outside requester, acceptance or full collation."
+      "change": "Standalone source-ID mapping and a linked false-consent constructed intake example; no live Case, outside requester, acceptance or full collation.",
+      "chapter_locator_update": {
+        "date_utc": "2026-10-07",
+        "change": "Link the optional two-witness chapter-location supplement; original sample Packet/intake and observations unchanged."
+      }
     },
     {
       "path": "samples/frankenstein-editions/decisions.csv",
@@ -628,6 +632,24 @@
       "sha256": "e7d897d6ec12a1ade0a0be0bc890867798d7838c1a4495917b873bb095bdb0dc",
       "source": "Original Bureau constructed conflicting-edition scenario; exact brief-only Case body with publication consent false.",
       "change": "Local inspection/preparation only. Do not publish unchanged or represent it as an outside request."
+    },
+    {
+      "path": "samples/frankenstein-editions/CHAPTER-LOCATOR.md",
+      "sha256": "56abb6e90079baa6ee5151311dbfe046c5744014fd6735ec574356a2264d5724",
+      "source": "Original Bureau analysis of Gutenberg41445/42324, retrieved2026-10-07; exact source URLs/hashes and normalized-passage evidence in chapter-evidence.json.",
+      "change": "47 numbered chapter headings,24 passage correspondences, explicit split and no fabricated chapter fragments. Locator only; no full collation, print pagination, outside request or acceptance."
+    },
+    {
+      "path": "samples/frankenstein-editions/chapter-evidence.json",
+      "sha256": "7f676f242f409ca2d4612f71fadc04d0e540247a7b9c1c9bda970faa520cbe91",
+      "source": "Original Bureau analysis of Gutenberg41445/42324, retrieved2026-10-07; exact source URLs/hashes and normalized-passage evidence in chapter-evidence.json.",
+      "change": "47 numbered chapter headings,24 passage correspondences, explicit split and no fabricated chapter fragments. Locator only; no full collation, print pagination, outside request or acceptance."
+    },
+    {
+      "path": "samples/frankenstein-editions/chapter-locations.csv",
+      "sha256": "259213a2c3c158187f3dcf665db9f6b8f16f277e9c29caeed853c2b0a6de8831",
+      "source": "Original Bureau analysis of Gutenberg41445/42324, retrieved2026-10-07; exact source URLs/hashes and normalized-passage evidence in chapter-evidence.json.",
+      "change": "47 numbered chapter headings,24 passage correspondences, explicit split and no fabricated chapter fragments. Locator only; no full collation, print pagination, outside request or acceptance."
     }
   ],
   "limitations": [
@@ -638,11 +660,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "f40f6113e86dc2f82bf4911e6e98ff546a8da416",
+    "parent_commit": "9893433cfd3a1f97061a9699db02e5f0bfb5cc19",
     "date_utc": "2026-10-07",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Explain returning with an old Packet reference after a correction, and link existing Case accepted-result selection."
+    "description": "Add a source-linked two-witness Frankenstein chapter locator with explicit first-chapter split, exact captured-source hashes and bounded passage evidence."
   },
   "public_case_briefs": [
     {

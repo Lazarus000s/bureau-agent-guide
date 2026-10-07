@@ -1,0 +1,988 @@
+{
+  "schema": "bureau.sample.frankenstein-chapter-locations.v1",
+  "purpose": "Locate shared passages between exactly two digital witnesses; not full collation, quote verification, or a universal edition classifier.",
+  "prepared_by": "Lazarus / Bureau of Lost Context",
+  "sources": [
+    {
+      "source_id": "41445",
+      "url": "https://www.gutenberg.org/cache/epub/41445/pg41445-images.html",
+      "retrieved_utc": "2026-10-07T19:20:50.566667+00:00",
+      "sha256": "f27402fdddac01576ae8a121e2c86e0d97dba7e345e9b26fb30d63df75473a02",
+      "html_bytes": 455200
+    },
+    {
+      "source_id": "42324",
+      "url": "https://www.gutenberg.org/cache/epub/42324/pg42324-images.html",
+      "retrieved_utc": "2026-10-07T19:20:50.567443+00:00",
+      "sha256": "f4197710e370ed2a63680a9076061e27c90d6b8f6a7a52e2f8b4fcee77a8e539",
+      "html_bytes": 481811
+    }
+  ],
+  "method": {
+    "headings": "23 h3 CHAPTER headings in 41445, volume labels I/II/III; 24 h2 CHAPTER headings in 42324.",
+    "text": "Only paragraph text after each heading. Stop at next chapter or end-of-volume/end-of-work marker. Exclude caption headings, front matter, transcriber notes and license.",
+    "normalization": "Unicode NFKC, casefold, curly apostrophe to straight; Unicode letter words allowing internal apostrophe; join normalized words with one ASCII space for hashes.",
+    "candidate_selection": "Compare distinct contiguous 8-word windows within chapters. Review first-chapter split and representative volume/boundary cases; require one shared 32-word span unique in each entire chaptered witness for every selected pair.",
+    "offsets": "HTML heading offsets are zero-based UTF-8 byte offsets in the exact hashed response. HTML lines are one-based and are not printed page numbers. Passage word offsets are zero-based within the extracted chapter paragraph words.",
+    "fragments": "No chapter heading IDs/named anchors in either captured HTML; no fabricated chapter fragment links supplied.",
+    "coverage": "All 23 chapter headings of 1818 and 24 of 1831 have a selected shared-passage location. This does not cover every sentence, front matter, four opening letters or other editions."
+  },
+  "chapter_index": [
+    {
+      "source_id": "41445",
+      "volume": "I",
+      "chapter": "I",
+      "ordinal": 1,
+      "locator": "I.I",
+      "html_heading_line": 886,
+      "html_heading_utf8_offset": 41048,
+      "paragraph_count": 28,
+      "token_count": 2953,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "72b4dad0e6375b6d69d87945acc4347f9ed7ce62e90c0302284cea1707371769"
+    },
+    {
+      "source_id": "41445",
+      "volume": "I",
+      "chapter": "II",
+      "ordinal": 2,
+      "locator": "I.II",
+      "html_heading_line": 1178,
+      "html_heading_utf8_offset": 58815,
+      "paragraph_count": 19,
+      "token_count": 2220,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "da13b925a6f7875670d2d975cf85de279c6e1afc9acca698bf03a49ec4fc7009"
+    },
+    {
+      "source_id": "41445",
+      "volume": "I",
+      "chapter": "III",
+      "ordinal": 3,
+      "locator": "I.III",
+      "html_heading_line": 1393,
+      "html_heading_utf8_offset": 72196,
+      "paragraph_count": 14,
+      "token_count": 2554,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "785f84d66b02ab5909f700a748e219dd041540fcd7ca4c7751dba4d3c82f4d78"
+    },
+    {
+      "source_id": "41445",
+      "volume": "I",
+      "chapter": "IV",
+      "ordinal": 4,
+      "locator": "I.IV",
+      "html_heading_line": 1629,
+      "html_heading_utf8_offset": 87173,
+      "paragraph_count": 26,
+      "token_count": 2327,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "ccf1fddc7be6d1ed07c2d4a86ee39fd4fb989d06f9087fe7da39cfe30cdb9ff1"
+    },
+    {
+      "source_id": "41445",
+      "volume": "I",
+      "chapter": "V",
+      "ordinal": 5,
+      "locator": "I.V",
+      "html_heading_line": 1863,
+      "html_heading_utf8_offset": 100969,
+      "paragraph_count": 24,
+      "token_count": 2681,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "37b8bbd6f17569eaf0fa05476895cdc6287063013bdb9dd57e4ef298ac51930e"
+    },
+    {
+      "source_id": "41445",
+      "volume": "I",
+      "chapter": "VI",
+      "ordinal": 6,
+      "locator": "I.VI",
+      "html_heading_line": 2127,
+      "html_heading_utf8_offset": 117025,
+      "paragraph_count": 52,
+      "token_count": 3557,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "e07b302522c956c3c3753e3c5d99ce87aadc577aaad45f4a62bf2c7fed2a5ff6"
+    },
+    {
+      "source_id": "41445",
+      "volume": "I",
+      "chapter": "VII",
+      "ordinal": 7,
+      "locator": "I.VII",
+      "html_heading_line": 2494,
+      "html_heading_utf8_offset": 138032,
+      "paragraph_count": 34,
+      "token_count": 3034,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "0f344fdf317abe5133fffe86d9020875bb858ff81187906293c5117e95de0b3f"
+    },
+    {
+      "source_id": "41445",
+      "volume": "II",
+      "chapter": "I",
+      "ordinal": 8,
+      "locator": "II.I",
+      "html_heading_line": 2832,
+      "html_heading_utf8_offset": 156564,
+      "paragraph_count": 15,
+      "token_count": 2059,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "09a0291cb99e017a47db6c96efcc1d6a9c890ff719bd75b45b997093fd701efb"
+    },
+    {
+      "source_id": "41445",
+      "volume": "II",
+      "chapter": "II",
+      "ordinal": 9,
+      "locator": "II.II",
+      "html_heading_line": 3027,
+      "html_heading_utf8_offset": 168533,
+      "paragraph_count": 16,
+      "token_count": 2194,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "092f63309a75ed15ae9bbd90655c2ae4097d15f0d38aa19e60af54aa569c9397"
+    },
+    {
+      "source_id": "41445",
+      "volume": "II",
+      "chapter": "III",
+      "ordinal": 10,
+      "locator": "II.III",
+      "html_heading_line": 3240,
+      "html_heading_utf8_offset": 181677,
+      "paragraph_count": 19,
+      "token_count": 2909,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "a0a020070979c87231fecb14b198def88f593569de9f4434cef21165e243e70b"
+    },
+    {
+      "source_id": "41445",
+      "volume": "II",
+      "chapter": "IV",
+      "ordinal": 11,
+      "locator": "II.IV",
+      "html_heading_line": 3504,
+      "html_heading_utf8_offset": 198189,
+      "paragraph_count": 19,
+      "token_count": 2074,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "29b59862f5d58677b3069f0e23bc10085ddb3b228834cacf0bcc4b5a60f37a42"
+    },
+    {
+      "source_id": "41445",
+      "volume": "II",
+      "chapter": "V",
+      "ordinal": 12,
+      "locator": "II.V",
+      "html_heading_line": 3707,
+      "html_heading_utf8_offset": 210742,
+      "paragraph_count": 22,
+      "token_count": 2039,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "ab3e0d2e2cc5bfc2765c2a481624a524f9f2b0872602c454d45c3bfaf4bbe525"
+    },
+    {
+      "source_id": "41445",
+      "volume": "II",
+      "chapter": "VI",
+      "ordinal": 13,
+      "locator": "II.VI",
+      "html_heading_line": 3913,
+      "html_heading_utf8_offset": 222860,
+      "paragraph_count": 20,
+      "token_count": 1860,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "8719acc59d18d627bb641b0895d41948deb883d47fc0fe636b5537fdaaaaac6b"
+    },
+    {
+      "source_id": "41445",
+      "volume": "II",
+      "chapter": "VII",
+      "ordinal": 14,
+      "locator": "II.VII",
+      "html_heading_line": 4098,
+      "html_heading_utf8_offset": 233830,
+      "paragraph_count": 38,
+      "token_count": 3016,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "cfb59370848e20aff550f689a89c3f22362d0febdde5e5cc992c552ff774f834"
+    },
+    {
+      "source_id": "41445",
+      "volume": "II",
+      "chapter": "VIII",
+      "ordinal": 15,
+      "locator": "II.VIII",
+      "html_heading_line": 4405,
+      "html_heading_utf8_offset": 251908,
+      "paragraph_count": 36,
+      "token_count": 3078,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "9c061371366dfe2a8f4e366f4647e2d0e53e4246c5373a5e4056129145821ed9"
+    },
+    {
+      "source_id": "41445",
+      "volume": "II",
+      "chapter": "IX",
+      "ordinal": 16,
+      "locator": "II.IX",
+      "html_heading_line": 4702,
+      "html_heading_utf8_offset": 269580,
+      "paragraph_count": 24,
+      "token_count": 2016,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "5f5f1be41fa12b0c64a0434c0267b7cea0a7033edae3fee1ff5a36896fd1e1e1"
+    },
+    {
+      "source_id": "41445",
+      "volume": "III",
+      "chapter": "I",
+      "ordinal": 17,
+      "locator": "III.I",
+      "html_heading_line": 4939,
+      "html_heading_utf8_offset": 281790,
+      "paragraph_count": 25,
+      "token_count": 2636,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "539aa2de44a908fbf7842abed1e8537bdd9fc9ef080abe86b78a66293ff9e404"
+    },
+    {
+      "source_id": "41445",
+      "volume": "III",
+      "chapter": "II",
+      "ordinal": 18,
+      "locator": "III.II",
+      "html_heading_line": 5205,
+      "html_heading_utf8_offset": 297897,
+      "paragraph_count": 23,
+      "token_count": 2548,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "b4b0d419d82352b03cbaad524f8795bb0ae71c145064012ed0f5495d6b32316d"
+    },
+    {
+      "source_id": "41445",
+      "volume": "III",
+      "chapter": "III",
+      "ordinal": 19,
+      "locator": "III.III",
+      "html_heading_line": 5449,
+      "html_heading_utf8_offset": 312910,
+      "paragraph_count": 37,
+      "token_count": 3467,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "8997013efff964ba1dec98d1f50d4328e56bcc663700fa6cfd2ab01575c36f02"
+    },
+    {
+      "source_id": "41445",
+      "volume": "III",
+      "chapter": "IV",
+      "ordinal": 20,
+      "locator": "III.IV",
+      "html_heading_line": 5776,
+      "html_heading_utf8_offset": 332380,
+      "paragraph_count": 50,
+      "token_count": 3685,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "c029490b1b95f98b91c2626e13679f50f16703aa45dd70bff033a54cf41b3b6d"
+    },
+    {
+      "source_id": "41445",
+      "volume": "III",
+      "chapter": "V",
+      "ordinal": 21,
+      "locator": "III.V",
+      "html_heading_line": 6142,
+      "html_heading_utf8_offset": 353480,
+      "paragraph_count": 42,
+      "token_count": 3318,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "1045564fff35397c9ff17a06f0f03f1bde1438e49d2a1d4a716ff18bb643c366"
+    },
+    {
+      "source_id": "41445",
+      "volume": "III",
+      "chapter": "VI",
+      "ordinal": 22,
+      "locator": "III.VI",
+      "html_heading_line": 6475,
+      "html_heading_utf8_offset": 372940,
+      "paragraph_count": 30,
+      "token_count": 2523,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "db906f34fcefea5eab2e8f84a6547ca0435e8abd430ef562d0e6d6810ce963bc"
+    },
+    {
+      "source_id": "41445",
+      "volume": "III",
+      "chapter": "VII",
+      "ordinal": 23,
+      "locator": "III.VII",
+      "html_heading_line": 6720,
+      "html_heading_utf8_offset": 387252,
+      "paragraph_count": 81,
+      "token_count": 8262,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "b95bab0190287dc265228d73832186cb6d661f86793999d0bed1d4a47218c6c0"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "I",
+      "ordinal": 1,
+      "locator": "I",
+      "html_heading_line": 1062,
+      "html_heading_utf8_offset": 58309,
+      "paragraph_count": 11,
+      "token_count": 1784,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "9424638996bceabc0e64e5b2238fbdd87da583b04ea833da0195c3ef611031cf"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "II",
+      "ordinal": 2,
+      "locator": "II",
+      "html_heading_line": 1214,
+      "html_heading_utf8_offset": 68785,
+      "paragraph_count": 16,
+      "token_count": 2211,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "e09863f6b74c99e6b47f2290c75579d2d0fd11e51bf056d2c76a6957873395e3"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "III",
+      "ordinal": 3,
+      "locator": "III",
+      "html_heading_line": 1408,
+      "html_heading_utf8_offset": 81880,
+      "paragraph_count": 21,
+      "token_count": 2686,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "98c1149c14464d7c1a1be90bc5fb33cb85bbc19e0cd5a2ac28dd498df68b6d27"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "IV",
+      "ordinal": 4,
+      "locator": "IV",
+      "html_heading_line": 1643,
+      "html_heading_utf8_offset": 97848,
+      "paragraph_count": 14,
+      "token_count": 2542,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "e08aea15d2d1b382e3886fa6f989b16f545605192b297c127001a4d930c816ea"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "V",
+      "ordinal": 5,
+      "locator": "V",
+      "html_heading_line": 1859,
+      "html_heading_utf8_offset": 112664,
+      "paragraph_count": 26,
+      "token_count": 2322,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "4590557e98418c49d490ebdcd03296c7a62fff8d978a41e25adb116b0396d681"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "VI",
+      "ordinal": 6,
+      "locator": "VI",
+      "html_heading_line": 2071,
+      "html_heading_utf8_offset": 126780,
+      "paragraph_count": 23,
+      "token_count": 2729,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "3a4e10f065fdb2bbba50a0b46e093e99366f201f1958f54670ee834abb9e8a6f"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "VII",
+      "ordinal": 7,
+      "locator": "VII",
+      "html_heading_line": 2307,
+      "html_heading_utf8_offset": 142828,
+      "paragraph_count": 51,
+      "token_count": 3576,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "c4cbed0a0e0d6a7f44e5fcf82fc3d70532b3dd3b32a366fa239b8343b3a31d31"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "VIII",
+      "ordinal": 8,
+      "locator": "VIII",
+      "html_heading_line": 2615,
+      "html_heading_utf8_offset": 163522,
+      "paragraph_count": 33,
+      "token_count": 3105,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "6161a0528aab13c1a7366f9b6dc5e7a0426e2466e0a20a9d4b2ee8329f79940a"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "IX",
+      "ordinal": 9,
+      "locator": "IX",
+      "html_heading_line": 2881,
+      "html_heading_utf8_offset": 181372,
+      "paragraph_count": 16,
+      "token_count": 2225,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "b44a8df94a42ebcd15bfed96c1a088411047f2042f94139700e6c2b682ffb41d"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "X",
+      "ordinal": 10,
+      "locator": "X",
+      "html_heading_line": 3068,
+      "html_heading_utf8_offset": 194219,
+      "paragraph_count": 16,
+      "token_count": 2299,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "6b3f28c94ba37298150c1eb9182d8c4a5c5807c3370a8b437b28ff9e9c0d89de"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "XI",
+      "ordinal": 11,
+      "locator": "XI",
+      "html_heading_line": 3269,
+      "html_heading_utf8_offset": 207831,
+      "paragraph_count": 19,
+      "token_count": 2906,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "24b968ffd1042a79990b0e915b14d899c9c454ef4ee9c9aa9a15be7a860bc1a8"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "XII",
+      "ordinal": 12,
+      "locator": "XII",
+      "html_heading_line": 3510,
+      "html_heading_utf8_offset": 224297,
+      "paragraph_count": 19,
+      "token_count": 2074,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "cb14ca83933d275c3cb9210e805d9a1e6a48a7c4dab3eaea6565a85947ff7152"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "XIII",
+      "ordinal": 13,
+      "locator": "XIII",
+      "html_heading_line": 3692,
+      "html_heading_utf8_offset": 236747,
+      "paragraph_count": 22,
+      "token_count": 2039,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "180475cd4f8bf6a1a9dbaf15213dcddd4545a566637ba64d8e201c78e021423e"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "XIV",
+      "ordinal": 14,
+      "locator": "XIV",
+      "html_heading_line": 3871,
+      "html_heading_utf8_offset": 248735,
+      "paragraph_count": 20,
+      "token_count": 1855,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "8f3e8f308cf7ffc3e6745e2f5768e005a6e8adf0938e0ac58b4b08c539549079"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "XV",
+      "ordinal": 15,
+      "locator": "XV",
+      "html_heading_line": 4031,
+      "html_heading_utf8_offset": 259557,
+      "paragraph_count": 38,
+      "token_count": 3015,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "bdb78912d2c210d5e5c994d7550fb69fd701823585487ee49d6f1e8c5122806d"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "XVI",
+      "ordinal": 16,
+      "locator": "XVI",
+      "html_heading_line": 4296,
+      "html_heading_utf8_offset": 277299,
+      "paragraph_count": 37,
+      "token_count": 3213,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "9e84b43df1cca08391f8a00fc80a024571797a0797200646476a8977f2996323"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "XVII",
+      "ordinal": 17,
+      "locator": "XVII",
+      "html_heading_line": 4564,
+      "html_heading_utf8_offset": 295459,
+      "paragraph_count": 21,
+      "token_count": 1924,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "b89ba599ef6ee2846f0586c9c7c58dd10b6c0bb8f91bd286fc9abe1c0e7cb775"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "XVIII",
+      "ordinal": 18,
+      "locator": "XVIII",
+      "html_heading_line": 4724,
+      "html_heading_utf8_offset": 306104,
+      "paragraph_count": 24,
+      "token_count": 2795,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "1837b8ea86eec1a2b951ccf4988a6b2acef6d4cb38ca2c22d20c3566951eb83b"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "XIX",
+      "ordinal": 19,
+      "locator": "XIX",
+      "html_heading_line": 4973,
+      "html_heading_utf8_offset": 323089,
+      "paragraph_count": 23,
+      "token_count": 2615,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "33800d22009bc44a8681b84c0b1fe1693cb52a583467297feabcaa5505478878"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "XX",
+      "ordinal": 20,
+      "locator": "XX",
+      "html_heading_line": 5194,
+      "html_heading_utf8_offset": 338360,
+      "paragraph_count": 37,
+      "token_count": 3534,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "7b496e897974a19fbca53946fb61cd3674c0512c10873563779fd35b20ea1759"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "XXI",
+      "ordinal": 21,
+      "locator": "XXI",
+      "html_heading_line": 5486,
+      "html_heading_utf8_offset": 358049,
+      "paragraph_count": 49,
+      "token_count": 3746,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "24000af4626ab7d415ee92bee0034a7972483fbf3e3103dfc7039ff841b16489"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "XXII",
+      "ordinal": 22,
+      "locator": "XXII",
+      "html_heading_line": 5802,
+      "html_heading_utf8_offset": 379275,
+      "paragraph_count": 41,
+      "token_count": 3426,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "86e02284c0cf65b53c5505d1beae1ae8b6decd0b437ee51666e41f884ca97705"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "XXIII",
+      "ordinal": 23,
+      "locator": "XXIII",
+      "html_heading_line": 6097,
+      "html_heading_utf8_offset": 399078,
+      "paragraph_count": 30,
+      "token_count": 2597,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "c2e81fb4de6d2ec230139ed0393929ac131fcd09166a2e0b7a086d6854894802"
+    },
+    {
+      "source_id": "42324",
+      "volume": null,
+      "chapter": "XXIV",
+      "ordinal": 24,
+      "locator": "XXIV",
+      "html_heading_line": 6315,
+      "html_heading_utf8_offset": 413632,
+      "paragraph_count": 81,
+      "token_count": 8266,
+      "html_fragment": null,
+      "normalized_chapter_words_sha256": "a929db4f95ed36302f4b984db8de6c448ef9f7d1ae2c2199a0992eeb475ccf96"
+    }
+  ],
+  "passage_locations": [
+    {
+      "1818_locator": "I.I",
+      "1831_locator": "I",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "9ce7d5892c228f86a15b62792fdde4aa998579899556f03dc8afab6482abd166",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 500,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": true
+    },
+    {
+      "1818_locator": "I.I",
+      "1831_locator": "II",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "57e65629d294e0243a0b55834ed24182831bdcd4d9fe22b704311039bfa5ecf6",
+        "1818_chapter_word_offset_zero_based": 1588,
+        "1831_chapter_word_offset_zero_based": 853,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 629,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": true
+    },
+    {
+      "1818_locator": "I.II",
+      "1831_locator": "III",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "4ba7df041817e1cfd0a4f04ee70173b316e5d62198e8848cd1a3709f8012914e",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 1621,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "I.III",
+      "1831_locator": "IV",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "1ec7aa3a485646f25cdaeb6e08c3d19fb9c16c5a1a68fba3333d771572b22b89",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 2312,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "I.IV",
+      "1831_locator": "V",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "67f976ef7e524562c9eff435932f8b3b449d7d784776f8d96465d11e53ee77f3",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 2248,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "I.V",
+      "1831_locator": "VI",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "54f20205cc85741c000acb0aadb0cbf08a82885d552f86590c934c3bcf8d6c47",
+        "1818_chapter_word_offset_zero_based": 467,
+        "1831_chapter_word_offset_zero_based": 452,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 1973,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "I.VI",
+      "1831_locator": "VII",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "3b0e2d9897ebecab822dede8bf322dc6bd7a0bf8fa87d521a1136a5a6ad26297",
+        "1818_chapter_word_offset_zero_based": 14,
+        "1831_chapter_word_offset_zero_based": 11,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 2953,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "I.VII",
+      "1831_locator": "VIII",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "c74314f744835a07240717e69a306247fbbb7b400446b486d94214503ac478d1",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 2492,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "II.I",
+      "1831_locator": "IX",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "47d18a0c010f85e6024c6bf409c58808f721698224f000eee12dc64b4e0158a4",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 1368,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "II.II",
+      "1831_locator": "X",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "2d71ceb53fd0d48f6d49b87567c3be87f9962c0e869074086a7beea8556dc9bb",
+        "1818_chapter_word_offset_zero_based": 28,
+        "1831_chapter_word_offset_zero_based": 134,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 1933,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "II.III",
+      "1831_locator": "XI",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "dee5e4c6805a8acac65a81deb59777056b8cfa344b7d205c6fa4759f0e9f2a37",
+        "1818_chapter_word_offset_zero_based": 11,
+        "1831_chapter_word_offset_zero_based": 11,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 2819,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "II.IV",
+      "1831_locator": "XII",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "cedc91857b3c32c8d39162e017f7683b3349a5b334bc2cffe06341b6d7d6d9ab",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 2035,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "II.V",
+      "1831_locator": "XIII",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "2c67e7044900943f7917d90b6892a3d79c06cb72d70dbfb1aae253973bbb4885",
+        "1818_chapter_word_offset_zero_based": 25,
+        "1831_chapter_word_offset_zero_based": 26,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 1918,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "II.VI",
+      "1831_locator": "XIV",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "cadc01ebafda1f4241f7c87b6ab1b14bde848ab230704bc2cb284e8bcd4a1653",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 1717,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "II.VII",
+      "1831_locator": "XV",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "c2cd1f49a87db384470ac285ea150f33c305877c83126634b837811154f56bd4",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 2844,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "II.VIII",
+      "1831_locator": "XVI",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "31cbbbcf2607b60c3a78bd8ce65ac6b74df5668bba9046dc3dfb0e50a279ed5d",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 2911,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "II.IX",
+      "1831_locator": "XVII",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "a45866ae12f16e2ff09ea61b22413d5501a914662e61bae3e7093cceea87c18f",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 1695,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "III.I",
+      "1831_locator": "XVIII",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "42a272417b94425073121a366d442c4a0b83855673e4183cd20c52acc95fadaf",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 2113,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "III.II",
+      "1831_locator": "XIX",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "ce418ee58ec9b10f01ebc5b405422f936ed51a3c817d4f54867f9cab9b56865a",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 2458,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "III.III",
+      "1831_locator": "XX",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "132c80d6671e1a890e783e08e7682d64c0d0a8eb3fe90ef04927c839c8fe0e62",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 3293,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "III.IV",
+      "1831_locator": "XXI",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "d615c9cd2c1346c1cd74c9a2d9c40b9514ebda4b748a8aba93852797fc8cf1dd",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 3305,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "III.V",
+      "1831_locator": "XXII",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "aacf883b3425361747b7520df7ad6f3f8375114f0e2961fc532ec709b2c453bc",
+        "1818_chapter_word_offset_zero_based": 135,
+        "1831_chapter_word_offset_zero_based": 184,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 2761,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "III.VI",
+      "1831_locator": "XXIII",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "5687149827862f885beac4d51e22dee5a54bf3decae955722c29fc9ad8ccd7c6",
+        "1818_chapter_word_offset_zero_based": 0,
+        "1831_chapter_word_offset_zero_based": 0,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 2280,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    },
+    {
+      "1818_locator": "III.VII",
+      "1831_locator": "XXIV",
+      "evidence": {
+        "normalized_word_count": 32,
+        "normalized_words_sha256": "3e9b33efe7b8d91750bd8ed26d34fe54d50798724667c74af71ebb8a3643df35",
+        "1818_chapter_word_offset_zero_based": 31,
+        "1831_chapter_word_offset_zero_based": 31,
+        "occurrences_in_each_chaptered_witness": 1
+      },
+      "shared_distinct_8_word_windows": 7604,
+      "relation": "shared_passage_location_not_whole_chapter_equivalence",
+      "split_first_chapter": false
+    }
+  ],
+  "limits": [
+    "A shared normalized passage does not make chapters equivalent or their quotations interchangeable.",
+    "The source URLs are mutable; positions and hashes describe the captured HTML only.",
+    "Original printed copies, pagination and transcription accuracy were not verified.",
+    "An unlisted, mixed or renumbered edition remains unresolved without its own source evidence.",
+    "Bureau-created reference work; no outside request, Case, accepted result or adoption claimed."
+  ]
+}
