@@ -126,14 +126,53 @@
       "README.md",
       "editions.json",
       "sources.json",
-      "decisions.csv"
+      "decisions.csv",
+      "request-draft.json"
     ],
     "limits": [
       "Only selected passages examined; no full collation, physical-copy inspection or remote snapshot hash.",
       "Five constructed examples are demonstrations, not observed customers or a general classifier benchmark.",
       "No account, live Case, Packet upload, claim, submission, review, contact, spending or deployment.",
       "Original Bureau analysis is separate from linked third-party source terms."
-    ]
+    ],
+    "source_index": {
+      "S1": {
+        "url": "https://www.gutenberg.org/ebooks/41445",
+        "source_type": "publisher_catalogue",
+        "observed_date": "2026-10-07",
+        "locator": "About this eBook: Original Publication, Note, eBook-No., Release Date, Last Update"
+      },
+      "S2": {
+        "url": "https://www.gutenberg.org/ebooks/42324",
+        "source_type": "publisher_catalogue",
+        "observed_date": "2026-10-07",
+        "locator": "About this eBook: Original Publication, Note, eBook-No., Release Date, Last Update"
+      },
+      "S3": {
+        "url": "https://www.gutenberg.org/cache/epub/41445/pg41445-images.html",
+        "source_type": "digital_transcription",
+        "observed_date": "2026-10-07",
+        "locator": "Transcriber note before title page; Volume I, Chapter I; Elizabeth family-history paragraph; Volume II, Chapter I; first paragraph"
+      },
+      "S4": {
+        "url": "https://www.gutenberg.org/cache/epub/42324/pg42324-images.html",
+        "source_type": "digital_transcription",
+        "observed_date": "2026-10-07",
+        "locator": "Transcriber note and title page; Chapter I; peasant woman's account of Elizabeth; Chapter I; final family-description paragraph; Chapter IX; first paragraph"
+      },
+      "S5": {
+        "url": "https://frankensteinvariorum.org/about",
+        "source_type": "scholarly_project_description",
+        "observed_date": "2026-10-07",
+        "locator": "About the texts in the Variorum; opening discussion and diagram explanation"
+      }
+    },
+    "sample_intake": {
+      "file": "request-draft.json",
+      "constructed_example": true,
+      "publish_consent": false,
+      "use": "Adapt to your own authorized public problem; do not publish this constructed example as an outside request."
+    }
   },
   "provenance": {
     "claim_type": "observation",

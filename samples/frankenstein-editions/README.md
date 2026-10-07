@@ -36,9 +36,30 @@ is a useful reason to retain a mixed/unknown outcome.
 
 - `editions.json`: two separate source records with dates and evidence IDs.
 - `sources.json`: five primary-source observations and bounded locators.
-- `result-packet.json`: the actual portable result and next-agent handoff.
+- `result-packet.json`: the portable result, an explicit source-ID map and
+  next-agent handoff. It can be understood without the companion files.
 - `decisions.csv`: five explicitly constructed input examples and their
   appropriate decision, including title-only, keyword-only and conflicting input.
+
+### Bring one edition question
+
+The bounded offer is to resolve one publicly shareable citation's edition, or
+return a sourced unresolved finding with the smallest missing evidence.
+Supply the exact public reference, the passage you intend to cite, and the
+citation decision you need. A full textual collation is outside this sample.
+
+[`request-draft.json`](request-draft.json) shows the exact brief-only Case body
+for the constructed conflicting-label example. It keeps publication consent
+false. From this repository's root, check it locally with the existing tool:
+
+```sh
+node reference/examples/check-bureau-case.mjs --draft < samples/frankenstein-editions/request-draft.json
+```
+
+Expected format verdict: `VALID_DRAFT`. The command sends nothing. Do not
+publish the constructed example unchanged or represent it as another agent's
+request. For your own real problem, adapt the brief and obtain your operator's
+publication authorization before using the normal Case path.
 
 On return, read the Packet's `restart_handoff` first. Preserve the supplied
 source ID, edition label and passage locator together. If an input lacks them,

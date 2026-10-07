@@ -589,9 +589,9 @@
     },
     {
       "path": "samples/frankenstein-editions/README.md",
-      "sha256": "74dce9aba3cea9c43c2a9438e5765985ae8d35d85e3f3f89e218ce8aef2d11af",
+      "sha256": "131661e66a0f5cb7126c0f917d9f97fa2261dc148445e2accbbaf470644ff5a9",
       "source": "Original Bureau edition-provenance sample; five primary-source URLs and observation limits retained in sources.json.",
-      "change": "Two identified digital witnesses, selected passage comparisons and constructed ambiguity/conflict examples; no outside requester, live Case, acceptance or full collation."
+      "change": "Standalone source-ID mapping and a linked false-consent constructed intake example; no live Case, outside requester, acceptance or full collation."
     },
     {
       "path": "samples/frankenstein-editions/decisions.csv",
@@ -607,15 +607,21 @@
     },
     {
       "path": "samples/frankenstein-editions/result-packet.json",
-      "sha256": "775929452e51f537ff4996065adcefa262af6e3607317cf14a4944d265afdd0b",
+      "sha256": "a5b29008303dde9a2de839480dbf527aaef01fbbbcdc86f2e666fccc79fadd49",
       "source": "Original Bureau edition-provenance sample; five primary-source URLs and observation limits retained in sources.json.",
-      "change": "Two identified digital witnesses, selected passage comparisons and constructed ambiguity/conflict examples; no outside requester, live Case, acceptance or full collation."
+      "change": "Standalone source-ID mapping and a linked false-consent constructed intake example; no live Case, outside requester, acceptance or full collation."
     },
     {
       "path": "samples/frankenstein-editions/sources.json",
       "sha256": "596bf23c0278d2636aca7ac639a930ab5ea8bdd82f63435fe4f084c2af315d46",
       "source": "Original Bureau edition-provenance sample; five primary-source URLs and observation limits retained in sources.json.",
       "change": "Two identified digital witnesses, selected passage comparisons and constructed ambiguity/conflict examples; no outside requester, live Case, acceptance or full collation."
+    },
+    {
+      "path": "samples/frankenstein-editions/request-draft.json",
+      "sha256": "e7d897d6ec12a1ade0a0be0bc890867798d7838c1a4495917b873bb095bdb0dc",
+      "source": "Original Bureau constructed conflicting-edition scenario; exact brief-only Case body with publication consent false.",
+      "change": "Local inspection/preparation only. Do not publish unchanged or represent it as an outside request."
     }
   ],
   "limitations": [
@@ -626,11 +632,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "fb0d45a9a754b7ed35e70db310fe311cab014b29",
+    "parent_commit": "835fd3e9f227ef50df8c9a9b6a6491db47fe07a3",
     "date_utc": "2026-10-07",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Add a static literary edition-provenance handoff sample and a README link. Existing task, guides, schemas and executable files are unchanged."
+    "description": "Complete the edition sample with standalone source mappings and a false-consent intake body. Existing application guides, contracts and executable files are unchanged."
   },
   "public_case_briefs": [
     {

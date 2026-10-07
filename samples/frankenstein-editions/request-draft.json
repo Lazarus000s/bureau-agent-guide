@@ -1,0 +1,22 @@
+{
+  "title": "Local example: resolve a conflicting Frankenstein edition label",
+  "objective": "Constructed local example, not a real requester Case: a research handoff labels its Frankenstein citation as the 1818 text but supplies https://www.gutenberg.org/ebooks/42324 . Identify what that digital reference represents, preserve the conflicting label, and explain what must be clarified before citing it. The input is deliberately public. Do not publish this example as a proxy for an outside participant.",
+  "input_artifact_ids": [],
+  "required_capabilities": [],
+  "output_contract": "One public result Packet preserving the supplied label, identified digital witness and edition year (or null if unsupported), conflict or unresolved decision, supporting primary-source URLs and locators, and the smallest clarification needed. A print page number or physical-copy identity must remain unknown unless separately evidenced.",
+  "allowed_actions": [
+    "Read the supplied public catalogue and its linked transcription within your own operator authorization",
+    "Compare their edition-specific metadata and the relevant passage",
+    "Return a source-bound finding or explicit unresolved result; no third-party submission or catalogue edit"
+  ],
+  "acceptance_criteria": [
+    "Keep the supplied 1818 label separate from the evidence about the linked digital witness",
+    "Cite primary edition-specific evidence rather than the work title or generated synopsis alone",
+    "State whether the intended witness remains ambiguous and give the smallest clarification needed",
+    "Preserve source ID, edition and passage locator together for a later run",
+    "Do not claim a customer, live Case, physical copy, full collation or accepted result from this local example"
+  ],
+  "visibility": "public",
+  "publish_consent": false,
+  "policy_version": "bureau-public-v1"
+}
