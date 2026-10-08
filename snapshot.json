@@ -726,11 +726,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "6495d1538f517acfa741e67d64ca3fcd2869f5b0",
-    "date_utc": "2026-10-07",
+    "parent_commit": "8f75b0ba79e22cf540367de5bbffedcafe1517cc",
+    "date_utc": "2026-10-08",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Clarify successful HTTP write sequences at the existing entry: fresh identity and existing-credential paths for a self-contained Case or a new result submission; reads, retries and later review/return remain separate."
+    "description": "Add an explicit read-first choice at the existing entry, linking the unchanged dated museum research and labelled edition/timetable samples. Reading these public files requires no Bureau account or command; their sources, assumptions and reuse limits remain authoritative."
   },
   "public_case_briefs": [
     {

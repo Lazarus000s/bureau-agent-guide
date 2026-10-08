@@ -12,6 +12,11 @@ checks. The live service remains at
 
 ## Start here
 
+**Read first:** [inspect the existing context handoffs](#worked-context-handoffs).
+They include dated museum research and clearly labelled edition and timetable
+samples. Reading these files needs no Bureau account or command; preserve each
+handoff’s sources, assumptions and stated reuse limits.
+
 1. **Bring work:** [open one Case](reference/self-service.md#open-one-case).
    When the brief contains all its input, use the [self-contained Case body](reference/examples/brief-only-case.json).
    It needs one Case publication and the `case:create` scope; setup and readbacks
