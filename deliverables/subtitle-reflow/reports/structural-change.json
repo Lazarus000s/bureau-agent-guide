@@ -1,0 +1,387 @@
+{
+  "checks": {
+    "counter_sequence_preserved": false,
+    "cue_count_preserved": false,
+    "normalized_text_sequence_preserved": false,
+    "timecode_sequence_preserved": false
+  },
+  "contract": {
+    "counter_rule": "Exact original counter strings and order are retained.",
+    "id": "ordered-srt-reflow-only/1",
+    "location_rule": "Ordinals and line spans identify positions only within the SHA256-bound file. Exact-text locations are observations, not persistent cue identity.",
+    "normalization": "Collapse ASCII space, TAB and normalized line endings to one space, trim ASCII boundary spaces; no other text normalization."
+  },
+  "exact_unique_text_locations": [
+    {
+      "after_ordinal": 1,
+      "before_ordinal": 1,
+      "end_delta_ms": 0,
+      "normalized_text_sha256": "46d8b735ad6059c27eec0a274585431df1a41962aa35cd2d3e1d5d76458f2707",
+      "start_delta_ms": 0
+    },
+    {
+      "after_ordinal": 4,
+      "before_ordinal": 3,
+      "end_delta_ms": 0,
+      "normalized_text_sha256": "e7fd4fce57f81d6da979ea2ec51a31078d1c22923f34ebca4aa0c5a84e91e2fd",
+      "start_delta_ms": 0
+    },
+    {
+      "after_ordinal": 5,
+      "before_ordinal": 4,
+      "end_delta_ms": 0,
+      "normalized_text_sha256": "81c16df0088348f00111ce20a891c892e04648bac4705baa7ad1dfd1eb804bfd",
+      "start_delta_ms": 0
+    },
+    {
+      "after_ordinal": 7,
+      "before_ordinal": 6,
+      "end_delta_ms": 0,
+      "normalized_text_sha256": "5eee510d36292afabde5e3ae65453c4c31ff0502e4e9c9edcb6ec3bcd13cc7cd",
+      "start_delta_ms": 0
+    },
+    {
+      "after_ordinal": 9,
+      "before_ordinal": 8,
+      "end_delta_ms": 0,
+      "normalized_text_sha256": "53bba5a3aea486568a276d6db812143b2e8a4f592a93bb04297fd7aa7616df08",
+      "start_delta_ms": 0
+    }
+  ],
+  "input_bytes_identical": false,
+  "inputs": {
+    "after": {
+      "byte_count": 509,
+      "cue_count": 9,
+      "cues": [
+        {
+          "counter": "1",
+          "end_ms": 3000,
+          "line_end": 3,
+          "line_start": 1,
+          "normalized_text_sha256": "46d8b735ad6059c27eec0a274585431df1a41962aa35cd2d3e1d5d76458f2707",
+          "ordinal": 1,
+          "start_ms": 1000,
+          "text": "The first drawer holds maps.",
+          "text_sha256": "46d8b735ad6059c27eec0a274585431df1a41962aa35cd2d3e1d5d76458f2707"
+        },
+        {
+          "counter": "2",
+          "end_ms": 5800,
+          "line_end": 7,
+          "line_start": 5,
+          "normalized_text_sha256": "8438e62319c68f42bee36122a046ce660c5ee02a4f98cd38953c1d8569319ad1",
+          "ordinal": 2,
+          "start_ms": 4000,
+          "text": "Keep the north arrow",
+          "text_sha256": "8438e62319c68f42bee36122a046ce660c5ee02a4f98cd38953c1d8569319ad1"
+        },
+        {
+          "counter": "3",
+          "end_ms": 8000,
+          "line_end": 11,
+          "line_start": 9,
+          "normalized_text_sha256": "0a579d0f106a875dc67e3b35e02269a595a48422c5fd6cbc8855a5d275dfa48f",
+          "ordinal": 3,
+          "start_ms": 6200,
+          "text": "with the map.",
+          "text_sha256": "0a579d0f106a875dc67e3b35e02269a595a48422c5fd6cbc8855a5d275dfa48f"
+        },
+        {
+          "counter": "4",
+          "end_ms": 12000,
+          "line_end": 15,
+          "line_start": 13,
+          "normalized_text_sha256": "e7fd4fce57f81d6da979ea2ec51a31078d1c22923f34ebca4aa0c5a84e91e2fd",
+          "ordinal": 4,
+          "start_ms": 9000,
+          "text": "This label belongs to the red box.",
+          "text_sha256": "e7fd4fce57f81d6da979ea2ec51a31078d1c22923f34ebca4aa0c5a84e91e2fd"
+        },
+        {
+          "counter": "5",
+          "end_ms": 16000,
+          "line_end": 19,
+          "line_start": 17,
+          "normalized_text_sha256": "81c16df0088348f00111ce20a891c892e04648bac4705baa7ad1dfd1eb804bfd",
+          "ordinal": 5,
+          "start_ms": 13000,
+          "text": "Check the stamp before you sign.",
+          "text_sha256": "81c16df0088348f00111ce20a891c892e04648bac4705baa7ad1dfd1eb804bfd"
+        },
+        {
+          "counter": "6",
+          "end_ms": 18000,
+          "line_end": 23,
+          "line_start": 21,
+          "normalized_text_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da",
+          "ordinal": 6,
+          "start_ms": 17000,
+          "text": "Yes.",
+          "text_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da"
+        },
+        {
+          "counter": "7",
+          "end_ms": 22000,
+          "line_end": 27,
+          "line_start": 25,
+          "normalized_text_sha256": "5eee510d36292afabde5e3ae65453c4c31ff0502e4e9c9edcb6ec3bcd13cc7cd",
+          "ordinal": 7,
+          "start_ms": 19000,
+          "text": "The red box stays on shelf four.",
+          "text_sha256": "5eee510d36292afabde5e3ae65453c4c31ff0502e4e9c9edcb6ec3bcd13cc7cd"
+        },
+        {
+          "counter": "8",
+          "end_ms": 24000,
+          "line_end": 31,
+          "line_start": 29,
+          "normalized_text_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da",
+          "ordinal": 8,
+          "start_ms": 23000,
+          "text": "Yes.",
+          "text_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da"
+        },
+        {
+          "counter": "9",
+          "end_ms": 29000,
+          "line_end": 35,
+          "line_start": 33,
+          "normalized_text_sha256": "53bba5a3aea486568a276d6db812143b2e8a4f592a93bb04297fd7aa7616df08",
+          "ordinal": 9,
+          "start_ms": 25000,
+          "text": "Leave the return note beside the key.",
+          "text_sha256": "53bba5a3aea486568a276d6db812143b2e8a4f592a93bb04297fd7aa7616df08"
+        }
+      ],
+      "role": "after",
+      "sha256": "352ccd871b69f0db1961ecf6cdfddeccb0c220d40c046508b7fef27ce4478783"
+    },
+    "before": {
+      "byte_count": 476,
+      "cue_count": 8,
+      "cues": [
+        {
+          "counter": "1",
+          "end_ms": 3000,
+          "line_end": 3,
+          "line_start": 1,
+          "normalized_text_sha256": "46d8b735ad6059c27eec0a274585431df1a41962aa35cd2d3e1d5d76458f2707",
+          "ordinal": 1,
+          "start_ms": 1000,
+          "text": "The first drawer holds maps.",
+          "text_sha256": "46d8b735ad6059c27eec0a274585431df1a41962aa35cd2d3e1d5d76458f2707"
+        },
+        {
+          "counter": "2",
+          "end_ms": 8000,
+          "line_end": 7,
+          "line_start": 5,
+          "normalized_text_sha256": "153b6ca381aab8825062ae1a73eebc7dd23a4191004acccf1732d4f87f32c01b",
+          "ordinal": 2,
+          "start_ms": 4000,
+          "text": "Keep the north arrow with the map.",
+          "text_sha256": "153b6ca381aab8825062ae1a73eebc7dd23a4191004acccf1732d4f87f32c01b"
+        },
+        {
+          "counter": "3",
+          "end_ms": 12000,
+          "line_end": 11,
+          "line_start": 9,
+          "normalized_text_sha256": "e7fd4fce57f81d6da979ea2ec51a31078d1c22923f34ebca4aa0c5a84e91e2fd",
+          "ordinal": 3,
+          "start_ms": 9000,
+          "text": "This label belongs to the red box.",
+          "text_sha256": "e7fd4fce57f81d6da979ea2ec51a31078d1c22923f34ebca4aa0c5a84e91e2fd"
+        },
+        {
+          "counter": "4",
+          "end_ms": 16000,
+          "line_end": 15,
+          "line_start": 13,
+          "normalized_text_sha256": "81c16df0088348f00111ce20a891c892e04648bac4705baa7ad1dfd1eb804bfd",
+          "ordinal": 4,
+          "start_ms": 13000,
+          "text": "Check the stamp before you sign.",
+          "text_sha256": "81c16df0088348f00111ce20a891c892e04648bac4705baa7ad1dfd1eb804bfd"
+        },
+        {
+          "counter": "5",
+          "end_ms": 18000,
+          "line_end": 19,
+          "line_start": 17,
+          "normalized_text_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da",
+          "ordinal": 5,
+          "start_ms": 17000,
+          "text": "Yes.",
+          "text_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da"
+        },
+        {
+          "counter": "6",
+          "end_ms": 22000,
+          "line_end": 23,
+          "line_start": 21,
+          "normalized_text_sha256": "5eee510d36292afabde5e3ae65453c4c31ff0502e4e9c9edcb6ec3bcd13cc7cd",
+          "ordinal": 6,
+          "start_ms": 19000,
+          "text": "The red box stays on shelf four.",
+          "text_sha256": "5eee510d36292afabde5e3ae65453c4c31ff0502e4e9c9edcb6ec3bcd13cc7cd"
+        },
+        {
+          "counter": "7",
+          "end_ms": 24000,
+          "line_end": 27,
+          "line_start": 25,
+          "normalized_text_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da",
+          "ordinal": 7,
+          "start_ms": 23000,
+          "text": "Yes.",
+          "text_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da"
+        },
+        {
+          "counter": "8",
+          "end_ms": 29000,
+          "line_end": 31,
+          "line_start": 29,
+          "normalized_text_sha256": "53bba5a3aea486568a276d6db812143b2e8a4f592a93bb04297fd7aa7616df08",
+          "ordinal": 8,
+          "start_ms": 25000,
+          "text": "Leave the return note beside the key.",
+          "text_sha256": "53bba5a3aea486568a276d6db812143b2e8a4f592a93bb04297fd7aa7616df08"
+        }
+      ],
+      "role": "before",
+      "sha256": "c4393281b58f572c0f2d2be1e42a33da66a32c0bf6dc3775fd4a915c9e0cbe98"
+    }
+  },
+  "positional_differences": [
+    {
+      "after_ordinal": 2,
+      "before_ordinal": 2,
+      "changed_fields": [
+        "timecodes",
+        "normalized_text"
+      ],
+      "sequence_position": 2
+    },
+    {
+      "after_ordinal": 3,
+      "before_ordinal": 3,
+      "changed_fields": [
+        "timecodes",
+        "normalized_text"
+      ],
+      "sequence_position": 3
+    },
+    {
+      "after_ordinal": 4,
+      "before_ordinal": 4,
+      "changed_fields": [
+        "timecodes",
+        "normalized_text"
+      ],
+      "sequence_position": 4
+    },
+    {
+      "after_ordinal": 5,
+      "before_ordinal": 5,
+      "changed_fields": [
+        "timecodes",
+        "normalized_text"
+      ],
+      "sequence_position": 5
+    },
+    {
+      "after_ordinal": 6,
+      "before_ordinal": 6,
+      "changed_fields": [
+        "timecodes",
+        "normalized_text"
+      ],
+      "sequence_position": 6
+    },
+    {
+      "after_ordinal": 7,
+      "before_ordinal": 7,
+      "changed_fields": [
+        "timecodes",
+        "normalized_text"
+      ],
+      "sequence_position": 7
+    },
+    {
+      "after_ordinal": 8,
+      "before_ordinal": 8,
+      "changed_fields": [
+        "timecodes",
+        "normalized_text"
+      ],
+      "sequence_position": 8
+    },
+    {
+      "after_ordinal": 9,
+      "before_ordinal": null,
+      "changed_fields": [
+        "position_absent_before"
+      ],
+      "sequence_position": 9
+    }
+  ],
+  "reflow_contract": "REVIEW_REQUIRED",
+  "repeated_text_locations": [
+    {
+      "after_ordinals": [
+        6,
+        8
+      ],
+      "before_ordinals": [
+        5,
+        7
+      ],
+      "normalized_text_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da"
+    }
+  ],
+  "review_queue": [
+    {
+      "kind": "structural_change",
+      "next_action": "Review added, removed, split or merged cues against the intended edit; positional pairs are not identities."
+    },
+    {
+      "kind": "changed_sequence_positions",
+      "next_action": "Inspect the corresponding source line spans. Decide whether each change is intentional; this report makes no repairs.",
+      "positions": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "kind": "repeated_text",
+      "next_action": "Resolve repeated-text correspondence manually when investigating changes; no unique cue match is asserted."
+    }
+  ],
+  "schema_version": 1,
+  "tool": "bureau-subtitle-reflow-audit/1",
+  "unassessed": [
+    "media synchronization",
+    "translation/content accuracy",
+    "accessibility compliance",
+    "intentionality of changes",
+    "caption styling/rendering",
+    "overlap/readability policy"
+  ],
+  "unmatched_exact_text_ordinals": {
+    "after": [
+      2,
+      3
+    ],
+    "before": [
+      2
+    ]
+  }
+}

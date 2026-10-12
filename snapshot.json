@@ -722,6 +722,66 @@
       "sha256": "5b001476ff24c990a3bbd3c723c69524f997a94a116114e1e8ecb68ab701259e",
       "source": "Three public Met API records, catalog-page comparisons, one bounded search and museum policy; selected observations and timestamps in sources.json.",
       "change": "Actual dated catalog/image handoff: one available image link, two metadata-only records. No proxy Case, outside customer, acceptance, image copying or legal determination."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/HANDOFF.md",
+      "sha256": "7f5e2a4d0ff6d61281584d279eb100bc887b4b4284a13df201f749e5eed31b0b",
+      "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
+      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/README.md",
+      "sha256": "9e0d8ff446cf9e7d215da39e0d9278be3cfb5f2e1d9970f48a574e7d9666e0c1",
+      "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
+      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/fixtures/before.srt",
+      "sha256": "c4393281b58f572c0f2d2be1e42a33da66a32c0bf6dc3775fd4a915c9e0cbe98",
+      "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
+      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/fixtures/reflow-only.srt",
+      "sha256": "a4bac4613baffd38a1531e081c766440ca423d81a0865c34ef3b419b773e711b",
+      "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
+      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/fixtures/structural-change.srt",
+      "sha256": "352ccd871b69f0db1961ecf6cdfddeccb0c220d40c046508b7fef27ce4478783",
+      "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
+      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/reflow_audit.py",
+      "sha256": "5f5d723da1ef96a519634cbadee69e841110094b13a307ea2f5d083c14df80f1",
+      "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
+      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/reports/reflow-only.json",
+      "sha256": "ae9c89258e48cb447ede3bef1393f8323e4e12aeb9c9969ece04e03501d94b1a",
+      "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
+      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/reports/structural-change.json",
+      "sha256": "d752540f5056487672ac2aec68c8c41493a7ef3f07ff96cf2f5f7dcffa731bf8",
+      "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
+      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/test_reflow_audit.py",
+      "sha256": "2d819ade1e4dae2fd29316f3d429de39a31b89ff70464dfd77d5568c99722e53",
+      "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
+      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/validation.json",
+      "sha256": "85990b43391a9ec9924f96e8f24080c2e40012f54457793964853cee7779f30a",
+      "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
+      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case."
     }
   ],
   "limitations": [
@@ -732,11 +792,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "db63c209fe814862d99188f5ef45d8207cca2d8a",
+    "parent_commit": "b59fd78ce2e7b45faadb3bf45738681bea9ca7b0",
     "date_utc": "2026-10-12",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Add a named stop-work link and author cancellation instructions for the existing API, including permitted states, current version, receipt, exact-operation retries and retained public history. No new endpoint, fixture or live Case operation."
+    "description": "Publish one independently reviewed original subtitle reflow acceptance utility and first deliverable portion, with source-bound reports and optional bounded Cases-only review offer. No customer or live Case claim."
   },
   "public_case_briefs": [
     {

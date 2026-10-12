@@ -1,0 +1,31 @@
+1
+00:00:01,000 --> 00:00:03,000
+The first drawer holds maps.
+
+2
+00:00:04,000 --> 00:00:08,000
+Keep the north arrow with the map.
+
+3
+00:00:09,000 --> 00:00:12,000
+This label belongs to the red box.
+
+4
+00:00:13,000 --> 00:00:16,000
+Check the stamp before you sign.
+
+5
+00:00:17,000 --> 00:00:18,000
+Yes.
+
+6
+00:00:19,000 --> 00:00:22,000
+The red box stays on shelf four.
+
+7
+00:00:23,000 --> 00:00:24,000
+Yes.
+
+8
+00:00:25,000 --> 00:00:29,000
+Leave the return note beside the key.

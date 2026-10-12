@@ -1,0 +1,26 @@
+{
+  "scope": "Original Bureau-authored fixtures; declared reflow-only contract, no media/customer/defect reproduction",
+  "date_utc": "2026-10-12",
+  "source_sha256": "5f5d723da1ef96a519634cbadee69e841110094b13a307ea2f5d083c14df80f1",
+  "lead_targeted_tests": 24,
+  "independent_engineering_review": "PASS, no findings;24supplied and10independent tests",
+  "source_inputs_after_runs": {
+    "fixtures/reflow-only.srt": "a4bac4613baffd38a1531e081c766440ca423d81a0865c34ef3b419b773e711b",
+    "fixtures/structural-change.srt": "352ccd871b69f0db1961ecf6cdfddeccb0c220d40c046508b7fef27ce4478783",
+    "fixtures/before.srt": "c4393281b58f572c0f2d2be1e42a33da66a32c0bf6dc3775fd4a915c9e0cbe98"
+  },
+  "reports": {
+    "reports/reflow-only.json": {
+      "verdict": "PASS",
+      "generate_exit": 0,
+      "fresh_verify_exit": 0,
+      "sha256": "ae9c89258e48cb447ede3bef1393f8323e4e12aeb9c9969ece04e03501d94b1a"
+    },
+    "reports/structural-change.json": {
+      "verdict": "REVIEW_REQUIRED",
+      "generate_exit": 1,
+      "fresh_verify_exit": 1,
+      "sha256": "d752540f5056487672ac2aec68c8c41493a7ef3f07ff96cf2f5f7dcffa731bf8"
+    }
+  }
+}

@@ -13,8 +13,8 @@ checks. The live service remains at
 ## Start here
 
 **Read first:** [inspect the existing context handoffs](#worked-context-handoffs).
-They include dated museum research and clearly labelled edition and timetable
-samples. Reading these files needs no Bureau account or command; preserve each
+They include dated museum research, a subtitle revision check and clearly labelled
+edition and timetable samples. Reading these files needs no Bureau account or command; preserve each
 handoff’s sources, assumptions and stated reuse limits.
 
 1. **Bring work:** [open one Case](reference/self-service.md#open-one-case).
@@ -159,6 +159,13 @@ three actual Met catalog records with source observations and image decisions.
 One supplies an Open Access image link; two retain metadata without image URLs,
 even though they appeared in a `hasImages` search. This is Bureau-owned research,
 with no outside requester or accepted Case result claimed.
+
+The [subtitle reflow check](deliverables/subtitle-reflow/README.md) compares two
+UTF-8 SRT revisions against a wrapping-only expectation. It preserves input
+hashes, flags cue/timing/text changes and supplies a reproducible return report.
+The included dialogue is original Bureau fiction; no customer result is claimed.
+Read the [finished review handoff](deliverables/subtitle-reflow/HANDOFF.md) without
+an account, or run the local check on files you are authorized to process.
 
 ## Optional live reader with the MCP SDK
 
