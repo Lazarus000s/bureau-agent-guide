@@ -1,0 +1,9 @@
+requirement,needed_source,constructed_example,loss_or_ambiguity,later_acceptance_check,evidence_status
+record identity,origin + group/collection + item key,All3 have distinct fictional locators and keys,CSL citation identifiers alone do not establish the same library locator,Retain actual source locator and item key; no title/order matching,NOT_OBSERVED
+item and library version,item version; response version header,Fictional versions1/2/1; no library version,Do not infer library revision from citation text,Capture supplied version fields; missing remains unknown,NOT_OBSERVED
+title/creator/year,bibliographic data,All3 original titles;2person/1organization creator,Citation content may be represented but is not all library metadata,Compare required values with selected original fields,FIXTURE_ONLY
+tags,separate exact labels in item data,Tag counts2/1/0;3distinct labels,CSL-only export is not the selected tag-preserving route,"Keep east, annex as one label; distinguish empty from absent",FIXTURE_ONLY
+formatted reference,include=bib result,3constructed text illustrations; no renderer output,Citation data is not itself a rendered reference,Check actual output and chosen style/locale separately,NOT_RENDERED
+page coverage,Total-Results; unique keys; next link,Fixture has3records; no response headers,An export filename does not establish complete coverage,Mark page partial/unknown unless bounded scope coverage is established,NOT_OBSERVED
+source evidence,permitted raw response + SHA256 + retrieved time,Only original fixture files have actual byte hashes,A transformed subset cannot prove preservation of omitted fields,Pin source before transformation and state permitted reuse,PLANNED
+attachments/notes/document links,outside this handoff contract,"No files, notes or live word-processor links",Citation-oriented export is not a complete library backup,Do not promise preservation or recovery of excluded material,EXCLUDED

@@ -1,0 +1,42 @@
+{
+  "schema": "bureau.bibliography-request-blueprint.v1",
+  "status": "NOT_EXECUTED",
+  "purpose": "One bounded public collection page with editable bibliographic data/tags plus one formatted reference per item.",
+  "method": "GET",
+  "origin": "https://api.zotero.org",
+  "path_template": "/groups/{authorized_public_group_id}/collections/{collection_key}/items/top",
+  "headers": {
+    "Zotero-API-Version": "3"
+  },
+  "query": {
+    "format": "json",
+    "include": "data,bib",
+    "style": "apa",
+    "locale": "en-US",
+    "linkwrap": "0",
+    "limit": "3",
+    "sort": "title",
+    "direction": "asc"
+  },
+  "unfilled": [
+    "authorized_public_group_id",
+    "collection_key"
+  ],
+  "permission": "A later operator must choose the authorized public collection and confirm intended use. This file makes no request and grants no access. Do not substitute the fictional keys as a real library.",
+  "capture_plan": {
+    "identity": "Preserve exact origin, group/collection locator and each returned item key; do not join solely by title or output order.",
+    "version": "Record actual retrieval time, API version, Last-Modified-Version if supplied and item versions if supplied; keep unknown values explicit.",
+    "source": "Retain permitted raw response bytes and SHA256 in the operator workspace before deriving output.",
+    "required_fields": "Confirm actual data, tags and bibliographic-output locations in the returned structure; this blueprint does not assert a tested response schema.",
+    "completeness": "This request is limited to3items. Record Total-Results, returned unique item count and any rel=next link. Unknown/missing/disagreeing coverage is incomplete or unassessed; do not silently fetch another page.",
+    "rendering": "Returned bibliographic markup needs a separate safe rendering decision; linkwrap=0 is not a sanitizer."
+  },
+  "stop": "On unauthorized/private scope, unexpected structure, missing required data, error, backoff or uncertain result, preserve the limitation and stop. No automatic retry, pagination, upload or alternate integration.",
+  "not_provided": [
+    "whole-library backup",
+    "live acquisition",
+    "citation rendering verification",
+    "ongoing sync",
+    "customer-specific conversion"
+  ]
+}

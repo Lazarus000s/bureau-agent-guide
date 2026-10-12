@@ -1,0 +1,23 @@
+{
+  "observed_at": "2026-10-12T13:04:49.800Z",
+  "sources": [
+    {
+      "url": "https://forums.zotero.org/discussion/114048/tags-export-in-json",
+      "role": "Historical real workflow question, April-May2024: collection-to-website tags and bibliography. Answered with native API/full-data alternatives; no current customer or unresolved defect inferred."
+    },
+    {
+      "url": "https://www.zotero.org/support/dev/web_api/v3/basics",
+      "role": "Current request contract; page last updated2026-07-29. APIv3, format=json/include=data,bib, selected query fields, version and page metadata. Documentation observed; request not executed."
+    },
+    {
+      "url": "https://www.zotero.org/support/kb/exporting",
+      "role": "Export preservation limits; page last updated2025-11-24. An export is not a complete backup or a replacement for library transfer/sync."
+    },
+    {
+      "url": "https://github.com/citation-style-language/schema",
+      "role": "Citation-input model purpose; not authority to add library tag arrays to CSL objects."
+    }
+  ],
+  "source_revision_limit": "Dated public documentation observations, not immutable upstream source snapshots or tested live responses.",
+  "original_material": "records.json and constructed text are authored for this Bureau handoff. No forum participant data, attachments, library or customer task was processed."
+}

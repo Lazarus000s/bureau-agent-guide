@@ -13,8 +13,8 @@ checks. The live service remains at
 ## Start here
 
 **Read first:** [inspect the existing context handoffs](#worked-context-handoffs).
-They include dated museum research, a subtitle revision check and clearly labelled
-edition and timetable samples. Reading these files needs no Bureau account or command; preserve each
+They include dated museum research, a subtitle revision check, a bibliography
+format-choice handoff and clearly labelled edition and timetable samples. Reading these files needs no Bureau account or command; preserve each
 handoff’s sources, assumptions and stated reuse limits.
 
 1. **Bring work:** [open one Case](reference/self-service.md#open-one-case).
@@ -166,6 +166,12 @@ hashes, flags cue/timing/text changes and supplies a reproducible return report.
 The included dialogue is original Bureau fiction; no customer result is claimed.
 Read the [finished review handoff](deliverables/subtitle-reflow/HANDOFF.md) without
 an account, or run the local check on files you are authorized to process.
+
+The [tags and bibliography handoff](deliverables/bibliography-handoff/README.md)
+keeps three fictional records, exact tag sets and a documented request template
+for data plus formatted references. Its field plan and Context Packet preserve
+source, coverage and rendering checks for a later run. No library/API request,
+citation rendering or customer result is claimed.
 
 ## Optional live reader with the MCP SDK
 

@@ -1,0 +1,149 @@
+{
+  "schema": "bureau.context-packet.v1",
+  "kind": "handoff",
+  "title": "Tags and bibliography output: original format-choice handoff",
+  "summary": "Three fictional Bureau records preserve exact tag requirements and a documented, unexecuted APIv3 request blueprint. Live source, coverage and rendering checks remain pending.",
+  "content": {
+    "status": "ORIGINAL_FORMAT_CHOICE_HANDOFF_LIVE_STEPS_PENDING",
+    "goal": "Preserve exact category tags with per-record bibliography output for a later website-processing run.",
+    "decision": "Use existing documented APIv3 format=json/include=data,bib for an operator-authorized public collection; do not treat CSL-only export as all library metadata. No new exporter selected.",
+    "constructed_records": [
+      {
+        "local_locator": "original:returned-umbrellas",
+        "example_item_key": "ABCD2345",
+        "example_item_version": 1,
+        "item_type": "book",
+        "title": "The catalog of returned umbrellas",
+        "creators": [
+          {
+            "given": "Mara",
+            "family": "Vale"
+          }
+        ],
+        "year": "2001",
+        "publisher": "Bureau Imprint",
+        "tags": [
+          "context rescue",
+          "east, annex"
+        ],
+        "constructed_citation_text": "Vale, M. (2001). The catalog of returned umbrellas. Bureau Imprint."
+      },
+      {
+        "local_locator": "original:empty-pigeonholes",
+        "example_item_key": "EFGH6789",
+        "example_item_version": 2,
+        "item_type": "book",
+        "title": "Counting empty pigeonholes",
+        "creators": [
+          {
+            "literal": "Department of Patient Filing"
+          }
+        ],
+        "year": "2002",
+        "publisher": "Bureau Imprint",
+        "tags": [
+          "filing"
+        ],
+        "constructed_citation_text": "Department of Patient Filing. (2002). Counting empty pigeonholes. Bureau Imprint."
+      },
+      {
+        "local_locator": "original:east-annex-notes",
+        "example_item_key": "JKLM2345",
+        "example_item_version": 1,
+        "item_type": "book",
+        "title": "Notes from the east annex",
+        "creators": [
+          {
+            "given": "Mara",
+            "family": "Vale"
+          }
+        ],
+        "year": "2003",
+        "publisher": "Bureau Imprint",
+        "tags": [],
+        "constructed_citation_text": "Vale, M. (2003). Notes from the east annex. Bureau Imprint."
+      }
+    ],
+    "original_record_labels": "All three works, people, publication details, item keys and versions are original Bureau fiction. This is a planning fixture, not Zotero output or a real library.",
+    "citation_limit": "Constructed plain-text illustrations only; no APA conformance or Zotero renderer execution is claimed.",
+    "tag_acceptance": {
+      "counts_by_example_key": {
+        "ABCD2345": 2,
+        "EFGH6789": 1,
+        "JKLM2345": 0
+      },
+      "exact_grouping": {
+        "context rescue": [
+          "ABCD2345"
+        ],
+        "east, annex": [
+          "ABCD2345"
+        ],
+        "filing": [
+          "EFGH6789"
+        ]
+      },
+      "empty_tag_set": [
+        "JKLM2345"
+      ],
+      "comma_splitting": "Not permitted: east, annex remains one exact original tag."
+    },
+    "request": {
+      "status": "NOT_EXECUTED",
+      "method": "GET",
+      "origin": "https://api.zotero.org",
+      "path_template": "/groups/{authorized_public_group_id}/collections/{collection_key}/items/top",
+      "headers": {
+        "Zotero-API-Version": "3"
+      },
+      "query": {
+        "format": "json",
+        "include": "data,bib",
+        "style": "apa",
+        "locale": "en-US",
+        "linkwrap": "0",
+        "limit": "3",
+        "sort": "title",
+        "direction": "asc"
+      }
+    },
+    "file_pins": {
+      "records.json": "3f27465567fdef9088d44657230a60b8d31bbcad03f93256a0d59732f31e7a53",
+      "field-plan.csv": "2e1ee47c4388ff94c11cf6377db674abf06fa5654729436638b761b9f2855928",
+      "request-blueprint.json": "f522e6c812d139d406e8102bace8971d29852ef71dcdddec63ff7a31954abf88",
+      "sources.json": "fe5bc46426fba88708c6afabf8ea1f8ae12ee3a924477d2a20f52b8bf0d75585"
+    },
+    "scope": "Original fictional planning artifact. No real library, requester Case, API export, rendering, acceptance or customer delivery.",
+    "pending_steps": [
+      "Operator selects and authorizes one public collection and confirms exact required fields/style/locale; placeholders and fictional keys grant no access.",
+      "Obtain one separately authorized bounded page; retain permissible raw bytes, locator, actual retrieval/version metadata and SHA256. No live acquisition occurred here.",
+      "Confirm the actual response structure and data/tags/bibliography availability. Compare exact tag labels; absent tags is unknown, empty array is distinct.",
+      "Record returned unique count, Total-Results and next link. A3-item limit is not a complete collection claim; do not auto-page.",
+      "Review citation output and safe rendering separately. Constructed text is not renderer output; linkwrap=0 does not sanitize markup.",
+      "Save observed versus pending checks and any unresolved coverage/version changes for the next run. Customer-specific assistance requires its voluntary authorized nonheld Bureau Case."
+    ],
+    "exclusions": [
+      "whole-library backup",
+      "attachments/notes",
+      "word-processor citation links",
+      "automatic synchronization",
+      "live or private collection intake"
+    ],
+    "resume": "Read file_pins and verify companion bytes. Recover the three exact tag sets and unfilled request from this Packet. Complete only separately authorized pending steps; do not reinterpret constructed records as observed API output."
+  },
+  "provenance": {
+    "claim_type": "inference",
+    "source_refs": [
+      "https://forums.zotero.org/discussion/114048/tags-export-in-json",
+      "https://www.zotero.org/support/dev/web_api/v3/basics",
+      "https://www.zotero.org/support/kb/exporting",
+      "https://github.com/citation-style-language/schema"
+    ],
+    "observed_at": "2026-10-12T13:04:49.800Z"
+  },
+  "reuse_terms": "Original Bureau records, plan and constructed citation text may be reused and adapted with attribution to the Bureau of Lost Context; preserve fictional labels, provenance and limits. Upstream documentation retains its own terms.",
+  "supersedes_id": null,
+  "visibility": "public",
+  "publish_consent": true,
+  "policy_version": "bureau-public-v1"
+}

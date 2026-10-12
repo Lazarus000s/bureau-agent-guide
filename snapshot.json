@@ -817,6 +817,42 @@
       "sha256": "3b936023c1175a0ae461a0edf8b8f454ff73646a63e6a9a6f33c32fb146a315b",
       "source": "Original Bureau four-cue excerpt and actual official SeConv5.2.0 balance-lines export, October12; source/version/arguments and local acceptance evidence retained.",
       "change": "Versioned editor-export interoperability and offline return evidence. No customer, media assessment, current-issue reproduction or live Case."
+    },
+    {
+      "path": "deliverables/bibliography-handoff/README.md",
+      "sha256": "cda71ed77313ec6c182b0608f30444f7bc96f3688076f3d16b7edf6e5531ab65",
+      "source": "Original three-record Bureau fiction and dated primary format documentation, October12. No real library/API or citation renderer execution.",
+      "change": "Preserve exact tags, locators, required fields and unperformed source/coverage/rendering steps in a compact return handoff."
+    },
+    {
+      "path": "deliverables/bibliography-handoff/field-plan.csv",
+      "sha256": "2e1ee47c4388ff94c11cf6377db674abf06fa5654729436638b761b9f2855928",
+      "source": "Original three-record Bureau fiction and dated primary format documentation, October12. No real library/API or citation renderer execution.",
+      "change": "Preserve exact tags, locators, required fields and unperformed source/coverage/rendering steps in a compact return handoff."
+    },
+    {
+      "path": "deliverables/bibliography-handoff/handoff-packet.json",
+      "sha256": "49ea49e5823ecfd29d75471564f586b1f5f1a6a21e1bacfb60f3502d3e752ddb",
+      "source": "Original three-record Bureau fiction and dated primary format documentation, October12. No real library/API or citation renderer execution.",
+      "change": "Preserve exact tags, locators, required fields and unperformed source/coverage/rendering steps in a compact return handoff."
+    },
+    {
+      "path": "deliverables/bibliography-handoff/records.json",
+      "sha256": "3f27465567fdef9088d44657230a60b8d31bbcad03f93256a0d59732f31e7a53",
+      "source": "Original three-record Bureau fiction and dated primary format documentation, October12. No real library/API or citation renderer execution.",
+      "change": "Preserve exact tags, locators, required fields and unperformed source/coverage/rendering steps in a compact return handoff."
+    },
+    {
+      "path": "deliverables/bibliography-handoff/request-blueprint.json",
+      "sha256": "f522e6c812d139d406e8102bace8971d29852ef71dcdddec63ff7a31954abf88",
+      "source": "Original three-record Bureau fiction and dated primary format documentation, October12. No real library/API or citation renderer execution.",
+      "change": "Preserve exact tags, locators, required fields and unperformed source/coverage/rendering steps in a compact return handoff."
+    },
+    {
+      "path": "deliverables/bibliography-handoff/sources.json",
+      "sha256": "fe5bc46426fba88708c6afabf8ea1f8ae12ee3a924477d2a20f52b8bf0d75585",
+      "source": "Original three-record Bureau fiction and dated primary format documentation, October12. No real library/API or citation renderer execution.",
+      "change": "Preserve exact tags, locators, required fields and unperformed source/coverage/rendering steps in a compact return handoff."
     }
   ],
   "limitations": [
@@ -827,11 +863,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "41d9a2dc16fcc5f7b22c7ed4a488976c1c487604",
+    "parent_commit": "2fd10e04888e873a006736f1dbc2616f84522c97",
     "date_utc": "2026-10-12",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Add one actual SeConv5.2.0 four-cue export and source/version-bound acceptance handoff. Existing checker, original fixtures, Case offer and application unchanged."
+    "description": "Add one original bibliography tags-plus-citation format-choice handoff with an unexecuted native request blueprint and recovery Packet. No new exporter, live library or customer work."
   },
   "public_case_briefs": [
     {
