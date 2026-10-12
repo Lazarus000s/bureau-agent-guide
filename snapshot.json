@@ -853,6 +853,42 @@
       "sha256": "fe5bc46426fba88708c6afabf8ea1f8ae12ee3a924477d2a20f52b8bf0d75585",
       "source": "Original three-record Bureau fiction and dated primary format documentation, October12. No real library/API or citation renderer execution.",
       "change": "Preserve exact tags, locators, required fields and unperformed source/coverage/rendering steps in a compact return handoff."
+    },
+    {
+      "path": "deliverables/catalogue-handoff/README.md",
+      "sha256": "9a2946bad409651426aa11be42671272f3005a63c90455721610a98d76019a5a",
+      "source": "Original four-row Bureau catalogue; one XlsxWriter3.2.9 native generation on October12 and independent standard-library stored-cell inspection.",
+      "change": "Preserve exact text identifiers, source format, output hashes and the unperformed Excel UI/recipient checks."
+    },
+    {
+      "path": "deliverables/catalogue-handoff/catalogue.psv",
+      "sha256": "a620a28826736f41d38343aa3f1dfc525bdc719963339ff4764c804df2df1fce",
+      "source": "Original four-row Bureau catalogue; one XlsxWriter3.2.9 native generation on October12 and independent standard-library stored-cell inspection.",
+      "change": "Preserve exact text identifiers, source format, output hashes and the unperformed Excel UI/recipient checks."
+    },
+    {
+      "path": "deliverables/catalogue-handoff/catalogue.xlsx",
+      "sha256": "db1100c1f47046d6df70528c9b450d10a05615aeb8f203a40bb34e62669d6961",
+      "source": "Original four-row Bureau catalogue; one XlsxWriter3.2.9 native generation on October12 and independent standard-library stored-cell inspection.",
+      "change": "Preserve exact text identifiers, source format, output hashes and the unperformed Excel UI/recipient checks."
+    },
+    {
+      "path": "deliverables/catalogue-handoff/representation-plan.json",
+      "sha256": "ff6d54df994a48234b74d534ea41ac088c72f99cbc805581686adfd24195a018",
+      "source": "Original four-row Bureau catalogue; one XlsxWriter3.2.9 native generation on October12 and independent standard-library stored-cell inspection.",
+      "change": "Preserve exact text identifiers, source format, output hashes and the unperformed Excel UI/recipient checks."
+    },
+    {
+      "path": "deliverables/catalogue-handoff/generation-receipt.json",
+      "sha256": "fe242280382e4df18d1dbbe9ed9cb702d1c4b2a22009e3abc9461c493535c35d",
+      "source": "Original four-row Bureau catalogue; one XlsxWriter3.2.9 native generation on October12 and independent standard-library stored-cell inspection.",
+      "change": "Preserve exact text identifiers, source format, output hashes and the unperformed Excel UI/recipient checks."
+    },
+    {
+      "path": "deliverables/catalogue-handoff/inspection.json",
+      "sha256": "c19b8debf4533e21892a5740945849bc6f6b7f46153c2f9d73f0ff7be517a0e8",
+      "source": "Original four-row Bureau catalogue; one XlsxWriter3.2.9 native generation on October12 and independent standard-library stored-cell inspection.",
+      "change": "Preserve exact text identifiers, source format, output hashes and the unperformed Excel UI/recipient checks."
     }
   ],
   "limitations": [
@@ -863,11 +899,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "2fd10e04888e873a006736f1dbc2616f84522c97",
+    "parent_commit": "73ac51108075838ab9180ccd2f34f11bc5cee4eb",
     "date_utc": "2026-10-12",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Add one original bibliography tags-plus-citation format-choice handoff with an unexecuted native request blueprint and recovery Packet. No new exporter, live library or customer work."
+    "description": "Add one original four-row identifier-as-text catalogue, native XLSX and actual stored-cell inspection. No general converter, Excel UI trial or customer data."
   },
   "public_case_briefs": [
     {

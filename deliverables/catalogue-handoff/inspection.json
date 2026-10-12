@@ -1,0 +1,151 @@
+{
+  "checked_utc": "2026-10-12T14:03:23.309189+00:00",
+  "status": "RAW_VALUES_AND_STRING_TYPES_VERIFIED",
+  "source_sha256": "a620a28826736f41d38343aa3f1dfc525bdc719963339ff4764c804df2df1fce",
+  "xlsx_sha256": "db1100c1f47046d6df70528c9b450d10a05615aeb8f203a40bb34e62669d6961",
+  "source_data_rows": 4,
+  "catalogue_cells_checked": 15,
+  "body_cells_with_text_format": 12,
+  "zip_members": 11,
+  "formula_macro_external_connection_parts_found": false,
+  "cells": [
+    {
+      "cell": "A1",
+      "stored_type": "s",
+      "value": "catalogue_id",
+      "exact_source_match": true,
+      "body_text_format": null,
+      "numFmtId": "0",
+      "resolved_format_code": null
+    },
+    {
+      "cell": "B1",
+      "stored_type": "s",
+      "value": "location_code",
+      "exact_source_match": true,
+      "body_text_format": null,
+      "numFmtId": "0",
+      "resolved_format_code": null
+    },
+    {
+      "cell": "C1",
+      "stored_type": "s",
+      "value": "description",
+      "exact_source_match": true,
+      "body_text_format": null,
+      "numFmtId": "0",
+      "resolved_format_code": null
+    },
+    {
+      "cell": "A2",
+      "stored_type": "s",
+      "value": "000042",
+      "exact_source_match": true,
+      "body_text_format": true,
+      "numFmtId": "164",
+      "resolved_format_code": "@"
+    },
+    {
+      "cell": "B2",
+      "stored_type": "s",
+      "value": "01",
+      "exact_source_match": true,
+      "body_text_format": true,
+      "numFmtId": "164",
+      "resolved_format_code": "@"
+    },
+    {
+      "cell": "C2",
+      "stored_type": "s",
+      "value": "North drawer divider",
+      "exact_source_match": true,
+      "body_text_format": true,
+      "numFmtId": "164",
+      "resolved_format_code": "@"
+    },
+    {
+      "cell": "A3",
+      "stored_type": "s",
+      "value": "987654321012345678",
+      "exact_source_match": true,
+      "body_text_format": true,
+      "numFmtId": "164",
+      "resolved_format_code": "@"
+    },
+    {
+      "cell": "B3",
+      "stored_type": "s",
+      "value": "02",
+      "exact_source_match": true,
+      "body_text_format": true,
+      "numFmtId": "164",
+      "resolved_format_code": "@"
+    },
+    {
+      "cell": "C3",
+      "stored_type": "s",
+      "value": "Folded map sleeve",
+      "exact_source_match": true,
+      "body_text_format": true,
+      "numFmtId": "164",
+      "resolved_format_code": "@"
+    },
+    {
+      "cell": "A4",
+      "stored_type": "s",
+      "value": "00123E04",
+      "exact_source_match": true,
+      "body_text_format": true,
+      "numFmtId": "164",
+      "resolved_format_code": "@"
+    },
+    {
+      "cell": "B4",
+      "stored_type": "s",
+      "value": "03",
+      "exact_source_match": true,
+      "body_text_format": true,
+      "numFmtId": "164",
+      "resolved_format_code": "@"
+    },
+    {
+      "cell": "C4",
+      "stored_type": "s",
+      "value": "Blue index ribbon",
+      "exact_source_match": true,
+      "body_text_format": true,
+      "numFmtId": "164",
+      "resolved_format_code": "@"
+    },
+    {
+      "cell": "A5",
+      "stored_type": "s",
+      "value": "03-04",
+      "exact_source_match": true,
+      "body_text_format": true,
+      "numFmtId": "164",
+      "resolved_format_code": "@"
+    },
+    {
+      "cell": "B5",
+      "stored_type": "s",
+      "value": "04",
+      "exact_source_match": true,
+      "body_text_format": true,
+      "numFmtId": "164",
+      "resolved_format_code": "@"
+    },
+    {
+      "cell": "C5",
+      "stored_type": "s",
+      "value": "Folio — ivory",
+      "exact_source_match": true,
+      "body_text_format": true,
+      "numFmtId": "164",
+      "resolved_format_code": "@"
+    }
+  ],
+  "method": "Python standard-library ZIP/XML inspection; writer package not imported",
+  "excel_ui_or_rendering_run": false,
+  "whole_ooxml_conformance_audit": false
+}

@@ -14,7 +14,7 @@ checks. The live service remains at
 
 **Read first:** [inspect the existing context handoffs](#worked-context-handoffs).
 They include dated museum research, a subtitle revision check, a bibliography
-format-choice handoff and clearly labelled edition and timetable samples. Reading these files needs no Bureau account or command; preserve each
+format-choice handoff, a typed catalogue and clearly labelled edition and timetable samples. Reading these files needs no Bureau account or command; preserve each
 handoff’s sources, assumptions and stated reuse limits.
 
 1. **Bring work:** [open one Case](reference/self-service.md#open-one-case).
@@ -172,6 +172,12 @@ keeps three fictional records, exact tag sets and a documented request template
 for data plus formatted references. Its field plan and Context Packet preserve
 source, coverage and rendering checks for a later run. No library/API request,
 citation rendering or customer result is claimed.
+
+The [catalogue identifier handoff](deliverables/catalogue-handoff/README.md)
+keeps four original fictional rows as string cells in a native XLSX workbook.
+Its pipe-separated source, representation plan and stored-cell receipt preserve
+exact values and text formats. All 15 Catalogue cells matched the source; no Excel
+UI roundtrip, customer result or outside adoption is claimed.
 
 ## Optional live reader with the MCP SDK
 

@@ -1,0 +1,38 @@
+{
+  "schema": "bureau.original-catalogue-plan.v1",
+  "original_fictional_data": true,
+  "source_file": "catalogue.psv",
+  "source_sha256": "a620a28826736f41d38343aa3f1dfc525bdc719963339ff4764c804df2df1fce",
+  "encoding": "UTF-8",
+  "delimiter": "|",
+  "quote_character": "\"",
+  "line_endings": "CRLF",
+  "header": [
+    "catalogue_id",
+    "location_code",
+    "description"
+  ],
+  "row_count": 4,
+  "fields": [
+    {
+      "name": "catalogue_id",
+      "semantic_type": "text",
+      "workbook_storage": "string",
+      "numeric_coercion_allowed": false
+    },
+    {
+      "name": "location_code",
+      "semantic_type": "text",
+      "workbook_storage": "string",
+      "numeric_coercion_allowed": false
+    },
+    {
+      "name": "description",
+      "semantic_type": "text",
+      "workbook_storage": "string",
+      "numeric_coercion_allowed": false
+    }
+  ],
+  "acceptance": "Exact equality of source fields and Catalogue worksheet cells, in order; string types and text format for body cells. No Excel UI claim.",
+  "recovery": "Retain raw source; do not infer missing digits from already altered values."
+}

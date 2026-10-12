@@ -1,0 +1,29 @@
+{
+  "generated_utc": "2026-10-12T14:02:04.016258+00:00",
+  "status": "NATIVE_XLSX_WRITTEN_INDEPENDENT_INSPECTION_PENDING",
+  "original_fictional_data": true,
+  "source": {
+    "file": "catalogue.psv",
+    "bytes": 170,
+    "sha256": "a620a28826736f41d38343aa3f1dfc525bdc719963339ff4764c804df2df1fce",
+    "encoding": "UTF-8",
+    "delimiter": "|",
+    "line_endings": "CRLF"
+  },
+  "output": {
+    "file": "catalogue.xlsx",
+    "bytes": 7095,
+    "sha256": "db1100c1f47046d6df70528c9b450d10a05615aeb8f203a40bb34e62669d6961"
+  },
+  "writer": {
+    "name": "XlsxWriter",
+    "version": "3.2.9",
+    "wheel_sha256": "9a5db42bc5dff014806c58a20b9eae7322a134abb6fce3c92c181bfb275ec5b3",
+    "cell_method": "write_string"
+  },
+  "catalogue_rows": 4,
+  "catalogue_columns": 3,
+  "expected_catalogue_string_cells_including_header": 15,
+  "excel_ui_or_rendering_run": false,
+  "customer_data_or_delivery": false
+}
