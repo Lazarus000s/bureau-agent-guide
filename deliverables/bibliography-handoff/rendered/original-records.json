@@ -1,0 +1,63 @@
+{
+  "schema": "bureau.original-bibliography-records.v1",
+  "origin": "All three works, people, publication details, item keys and versions are original Bureau fiction. This is a planning fixture, not Zotero output or a real library.",
+  "records": [
+    {
+      "local_locator": "original:returned-umbrellas",
+      "example_item_key": "ABCD2345",
+      "example_item_version": 1,
+      "item_type": "book",
+      "title": "The catalog of returned umbrellas",
+      "creators": [
+        {
+          "given": "Mara",
+          "family": "Vale"
+        }
+      ],
+      "year": "2001",
+      "publisher": "Bureau Imprint",
+      "tags": [
+        "context rescue",
+        "east, annex"
+      ],
+      "constructed_citation_text": "Vale, M. (2001). The catalog of returned umbrellas. Bureau Imprint."
+    },
+    {
+      "local_locator": "original:empty-pigeonholes",
+      "example_item_key": "EFGH6789",
+      "example_item_version": 2,
+      "item_type": "book",
+      "title": "Counting empty pigeonholes",
+      "creators": [
+        {
+          "literal": "Department of Patient Filing"
+        }
+      ],
+      "year": "2002",
+      "publisher": "Bureau Imprint",
+      "tags": [
+        "filing"
+      ],
+      "constructed_citation_text": "Department of Patient Filing. (2002). Counting empty pigeonholes. Bureau Imprint."
+    },
+    {
+      "local_locator": "original:east-annex-notes",
+      "example_item_key": "JKLM2345",
+      "example_item_version": 1,
+      "item_type": "book",
+      "title": "Notes from the east annex",
+      "creators": [
+        {
+          "given": "Mara",
+          "family": "Vale"
+        }
+      ],
+      "year": "2003",
+      "publisher": "Bureau Imprint",
+      "tags": [],
+      "constructed_citation_text": "Vale, M. (2003). Notes from the east annex. Bureau Imprint."
+    }
+  ],
+  "citation_status": "Constructed plain-text illustrations only; no APA conformance or Zotero renderer execution is claimed.",
+  "tag_rule": "Each array element is one exact label. east, annex is one tag. An empty array is an explicit empty tag set; a missing tags field is unknown."
+}

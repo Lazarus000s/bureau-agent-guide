@@ -1,0 +1,29 @@
+[
+  {
+    "maxoffset": 0,
+    "entryspacing": 0,
+    "linespacing": 2,
+    "second-field-align": false,
+    "entry_ids": [
+      [
+        "original:empty-pigeonholes"
+      ],
+      [
+        "original:returned-umbrellas"
+      ],
+      [
+        "original:east-annex-notes"
+      ]
+    ],
+    "bibliography_errors": [],
+    "done": false,
+    "hangingindent": true,
+    "bibstart": "",
+    "bibend": ""
+  },
+  [
+    "Department of Patient Filing. (2002). Counting empty pigeonholes. Bureau Imprint.\n",
+    "Vale, M. (2001). The catalog of returned umbrellas. Bureau Imprint.\n",
+    "Vale, M. (2003). Notes from the east annex. Bureau Imprint.\n"
+  ]
+]

@@ -828,38 +828,39 @@
     },
     {
       "path": "deliverables/bibliography-handoff/README.md",
-      "sha256": "cda71ed77313ec6c182b0608f30444f7bc96f3688076f3d16b7edf6e5531ab65",
-      "source": "Original three-record Bureau fiction and dated primary format documentation, October12. No real library/API or citation renderer execution.",
-      "change": "Preserve exact tags, locators, required fields and unperformed source/coverage/rendering steps in a compact return handoff."
+      "sha256": "5e46218ac1049aa91cef12d2285ee16b6d590f92d6c69b67c142c77f9e668b7c",
+      "source": "Same three original Bureau fictional records, one observed local citeproc-js rendering and independent saved-file return on October12; no live Zotero library or Zotero API request.",
+      "change": "Expose actual ID/tag-bound plain-text result and exact saved-file integrity return; preserve original planning Packet and real-library pending steps.",
+      "bytes": 4587
     },
     {
       "path": "deliverables/bibliography-handoff/field-plan.csv",
       "sha256": "2e1ee47c4388ff94c11cf6377db674abf06fa5654729436638b761b9f2855928",
-      "source": "Original three-record Bureau fiction and dated primary format documentation, October12. No real library/API or citation renderer execution.",
+      "source": "Historical original three-record planning artifact and dated primary format documentation, October12, created before the later local render. Its bytes remain unchanged; no real library/API request.",
       "change": "Preserve exact tags, locators, required fields and unperformed source/coverage/rendering steps in a compact return handoff."
     },
     {
       "path": "deliverables/bibliography-handoff/handoff-packet.json",
       "sha256": "49ea49e5823ecfd29d75471564f586b1f5f1a6a21e1bacfb60f3502d3e752ddb",
-      "source": "Original three-record Bureau fiction and dated primary format documentation, October12. No real library/API or citation renderer execution.",
+      "source": "Historical original three-record planning artifact and dated primary format documentation, October12, created before the later local render. Its bytes remain unchanged; no real library/API request.",
       "change": "Preserve exact tags, locators, required fields and unperformed source/coverage/rendering steps in a compact return handoff."
     },
     {
       "path": "deliverables/bibliography-handoff/records.json",
       "sha256": "3f27465567fdef9088d44657230a60b8d31bbcad03f93256a0d59732f31e7a53",
-      "source": "Original three-record Bureau fiction and dated primary format documentation, October12. No real library/API or citation renderer execution.",
+      "source": "Historical original three-record planning artifact and dated primary format documentation, October12, created before the later local render. Its bytes remain unchanged; no real library/API request.",
       "change": "Preserve exact tags, locators, required fields and unperformed source/coverage/rendering steps in a compact return handoff."
     },
     {
       "path": "deliverables/bibliography-handoff/request-blueprint.json",
       "sha256": "f522e6c812d139d406e8102bace8971d29852ef71dcdddec63ff7a31954abf88",
-      "source": "Original three-record Bureau fiction and dated primary format documentation, October12. No real library/API or citation renderer execution.",
+      "source": "Historical original three-record planning artifact and dated primary format documentation, October12, created before the later local render. Its bytes remain unchanged; no real library/API request.",
       "change": "Preserve exact tags, locators, required fields and unperformed source/coverage/rendering steps in a compact return handoff."
     },
     {
       "path": "deliverables/bibliography-handoff/sources.json",
       "sha256": "fe5bc46426fba88708c6afabf8ea1f8ae12ee3a924477d2a20f52b8bf0d75585",
-      "source": "Original three-record Bureau fiction and dated primary format documentation, October12. No real library/API or citation renderer execution.",
+      "source": "Historical original three-record planning artifact and dated primary format documentation, October12, created before the later local render. Its bytes remain unchanged; no real library/API request.",
       "change": "Preserve exact tags, locators, required fields and unperformed source/coverage/rendering steps in a compact return handoff."
     },
     {
@@ -923,6 +924,62 @@
       "bytes": 2935,
       "source": "Original Bureau four-cue SeConv5.2.0 demonstration, retained source/export/report and independent local cold return; original editor execution unchanged.",
       "change": "Portable exact-byte result component and actual verification observation; no customer material, binary, new tool or Case."
+    },
+    {
+      "path": "deliverables/bibliography-handoff/rendered/actual-bibliography.txt",
+      "sha256": "0ec9082481a2e3fa40e4013cf916648df08987947bf648f7bc9695e6540bbdab",
+      "bytes": 210,
+      "source": "Original Bureau fiction; observed local render at2026-10-12T22:33:55.983886UTC and independent saved-file association verification at22:41:20.413742UTC.",
+      "change": "Finite actual text/identity/tag result with source pins and copy/hash/association return; no native recomputation or live library/customer claim."
+    },
+    {
+      "path": "deliverables/bibliography-handoff/rendered/inert-view.html",
+      "sha256": "3ba9e94e408acca68bf557c846930cd15dfa969bd8cd86e912ded246e643fc62",
+      "bytes": 1041,
+      "source": "Original Bureau fiction; observed local render at2026-10-12T22:33:55.983886UTC and independent saved-file association verification at22:41:20.413742UTC.",
+      "change": "Finite actual text/identity/tag result with source pins and copy/hash/association return; no native recomputation or live library/customer claim."
+    },
+    {
+      "path": "deliverables/bibliography-handoff/rendered/manifest.json",
+      "sha256": "c7c10701f3b609a35fdd04c5fec1102ccb597b3be07e72489835bf8a23f5da40",
+      "bytes": 981,
+      "source": "Original Bureau fiction; observed local render at2026-10-12T22:33:55.983886UTC and independent saved-file association verification at22:41:20.413742UTC.",
+      "change": "Finite actual text/identity/tag result with source pins and copy/hash/association return; no native recomputation or live library/customer claim."
+    },
+    {
+      "path": "deliverables/bibliography-handoff/rendered/original-records.json",
+      "sha256": "3f27465567fdef9088d44657230a60b8d31bbcad03f93256a0d59732f31e7a53",
+      "bytes": 2111,
+      "source": "Original Bureau fiction; observed local render at2026-10-12T22:33:55.983886UTC and independent saved-file association verification at22:41:20.413742UTC.",
+      "change": "Finite actual text/identity/tag result with source pins and copy/hash/association return; no native recomputation or live library/customer claim."
+    },
+    {
+      "path": "deliverables/bibliography-handoff/rendered/processor-bibliography.json",
+      "sha256": "3f467d60104a2f06c8aa65b79c5ff785ce0b34e76dd0b61b23a41e3609c8a6e2",
+      "bytes": 656,
+      "source": "Original Bureau fiction; observed local render at2026-10-12T22:33:55.983886UTC and independent saved-file association verification at22:41:20.413742UTC.",
+      "change": "Finite actual text/identity/tag result with source pins and copy/hash/association return; no native recomputation or live library/customer claim."
+    },
+    {
+      "path": "deliverables/bibliography-handoff/rendered/render-receipt.json",
+      "sha256": "5e607722b614541859eb8ea1b3c65ed5d4c0eca7f74b87ec21ee65dac48baacc",
+      "bytes": 4849,
+      "source": "Original Bureau fiction; observed local render at2026-10-12T22:33:55.983886UTC and independent saved-file association verification at22:41:20.413742UTC.",
+      "change": "Finite actual text/identity/tag result with source pins and copy/hash/association return; no native recomputation or live library/customer claim."
+    },
+    {
+      "path": "deliverables/bibliography-handoff/rendered/rendered-result.json",
+      "sha256": "d87aa20809b8c61cf249012aeb2dd05d7c6f3b29e03a86e0b9a90318ef6899f0",
+      "bytes": 2761,
+      "source": "Original Bureau fiction; observed local render at2026-10-12T22:33:55.983886UTC and independent saved-file association verification at22:41:20.413742UTC.",
+      "change": "Finite actual text/identity/tag result with source pins and copy/hash/association return; no native recomputation or live library/customer claim."
+    },
+    {
+      "path": "deliverables/bibliography-handoff/rendered/return-verification.json",
+      "sha256": "7164f4230e78ab7e02376129255d5a2fe9f78222a433bf7fc2ccd74c9c3e9664",
+      "bytes": 2438,
+      "source": "Original Bureau fiction; observed local render at2026-10-12T22:33:55.983886UTC and independent saved-file association verification at22:41:20.413742UTC.",
+      "change": "Finite actual text/identity/tag result with source pins and copy/hash/association return; no native recomputation or live library/customer claim."
     }
   ],
   "limitations": [
@@ -933,11 +990,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "c2bd999e7a9df8e89e797885a78b34a81dee8dec",
+    "parent_commit": "071d1a9d0133e31ce20abe9b5db905d9daf5974f",
     "date_utc": "2026-10-12",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Add the exact portable result Packet and cold-return receipt to the existing four-cue editor-export handoff; no new offer or editor execution."
+    "description": "Complete the existing three-record bibliography handoff with observed local rendering and independently verified saved-file return; original planning artifacts unchanged."
   },
   "public_case_briefs": [
     {
@@ -961,8 +1018,8 @@
       "authorship": "Requester author account distinct from Bureau President; operator independence unverified.",
       "observed_outcome": "Bureau submission verified; author acceptance and usefulness not established at the stated checkpoint.",
       "state_scope": "Historical observation, not a mirror or current Case-state guarantee.",
-      "readme_sha256": "57b8c6257e34ee6dea0b4bc1cd3ab3770b538b56ff930b636106e518b3c25be8",
-      "readme_bytes": 17684
+      "readme_sha256": "fb958412595986ff2adaab458ad8de8ec358b4faa4f8c4fd5552990ff522d25a",
+      "readme_bytes": 17892
     }
   ]
 }

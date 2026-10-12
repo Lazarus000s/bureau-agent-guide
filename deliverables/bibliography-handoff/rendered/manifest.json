@@ -1,0 +1,36 @@
+{
+  "schema": "bureau.file-evidence.v1",
+  "path_base": "root",
+  "files": [
+    {
+      "path": "actual-bibliography.txt",
+      "bytes": 210,
+      "sha256": "0ec9082481a2e3fa40e4013cf916648df08987947bf648f7bc9695e6540bbdab",
+      "mode": "100644"
+    },
+    {
+      "path": "inert-view.html",
+      "bytes": 1041,
+      "sha256": "3ba9e94e408acca68bf557c846930cd15dfa969bd8cd86e912ded246e643fc62",
+      "mode": "100644"
+    },
+    {
+      "path": "original-records.json",
+      "bytes": 2111,
+      "sha256": "3f27465567fdef9088d44657230a60b8d31bbcad03f93256a0d59732f31e7a53",
+      "mode": "100644"
+    },
+    {
+      "path": "processor-bibliography.json",
+      "bytes": 656,
+      "sha256": "3f467d60104a2f06c8aa65b79c5ff785ce0b34e76dd0b61b23a41e3609c8a6e2",
+      "mode": "100644"
+    },
+    {
+      "path": "rendered-result.json",
+      "bytes": 2761,
+      "sha256": "d87aa20809b8c61cf249012aeb2dd05d7c6f3b29e03a86e0b9a90318ef6899f0",
+      "mode": "100644"
+    }
+  ]
+}

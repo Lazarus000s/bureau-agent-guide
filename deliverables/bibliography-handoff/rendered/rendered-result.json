@@ -1,0 +1,64 @@
+{
+  "schema": "bureau.original-bibliography-render.v1",
+  "origin": "All three works, people, publication details, item keys and versions are original Bureau fiction. This is a planning fixture, not Zotero output or a real library.",
+  "source_sha256": "3f27465567fdef9088d44657230a60b8d31bbcad03f93256a0d59732f31e7a53",
+  "processor": {
+    "name": "citeproc-js",
+    "version": "1.4.61",
+    "package_metadata_version": "2.4.63",
+    "version_note": "The checked-in processor constant differs from its package metadata; both are recorded.",
+    "commit": "cc9153c45293af878de08cafddbefe6ea150c380",
+    "source_sha256": "2c659319b3b133c0204d60eba3e5daa566e1457e36b19cb6bfe4c8b1b4662650"
+  },
+  "style": {
+    "name": "apa",
+    "commit": "5dd83d1a61ed1df6275ec97c0e5bf4ea77a2c115",
+    "sha256": "3917def5fc951b104d64216c3373096042368b9704ba269ca83c14ebaba889fc"
+  },
+  "locale": {
+    "name": "en-US",
+    "commit": "a89adece41013402236e2c9020972d7e931fbab8",
+    "sha256": "ac864c7c21166b4390d82c31792cdc509400727fa0060b43d8aa17e07f9cb079"
+  },
+  "output_mode": "text",
+  "presentation_limit": "Native plain text omits typography such as italic book titles; this is not a formatted APA document.",
+  "identity_rule": "Each row is joined through the processor entry_ids, not input order or title.",
+  "tag_rule": "Each array element is one exact label. east, annex is one tag. An empty array is an explicit empty tag set; a missing tags field is unknown.",
+  "records": [
+    {
+      "local_locator": "original:empty-pigeonholes",
+      "example_item_key": "EFGH6789",
+      "example_item_version": 2,
+      "tags": [
+        "filing"
+      ],
+      "tag_state": "explicit_array",
+      "rendered_text": "Department of Patient Filing. (2002). Counting empty pigeonholes. Bureau Imprint.\n"
+    },
+    {
+      "local_locator": "original:returned-umbrellas",
+      "example_item_key": "ABCD2345",
+      "example_item_version": 1,
+      "tags": [
+        "context rescue",
+        "east, annex"
+      ],
+      "tag_state": "explicit_array",
+      "rendered_text": "Vale, M. (2001). The catalog of returned umbrellas. Bureau Imprint.\n"
+    },
+    {
+      "local_locator": "original:east-annex-notes",
+      "example_item_key": "JKLM2345",
+      "example_item_version": 1,
+      "tags": [],
+      "tag_state": "explicit_array",
+      "rendered_text": "Vale, M. (2003). Notes from the east annex. Bureau Imprint.\n"
+    }
+  ],
+  "bibliography_sha256": "0ec9082481a2e3fa40e4013cf916648df08987947bf648f7bc9695e6540bbdab",
+  "limits": [
+    "Original Bureau fiction; no live Zotero or library request.",
+    "One processor/style/locale result, not general APA conformance or outside acceptance.",
+    "Fictional keys and versions remain constructed metadata."
+  ]
+}

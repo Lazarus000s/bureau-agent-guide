@@ -1,0 +1,106 @@
+{
+  "schema": "bureau.original-bibliography-render-receipt.v1",
+  "observed_utc": "2026-10-12T22:33:55.983886+00:00",
+  "origin": "Same three original fictional Bureau books, people, publishers, keys and versions; no real library.",
+  "method": "One local citeproc-js makeBibliography call with mappedCSLbook fields, pinned APA style and en-US locale; native text mode.",
+  "runtime": {
+    "name": "Node.js",
+    "version": "v20.3.0",
+    "sha256": "2e8101ad32a3c58ff605e544d1548c74a54aaf66db23bf6ac93167269d92afd3"
+  },
+  "processor": {
+    "name": "citeproc-js",
+    "observed_version_constant": "1.4.61",
+    "package_metadata_version": "2.4.63",
+    "version_note": "The checked-in processor constant is1.4.61; package metadata is2.4.63 and describes base1.4.63. These disagree; the actualconstant and exactsourcehash identify this run.",
+    "source_commit": "cc9153c45293af878de08cafddbefe6ea150c380"
+  },
+  "resources": [
+    {
+      "role": "citeproc_commonjs.js",
+      "url": "https://raw.githubusercontent.com/Juris-M/citeproc-js/cc9153c45293af878de08cafddbefe6ea150c380/citeproc_commonjs.js",
+      "bytes": 970041,
+      "sha256": "2c659319b3b133c0204d60eba3e5daa566e1457e36b19cb6bfe4c8b1b4662650"
+    },
+    {
+      "role": "processor-package.json",
+      "url": "https://raw.githubusercontent.com/Juris-M/citeproc-js/cc9153c45293af878de08cafddbefe6ea150c380/package.json",
+      "bytes": 641,
+      "sha256": "fce7b24d1555ef8a32f0b07ecbc45720c812dae850104560739602ed89c98944"
+    },
+    {
+      "role": "processor-LICENSE",
+      "url": "https://raw.githubusercontent.com/Juris-M/citeproc-js/cc9153c45293af878de08cafddbefe6ea150c380/LICENSE",
+      "bytes": 1017,
+      "sha256": "b96ca8e1716f93449b480083c7510c18d129fa9afa4644d62c6347c06177ce30"
+    },
+    {
+      "role": "apa.csl",
+      "url": "https://raw.githubusercontent.com/citation-style-language/styles/5dd83d1a61ed1df6275ec97c0e5bf4ea77a2c115/apa.csl",
+      "bytes": 85817,
+      "sha256": "3917def5fc951b104d64216c3373096042368b9704ba269ca83c14ebaba889fc"
+    },
+    {
+      "role": "locales-en-US.xml",
+      "url": "https://raw.githubusercontent.com/citation-style-language/locales/a89adece41013402236e2c9020972d7e931fbab8/locales-en-US.xml",
+      "bytes": 32649,
+      "sha256": "ac864c7c21166b4390d82c31792cdc509400727fa0060b43d8aa17e07f9cb079"
+    }
+  ],
+  "source_record_sha256": "3f27465567fdef9088d44657230a60b8d31bbcad03f93256a0d59732f31e7a53",
+  "source_commit": "071d1a9d0133e31ce20abe9b5db905d9daf5974f",
+  "input_order": [
+    "original:returned-umbrellas",
+    "original:empty-pigeonholes",
+    "original:east-annex-notes"
+  ],
+  "returned_order": [
+    "original:empty-pigeonholes",
+    "original:returned-umbrellas",
+    "original:east-annex-notes"
+  ],
+  "identity_rule": "Join each native entry_ids value to local_locator; do not join by title or input position.",
+  "exact_tag_arrays_preserved": true,
+  "processor_warning_count": 0,
+  "processor_bibliography_calls": 1,
+  "native_text_sha256": "0ec9082481a2e3fa40e4013cf916648df08987947bf648f7bc9695e6540bbdab",
+  "retained_files": [
+    {
+      "path": "actual-bibliography.txt",
+      "bytes": 210,
+      "sha256": "0ec9082481a2e3fa40e4013cf916648df08987947bf648f7bc9695e6540bbdab",
+      "mode": "100644"
+    },
+    {
+      "path": "inert-view.html",
+      "bytes": 1041,
+      "sha256": "3ba9e94e408acca68bf557c846930cd15dfa969bd8cd86e912ded246e643fc62",
+      "mode": "100644"
+    },
+    {
+      "path": "original-records.json",
+      "bytes": 2111,
+      "sha256": "3f27465567fdef9088d44657230a60b8d31bbcad03f93256a0d59732f31e7a53",
+      "mode": "100644"
+    },
+    {
+      "path": "processor-bibliography.json",
+      "bytes": 656,
+      "sha256": "3f467d60104a2f06c8aa65b79c5ff785ce0b34e76dd0b61b23a41e3609c8a6e2",
+      "mode": "100644"
+    },
+    {
+      "path": "rendered-result.json",
+      "bytes": 2761,
+      "sha256": "d87aa20809b8c61cf249012aeb2dd05d7c6f3b29e03a86e0b9a90318ef6899f0",
+      "mode": "100644"
+    }
+  ],
+  "limits": [
+    "Text mode omits typography such as italic book titles; this is not a fully formatted APA document or general APA-conformance result.",
+    "No Zotero API/library/export response, account, customer result or outside acceptance is established.",
+    "The separate return verification concerns copied-file integrity and ID/tag associations; it does not recompute citations.",
+    "Resource URLs are provenance references, not instructions to fetch or execute software. Vendor source/runtime binaries and executable callers are not included here."
+  ],
+  "attribution": "Original fictional records and authored result materials: Bureau of Lost Context. Citation rendering: citeproc-js by Frank Bennett and contributors; APA CSL style and en-US locale from the Citation Style Language project, each identified by immutable source URL and hash."
+}

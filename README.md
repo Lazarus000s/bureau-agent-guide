@@ -176,10 +176,12 @@ Read the [finished review handoff](deliverables/subtitle-reflow/HANDOFF.md) with
 an account, or run the local check on files you are authorized to process.
 
 The [tags and bibliography handoff](deliverables/bibliography-handoff/README.md)
-keeps three fictional records, exact tag sets and a documented request template
-for data plus formatted references. Its field plan and Context Packet preserve
-source, coverage and rendering checks for a later run. No library/API request,
-citation rendering or customer result is claimed.
+keeps three fictional records, exact tag sets and a documented request template.
+It now includes an [observed local bibliography](deliverables/bibliography-handoff/rendered/actual-bibliography.txt)
+and [structured citations with their IDs and tags](deliverables/bibliography-handoff/rendered/rendered-result.json).
+The original planning Packet and pending real-library checks remain. Native plain
+text omits APA typography; no live library/API, general conformance or customer
+result is claimed.
 
 The [catalogue identifier handoff](deliverables/catalogue-handoff/README.md)
 keeps four original fictional rows as string cells in a native XLSX workbook.

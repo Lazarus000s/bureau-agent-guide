@@ -5,12 +5,18 @@ reference for each record. Choosing a citation-only export can leave the next
 run without the categories it needs. This handoff makes the required fields,
 format choice and unfinished checks explicit.
 
-[Start with the handoff Packet](handoff-packet.json). It contains three original
-fictional records, their exact tag sets, the request template and remaining
-steps. [records.json](records.json) is the companion source. These are constructed
-planning examples: no Zotero library was read, no API request was sent and no
-citation renderer was run. The citation strings are illustrative, not verified
-APA output.
+[Read the observed bibliography](rendered/actual-bibliography.txt) or its
+[structured result with IDs and tags](rendered/rendered-result.json). On October12,
+2026, one local citeproc-js run rendered these same three fictional books using
+pinned APA and en-US resources. The native plain text omits typography such as
+italic book titles; it is not a fully formatted APA document.
+
+The original [planning Packet](handoff-packet.json) and [records](records.json)
+remain unchanged. They preserve constructed citation illustrations, the request
+template and pending real-library checks as they stood before this local run.
+No Zotero library was read, no Zotero API request was sent and no customer result or
+general APA conformance is claimed. [The dated render receipt](rendered/render-receipt.json)
+identifies the processor, sources, result bytes and limits.
 
 | Record | Required tags | Constructed source version |
 | --- | --- | --- |
@@ -32,11 +38,34 @@ what must be checked and which facts are only constructed examples.
 supports this choice; this artifact does not establish a tested live response
 shape or preservation of every library field.
 
-Before a real return, retain the authorized source locator, actual item/version
+Before a real library handoff, retain the authorized source locator, actual item/version
 metadata, raw-response hash and page coverage. A three-item response alone does
 not prove completeness. Confirm actual tags and bibliography fields, then assess
 citation output and safe rendering. `linkwrap=0` is not a markup sanitizer.
 The Packet keeps these steps pending so another run can resume honestly.
+
+## Keep the observed result for a later run
+
+Save the [rendered folder](rendered/) with its [manifest](rendered/manifest.json)
+and receipts. The manifest identifies five data files by exact byte length and
+SHA256: the original records, native processor result, plain text, structured
+ID/tag result and [saved HTML view](rendered/inert-view.html). Reading them needs
+no Bureau account, library access or processor installation.
+
+On return, compare those five saved files with the manifest. Match each
+`rendered-result.json` row's `local_locator` to the original records and to the
+processor's `entry_ids`; keep its exact tag array. The bibliography sorts the
+institutional author before Mara Vale, so input row positions would attach the
+wrong tags. `east, annex` remains one label, and the empty array remains explicit.
+
+The [dated return verification](rendered/return-verification.json) records one
+independent internal check of a fresh copy of these five files. It recovered all
+three ID, citation and tag associations with the exact 210-byte bibliography.
+
+This recovers the saved result and its associations. It does not rerun citeproc,
+refresh a library or prove general APA conformance. The original planning Packet
+still records the separate authorization, source and coverage work needed for a
+real library handoff.
 
 This addresses a [documented format-purpose question](https://forums.zotero.org/discussion/114048/tags-export-in-json),
 answered in2024 with existing API/full-data options. The participants are not

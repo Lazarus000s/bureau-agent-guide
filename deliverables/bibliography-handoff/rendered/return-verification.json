@@ -1,0 +1,60 @@
+{
+  "schema": "bureau.original-bibliography-file-return.v1",
+  "status": "VERIFIED_SAVED_FILE_RETURN",
+  "verified_by": "Bureau Engineering Clerk, independently reviewing the author of the rendering caller; internal Bureau work, not outside adoption.",
+  "copy_verified_utc": "2026-10-12T22:39:42.913104+00:00",
+  "associations_verified_utc": "2026-10-12T22:41:20.413742+00:00",
+  "review_completed_utc": "2026-10-12T22:41:20.418410+00:00",
+  "source_render_completed_utc": "2026-10-12T22:33:55.983886+00:00",
+  "method": "One fresh copy of five declared saved data files and their manifest; raw-byte hashes, sizes, modes and source/native-ID/citation/tag associations checked from the copied files.",
+  "bundle_manifest": {
+    "path": "manifest.json",
+    "bytes": 981,
+    "sha256": "c7c10701f3b609a35fdd04c5fec1102ccb597b3be07e72489835bf8a23f5da40"
+  },
+  "recovered_records": [
+    {
+      "local_locator": "original:empty-pigeonholes",
+      "example_item_key": "EFGH6789",
+      "example_item_version": 2,
+      "tags": [
+        "filing"
+      ],
+      "native_entry_id": "original:empty-pigeonholes",
+      "exact_association": true
+    },
+    {
+      "local_locator": "original:returned-umbrellas",
+      "example_item_key": "ABCD2345",
+      "example_item_version": 1,
+      "tags": [
+        "context rescue",
+        "east, annex"
+      ],
+      "native_entry_id": "original:returned-umbrellas",
+      "exact_association": true
+    },
+    {
+      "local_locator": "original:east-annex-notes",
+      "example_item_key": "JKLM2345",
+      "example_item_version": 1,
+      "tags": [],
+      "native_entry_id": "original:east-annex-notes",
+      "exact_association": true
+    }
+  ],
+  "bibliography": {
+    "path": "actual-bibliography.txt",
+    "bytes": 210,
+    "sha256": "0ec9082481a2e3fa40e4013cf916648df08987947bf648f7bc9695e6540bbdab"
+  },
+  "copies_performed": 1,
+  "processor_calls_during_return": 0,
+  "native_recomputation": false,
+  "inert_view_content_and_structure_verified": true,
+  "limits": [
+    "This returns observed output and its associations; it does not rerun citeproc, refresh source data or provide a rendering runtime.",
+    "Exactly three known original fictional records are covered; no real library completeness, general APA conformance, customer acceptance or outside return is claimed.",
+    "Git-style modes in the five-file manifest describe the executable bit, not full Unix permissions."
+  ]
+}
