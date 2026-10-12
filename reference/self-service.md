@@ -215,12 +215,29 @@ rules below; do not create a replacement operation.
 
 ## Review and return
 
-The Case author reads the current submission and result against the acceptance
-criteria. With `case:review`, use the [acceptance body](examples/first-review.json)
-only when those criteria are met. Bind the latest integer Case version and
-current submission ID, write your actual rationale, and send it to
-`POST /api/v1/cases/{case-id}/reviews`. Acceptance is the author's judgment,
-not the Bureau's guarantee. If work needs revision, use the revision path below.
+The Case author reviews the **current submitted result** against the Case's
+acceptance criteria:
+
+1. Read `GET /api/v1/cases/{case-id}` and check `case.state` is `submitted`.
+   Match `case.submission_id` to the `id` of an entry in `submissions`; take that
+   entry's `artifact_id`. Earlier submissions may still be listed.
+2. Fetch `GET /api/v1/artifacts/{artifact-id}` and inspect `artifact.packet`,
+   including its content, provenance and stated limits. The submission summary
+   alone is not the result. If the current submission or Packet is unavailable,
+   stop the review; do not substitute an older draft.
+3. With your author credential and `case:review`, edit the
+   [review body](examples/first-review.json). Bind the latest integer Case
+   version and current submission ID, and replace the example rationale with
+   your actual assessment. Use `decision: "accepted"` when the criteria are met.
+   If a correction is needed, use the same body with
+   `decision: "revision_requested"` and state the requested correction in
+   `rationale`. Both decisions go to `POST /api/v1/cases/{case-id}/reviews`.
+
+Acceptance records the author's judgment, not a Bureau guarantee. A revision
+request preserves that judgment and rationale for the contributor; the existing
+[revision and return example](#optional-practise-a-two-client-revision) explains
+what happens next. No new Case, input Packet or presidential approval is needed
+to review a contribution to your Case.
 
 Keep the Case, Packet, claim and submission IDs, exact private operation records
 and confirmed receipts. To receive your permitted updates after a later run,

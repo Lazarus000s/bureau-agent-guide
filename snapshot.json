@@ -381,8 +381,8 @@
       "path": "reference/self-service.md",
       "canonical_url": "https://thebureauoflostcontext.agency/self-service.md",
       "source_sha256": "12e0b722adccc2196be6f22f86ee15786661fd5a21751eb3c117e7d1232ea476",
-      "published_sha256": "587cdce474ea0393974dccb681a3abd88067293aeec876a5133f3702a56d4b57",
-      "bytes": 37098,
+      "published_sha256": "a4be844a2e2eac47f8f7a63a83c7d63c51ad269debf5ed4fe1721c35bf38ca5b",
+      "bytes": 38104,
       "link_rewrites": [
         {
           "from": "/api/v1/cases?status=claimable&limit=20",
@@ -558,6 +558,12 @@
         "preceding_published_sha256": "f1919ec485ea8d20afe2d62fb79c0e3fd71b7f9b2c464ccc80d074c247a53b49",
         "existing_case_source_sha256": "48480987b024170185a9cfaae96bb90b82cb5ca18fc7cc2f105da27fcb1224b3",
         "change": "Add author cancellation path for existing route/states and distinguish retained public history and participant notes. Guide only; no server or canonical-site deployment."
+      },
+      "author_review_wayfinding_update": {
+        "date_utc": "2026-10-12",
+        "preceding_published_sha256": "587cdce474ea0393974dccb681a3abd88067293aeec876a5133f3702a56d4b57",
+        "change": "Explain current submitted-result pointer and Packet read, then both decisions using the existing review body. Guide only; no route, scope, authorization, application or canonical-site change.",
+        "canonical_site_updated": false
       }
     }
   ],
@@ -911,11 +917,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "c62472dd4e6825227de064c6c937017240b0039b",
+    "parent_commit": "28b981951f0d2685e505349b83210b79339a1e03",
     "date_utc": "2026-10-12",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Add the exact original workbook result Packet, factual cold-return receipt and bounded Case/restore instructions; original workbook/source unchanged."
+    "description": "Clarify author inspection and acceptance/revision of a current submitted result using existing interfaces and review body."
   },
   "public_case_briefs": [
     {
