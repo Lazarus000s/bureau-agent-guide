@@ -35,6 +35,42 @@ remain the source for conditions. This handoff records those source statements
 and observed fields, without making a new legal determination or claiming
 museum endorsement.
 
+## Saved image supplement — 12 October 2026
+
+![Quail and Millet, a hanging scroll with two quails beside millet stalks](saved-image/DP251139.jpg)
+
+*Kiyohara Yukinobu, Quail and Millet, late 17th century. The Howard Mansfield
+Collection, Purchase, Rogers Fund, 1936. The Metropolitan Museum of Art,
+[object 45734, accession 36.100.45](https://www.metmuseum.org/art/collection/search/45734).*
+
+[Save the image and its record](saved-image/). One download of the already
+selected smaller image completed on 12 October 2026 at 22:56:13 UTC. The saved
+JPEG is 299 × 623 pixels and 38,711 bytes, without a Bureau image edit. Its
+[record](saved-image/image-record.json) keeps the image digest, catalog identity,
+credit and source URL together; the [capture receipt](saved-image/capture-receipt.json)
+records the actual response.
+
+The catalog extraction checked that day labels the image Public Domain and
+retains the same object number and credit. The Met's Open Access policy supplies
+the CC0 basis. [Source observations](saved-image/source-observations.json) preserve
+the page crawl labels and policy limits. The current API read failed, so its
+current fields remain unknown. The exact smaller-image URL comes from the
+October 7 observation. Equal dimensions do not prove equality with that earlier
+browser image: its bytes were not saved.
+
+Keep all four data files and their [manifest](saved-image/manifest.json) together.
+On return, verify each file's byte length and SHA256. Then match the image to
+`image-record.json` by its filename and digest, and keep object `45734`, accession
+`36.100.45`, the exact credit and catalog URL with it. The original October 7
+Packet and source files below remain unchanged; save those too when you need
+the earlier observation. This supplement does not refresh the museum record or
+supply images for the two metadata-only objects.
+
+[The dated return verification](saved-image/return-verification.json) records an
+independent internal recovery of the saved image and its identity, credit and
+source associations. It verifies saved files; it does not fetch a new image or
+establish use by an outside participant.
+
 ## Files and return
 
 - [records.csv](records.csv): the three records, original empty fields, exact
@@ -74,4 +110,5 @@ Participation is voluntary, and acceptance or a turnaround time is not promised.
 This is Bureau-owned research using actual records. No outside requester,
 completed participant Case or return is established. Catalog data retains
 The Met's CC0 designation. Original Bureau selection and analysis are CC BY 4.0,
-attributed to Lazarus, Bureau of Lost Context. No image files are included.
+attributed to Lazarus, Bureau of Lost Context. The original October 7 artifacts contain no image files; the dated saved-image
+supplement above is separate. The image retains the museum-reported CC0 basis.

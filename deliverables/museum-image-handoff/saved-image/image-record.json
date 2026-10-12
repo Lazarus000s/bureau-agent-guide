@@ -1,0 +1,36 @@
+{
+  "schema": "bureau.museum-saved-image.v1",
+  "object_id": 45734,
+  "accession_number": "36.100.45",
+  "title": "Quail and Millet",
+  "creator": "Kiyohara Yukinobu",
+  "displayed_date": "late 17th century",
+  "credit_line": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+  "catalog_url": "https://www.metmuseum.org/art/collection/search/45734",
+  "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/45734",
+  "image": {
+    "file": "DP251139.jpg",
+    "source_url": "https://images.metmuseum.org/CRDImages/as/web-large/DP251139.jpg",
+    "bytes": 38711,
+    "sha256": "2c3ff57c7ca7bc06b2eb8d3a14c1c0a0c85276a3e4d09bf92f0edfd43de09fcd",
+    "mime_type": "image/jpeg",
+    "width": 299,
+    "height": 623,
+    "modified_by_bureau": false,
+    "captured_utc": "2026-10-12T22:56:13.092234+00:00"
+  },
+  "source_basis": {
+    "identity_and_credit": "Retained October7 API observations and October12 catalog web extraction agree on the listed identity and credit.",
+    "image_url": "Exact small image URL from October7 API/browser observation; this file is a new October12 capture.",
+    "rights": "The catalog labels the image Public Domain. The museum makes its Open Access images available under CC0; see source-observations.json for dated policy and limitations.",
+    "current_api_fields": "UNKNOWN: one October12 web-tool API read failed; no retry or alternate. No new API response is represented."
+  },
+  "historical_handoff": {
+    "file": "../handoff.json",
+    "sha256": "2ba1bc3bba0fcdab39e67f03846b31d08735a7b17c91ad7d528e16eb581a99ad",
+    "image_bytes_in_that_handoff": false,
+    "past_byte_identity": "UNKNOWN; October7 image bytes were not saved."
+  },
+  "return": "Keep this record, the image, capture receipt, source observations and manifest together. Verify exact bytes and object45734 association, including the credit. A saved-file return does not refresh the catalog or establish future permission.",
+  "endorsement": "No museum endorsement or outside participant use established."
+}

@@ -701,32 +701,33 @@
     },
     {
       "path": "deliverables/museum-image-handoff/README.md",
-      "sha256": "1765c34bca91b8c37788d4aa16153454a767f4f51b1b0355c8eb5aab23d5ed8e",
-      "source": "Three public Met API records, catalog-page comparisons, one bounded search and museum policy; selected observations and timestamps in sources.json.",
-      "change": "Actual dated catalog/image handoff: one available image link, two metadata-only records. No proxy Case, outside customer, acceptance, image copying or legal determination."
+      "sha256": "8d1c6ea149162efe8ef9a53bc00bfcd4c6af703597d9b4c2f5c51fbafafec543",
+      "source": "Original October7 three-record museum handoff, plus one October12 capture of the already selected Met45734 small image and independently verified saved-file identity/credit/source return.",
+      "change": "Expose one dated unedited image with exact provenance and saved-file return; preserve original data/Packet and both metadata-only decisions. Current API read failed and is not retried.",
+      "bytes": 7179
     },
     {
       "path": "deliverables/museum-image-handoff/handoff.json",
       "sha256": "2ba1bc3bba0fcdab39e67f03846b31d08735a7b17c91ad7d528e16eb581a99ad",
-      "source": "Three public Met API records, catalog-page comparisons, one bounded search and museum policy; selected observations and timestamps in sources.json.",
+      "source": "Historical October7 three-record Met API/catalog/policy observations, preserved byte-exact before the later October12 saved-image supplement. Selected observations and timestamps are retained in sources.json.",
       "change": "Actual dated catalog/image handoff: one available image link, two metadata-only records. No proxy Case, outside customer, acceptance, image copying or legal determination."
     },
     {
       "path": "deliverables/museum-image-handoff/records.csv",
       "sha256": "3633ebd7871719e93eec748d8b1f08e85cefff0abfc1bf1bb506a2b3c98784aa",
-      "source": "Three public Met API records, catalog-page comparisons, one bounded search and museum policy; selected observations and timestamps in sources.json.",
+      "source": "Historical October7 three-record Met API/catalog/policy observations, preserved byte-exact before the later October12 saved-image supplement. Selected observations and timestamps are retained in sources.json.",
       "change": "Actual dated catalog/image handoff: one available image link, two metadata-only records. No proxy Case, outside customer, acceptance, image copying or legal determination."
     },
     {
       "path": "deliverables/museum-image-handoff/result-packet.json",
       "sha256": "7396fba0828e37dcd57d58f73956b79bb9fede4c82188ea298fcb2fb75a629ab",
-      "source": "Three public Met API records, catalog-page comparisons, one bounded search and museum policy; selected observations and timestamps in sources.json.",
+      "source": "Historical October7 three-record Met API/catalog/policy observations, preserved byte-exact before the later October12 saved-image supplement. Selected observations and timestamps are retained in sources.json.",
       "change": "Actual dated catalog/image handoff: one available image link, two metadata-only records. No proxy Case, outside customer, acceptance, image copying or legal determination."
     },
     {
       "path": "deliverables/museum-image-handoff/sources.json",
       "sha256": "5b001476ff24c990a3bbd3c723c69524f997a94a116114e1e8ecb68ab701259e",
-      "source": "Three public Met API records, catalog-page comparisons, one bounded search and museum policy; selected observations and timestamps in sources.json.",
+      "source": "Historical October7 three-record Met API/catalog/policy observations, preserved byte-exact before the later October12 saved-image supplement. Selected observations and timestamps are retained in sources.json.",
       "change": "Actual dated catalog/image handoff: one available image link, two metadata-only records. No proxy Case, outside customer, acceptance, image copying or legal determination."
     },
     {
@@ -980,6 +981,48 @@
       "bytes": 2438,
       "source": "Original Bureau fiction; observed local render at2026-10-12T22:33:55.983886UTC and independent saved-file association verification at22:41:20.413742UTC.",
       "change": "Finite actual text/identity/tag result with source pins and copy/hash/association return; no native recomputation or live library/customer claim."
+    },
+    {
+      "path": "deliverables/museum-image-handoff/saved-image/DP251139.jpg",
+      "sha256": "2c3ff57c7ca7bc06b2eb8d3a14c1c0a0c85276a3e4d09bf92f0edfd43de09fcd",
+      "bytes": 38711,
+      "source": "Met object 45734 small image captured on 2026-10-12 at 22:56:13.092234 UTC; exact image, source, identity and credit bundle, with final independent saved-file association checked at 23:08:28.371060 UTC.",
+      "change": "One existing selected asset, unedited, with dated source and return receipts. No new object, current API response, historical image-byte equality, outside participant or main-site action."
+    },
+    {
+      "path": "deliverables/museum-image-handoff/saved-image/capture-receipt.json",
+      "sha256": "788b227db458ad9782f41f68b8910806354491f31c4527196efabcbb25254a93",
+      "bytes": 1273,
+      "source": "Met object 45734 small image captured on 2026-10-12 at 22:56:13.092234 UTC; exact image, source, identity and credit bundle, with final independent saved-file association checked at 23:08:28.371060 UTC.",
+      "change": "One existing selected asset, unedited, with dated source and return receipts. No new object, current API response, historical image-byte equality, outside participant or main-site action."
+    },
+    {
+      "path": "deliverables/museum-image-handoff/saved-image/image-record.json",
+      "sha256": "4826e9f20b26f74c15e58b0523b703a35e5ccb5e6e31fe38310790ec5fb2c4c0",
+      "bytes": 2047,
+      "source": "Met object 45734 small image captured on 2026-10-12 at 22:56:13.092234 UTC; exact image, source, identity and credit bundle, with final independent saved-file association checked at 23:08:28.371060 UTC.",
+      "change": "One existing selected asset, unedited, with dated source and return receipts. No new object, current API response, historical image-byte equality, outside participant or main-site action."
+    },
+    {
+      "path": "deliverables/museum-image-handoff/saved-image/manifest.json",
+      "sha256": "499213f0f9dab3c0b2165801a9fdcea3f0238159ed7a1cf74ea8cfa8d4c92db4",
+      "bytes": 792,
+      "source": "Met object 45734 small image captured on 2026-10-12 at 22:56:13.092234 UTC; exact image, source, identity and credit bundle, with final independent saved-file association checked at 23:08:28.371060 UTC.",
+      "change": "One existing selected asset, unedited, with dated source and return receipts. No new object, current API response, historical image-byte equality, outside participant or main-site action."
+    },
+    {
+      "path": "deliverables/museum-image-handoff/saved-image/return-verification.json",
+      "sha256": "fae35fdbd9cfb06e8d37cdfda23932961108db49ff7b96c16302885d2cd85d05",
+      "bytes": 2525,
+      "source": "Met object 45734 small image captured on 2026-10-12 at 22:56:13.092234 UTC; exact image, source, identity and credit bundle, with final independent saved-file association checked at 23:08:28.371060 UTC.",
+      "change": "One existing selected asset, unedited, with dated source and return receipts. No new object, current API response, historical image-byte equality, outside participant or main-site action."
+    },
+    {
+      "path": "deliverables/museum-image-handoff/saved-image/source-observations.json",
+      "sha256": "ec28cd2206c416531117a0a1bec389984304309e48bf5bb35d259961a97b399e",
+      "bytes": 3148,
+      "source": "Met object 45734 small image captured on 2026-10-12 at 22:56:13.092234 UTC; exact image, source, identity and credit bundle, with final independent saved-file association checked at 23:08:28.371060 UTC.",
+      "change": "One existing selected asset, unedited, with dated source and return receipts. No new object, current API response, historical image-byte equality, outside participant or main-site action."
     }
   ],
   "limitations": [
@@ -990,11 +1033,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "071d1a9d0133e31ce20abe9b5db905d9daf5974f",
+    "parent_commit": "2ea20c99787e7bb4ab5b55272745ccd2e601c5bc",
     "date_utc": "2026-10-12",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Complete the existing three-record bibliography handoff with observed local rendering and independently verified saved-file return; original planning artifacts unchanged."
+    "description": "Complete the existing museum handoff with its already selected small image, dated provenance and independent saved-file return. Original October7 data/Packet and metadata-only decisions remain unchanged."
   },
   "public_case_briefs": [
     {
@@ -1018,8 +1061,8 @@
       "authorship": "Requester author account distinct from Bureau President; operator independence unverified.",
       "observed_outcome": "Bureau submission verified; author acceptance and usefulness not established at the stated checkpoint.",
       "state_scope": "Historical observation, not a mirror or current Case-state guarantee.",
-      "readme_sha256": "fb958412595986ff2adaab458ad8de8ec358b4faa4f8c4fd5552990ff522d25a",
-      "readme_bytes": 17892
+      "readme_sha256": "7b8af1b8e0cdf0df7faaf2f5b60e02edc9fbdebe5b1c0278ba4086e63c91b535",
+      "readme_bytes": 17940
     }
   ]
 }

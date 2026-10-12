@@ -1,0 +1,56 @@
+{
+  "schema": "bureau.museum-image-source-observations.v1",
+  "observed_utc": "2026-10-12T22:55:10.954900+00:00",
+  "method": "One web-tool call, four explicit official URLs; extracted page text, not raw HTTP or image bytes.",
+  "sources": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/45734",
+      "result": "RETURNED_PAGE",
+      "crawl_label": "yesterday",
+      "observations": {
+        "title": "Quail and Millet",
+        "creator": "Kiyohara Yukinobu",
+        "date": "late 17th century",
+        "credit_line": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+        "object_number": "36.100.45",
+        "image_label": "Public Domain",
+        "image_action": "Download Image"
+      }
+    },
+    {
+      "url": "https://www.metmuseum.org/policies/image-resources",
+      "result": "RETURNED_PAGE",
+      "crawl_label": "today",
+      "paraphrase": "The museum makes its designated public-domain artwork images available under CC0 and distinguishes these from restricted images and from catalog data."
+    },
+    {
+      "url": "https://www.metmuseum.org/policies/terms-and-conditions",
+      "result": "RETURNED_PAGE",
+      "crawl_label": "today",
+      "displayed_update": "October25,2018",
+      "paraphrase": "OA materials may be used without fee or further museum permission. The museum gives no guarantee regarding third-party rights; preserve source notices and credits and imply no endorsement. The terms cover the API and allow service limits."
+    },
+    {
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/45734",
+      "result": "TOOL_INTERNAL_ERROR",
+      "body_obtained": false,
+      "http_status": "NOT_EXPOSED",
+      "retry_or_alternate": "NONE; this current API operation is deferred."
+    }
+  ],
+  "image_url_provenance": {
+    "source_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/45734",
+    "observed_utc": "2026-10-07T21:52:25.939Z",
+    "small_image_url": "https://images.metmuseum.org/CRDImages/as/web-large/DP251139.jpg",
+    "browser_observed_utc": "2026-10-07T21:54:33.068Z",
+    "original_handoff_sha256": "2ba1bc3bba0fcdab39e67f03846b31d08735a7b17c91ad7d528e16eb581a99ad"
+  },
+  "limits": [
+    "Page extraction may be cached; crawl labels are retained. No fresh raw API response was obtained.",
+    "Museum-reported Public Domain/CC0 status is attributed to its catalog and policies, not a new Bureau legal determination.",
+    "Only object45734 small image was captured. No original-size/additional image or image for either metadata-only record was obtained.",
+    "October7 source evidence stays unchanged; a new capture is not a proof of past byte equality."
+  ],
+  "attribution": "Kiyohara Yukinobu, Quail and Millet, late 17th century. The Howard Mansfield Collection, Purchase, Rogers Fund, 1936. The Metropolitan Museum of Art, object 45734, accession 36.100.45. The canonical catalog link is in image-record.json.",
+  "bureau_analysis_reuse": "CC BY 4.0; attribute Lazarus, Bureau of Lost Context. This does not replace the museum-reported CC0 designation for the artwork image and catalog data."
+}

@@ -164,8 +164,9 @@ with a complete result Packet. No real timetable or customer result is claimed.
 
 The [museum image handoff](deliverables/museum-image-handoff/README.md) carries
 three actual Met catalog records with source observations and image decisions.
-One supplies an Open Access image link; two retain metadata without image URLs,
-even though they appeared in a `hasImages` search. This is Bureau-owned research,
+One supplies an Open Access image link and a dated saved image with its catalog
+record; two retain metadata without image URLs, even though they appeared in a
+`hasImages` search. This is Bureau-owned research,
 with no outside requester or accepted Case result claimed.
 
 The [subtitle reflow check](deliverables/subtitle-reflow/README.md) compares two

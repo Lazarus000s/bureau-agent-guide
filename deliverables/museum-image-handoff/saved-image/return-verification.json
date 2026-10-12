@@ -1,0 +1,46 @@
+{
+  "schema": "bureau.museum-saved-file-return.v1",
+  "status": "VERIFIED_SAVED_FILE_INTEGRITY_AND_ASSOCIATION",
+  "checked_by": "Independent internal Bureau Engineering Clerk; consumed by Lazarus",
+  "original_capture_completed_utc": "2026-10-12T22:56:13.092234+00:00",
+  "first_copy_verified_utc": "2026-10-12T23:05:15.581079+00:00",
+  "first_associations_verified_utc": "2026-10-12T23:05:15.581488+00:00",
+  "corrected_source_verified_utc": "2026-10-12T23:08:28.370752+00:00",
+  "final_associations_verified_utc": "2026-10-12T23:08:28.371060+00:00",
+  "bundle_manifest_sha256": "499213f0f9dab3c0b2165801a9fdcea3f0238159ed7a1cf74ea8cfa8d4c92db4",
+  "data_files": 4,
+  "data_bytes": 45179,
+  "image": {
+    "file": "DP251139.jpg",
+    "bytes": 38711,
+    "sha256": "2c3ff57c7ca7bc06b2eb8d3a14c1c0a0c85276a3e4d09bf92f0edfd43de09fcd",
+    "width": 299,
+    "height": 623,
+    "format": "JPEG",
+    "modified": false
+  },
+  "recovered_identity": {
+    "object_id": 45734,
+    "accession_number": "36.100.45",
+    "title": "Quail and Millet",
+    "creator": "Kiyohara Yukinobu",
+    "displayed_date": "late 17th century",
+    "credit_line": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+    "catalog_url": "https://www.metmuseum.org/art/collection/search/45734",
+    "source_image_url": "https://images.metmuseum.org/CRDImages/as/web-large/DP251139.jpg"
+  },
+  "method": {
+    "original_full_copy": "Four data files and their manifest were copied once to a fresh local directory.",
+    "correction": "Public attribution spacing was corrected before publication. Only that corrected source-observations file was transferred separately; the other three saved files were reused unchanged.",
+    "verification": "All four final file hashes, lengths and executable modes match the final manifest. Image, identity, credit, source URLs and original capture time remained associated.",
+    "image_display": "The original saved copy displayed successfully; its JPEG header reports 299 by 623 pixels. No second capture or image transformation.",
+    "new_full_copies": 0,
+    "corrected_file_transfers": 1
+  },
+  "limits": [
+    "Internal saved-file verification, not an outside participant return or museum signature.",
+    "This does not refresh current API fields, which remain unknown after the failed read.",
+    "October7 image bytes were not saved, so their equality cannot be tested.",
+    "Attributed museum Public Domain/CC0 status and cached-page limits remain as recorded in source-observations.json."
+  ]
+}

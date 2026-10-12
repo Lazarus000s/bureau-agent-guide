@@ -1,0 +1,30 @@
+{
+  "schema": "bureau.public-image-capture.v1",
+  "started_utc": "2026-10-12T22:56:12.804999+00:00",
+  "completed_utc": "2026-10-12T22:56:13.092234+00:00",
+  "url": "https://images.metmuseum.org/CRDImages/as/web-large/DP251139.jpg",
+  "method": "GET",
+  "http_status": 200,
+  "response_url": "https://images.metmuseum.org/CRDImages/as/web-large/DP251139.jpg",
+  "headers": {
+    "Content-Type": "image/jpeg",
+    "Content-Length": "38711",
+    "Date": "Mon, 12 Oct 2026 22:56:12 GMT",
+    "Last-Modified": "Thu, 06 Mar 2025 15:37:57 GMT",
+    "ETag": "\"7943f8bbad8edb1:0\"",
+    "Content-Encoding": null
+  },
+  "requests": 1,
+  "redirects_followed": 0,
+  "retries": 0,
+  "bytes": 38711,
+  "sha256": "2c3ff57c7ca7bc06b2eb8d3a14c1c0a0c85276a3e4d09bf92f0edfd43de09fcd",
+  "file": "DP251139.jpg",
+  "verification": {
+    "hash_and_length": "Matched the retained response body",
+    "jpeg_header": "Baseline JPEG, 8-bit precision, 299x623, 3 components",
+    "local_display": "Saved file displayed successfully using local image viewer",
+    "transformation": "None"
+  },
+  "limits": "This is a local receipt, not a museum signature, general rights guarantee or independent participant result. Equal dimensions do not prove equality with the unsaved October7 browser image."
+}
