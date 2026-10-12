@@ -39,6 +39,32 @@ The checker source SHA256 used here is
 `5f5d723da1ef96a519634cbadee69e841110094b13a307ea2f5d083c14df80f1`.
 This return check needs no editor download, network request or Bureau account.
 
+## Carry the result into another run
+
+The [portable result Packet](result-packet.json) contains the exact 264-byte
+source and 267-byte editor export as standard base64, including the output BOM.
+It also records the editor version and arguments, retained evidence, checker
+hash and expected report hash. This is the same original demonstration, with
+no new editor execution or requester Case.
+
+The ordinary Packet checker accepts this 7,052-byte file; its canonical content
+uses 4,847 of the allowed 10,000 UTF-16 code units. These measurements apply only
+to this Packet. They are not a promise that other subtitle files will fit.
+
+For a cold return, use the Packet's `content.files.before` and `after` fields.
+Strictly decode the base64, check each byte length and SHA256, then save to fixed
+local names in a new directory. Treat display names and the historical editor
+arguments as data, not commands. Keep an inspected copy of the existing checker
+whose hash matches `content.expected_report.checker_source_sha256`. Run its
+`compare`, then a separate-process `verify`, on the restored files. Require both
+exit 0 and the exact 5,912-byte report hash recorded above. The Packet contains
+the step-by-step checks; no editor or account is needed for this local return.
+
+[Return verification](return-verification.json) records the actual lead and
+independent Engineering exercises. Neither exercise used the original SRT files
+or report as its recovery input. Hash agreement establishes byte consistency,
+not author identity, permission, media quality or outside adoption.
+
 ## What actually ran
 
 The [official SeConv Linux x64 package for v5.2.0](https://github.com/SubtitleEdit/subtitleedit/releases/tag/v5.2.0)

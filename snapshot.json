@@ -796,9 +796,11 @@
     },
     {
       "path": "deliverables/subtitle-reflow/editor-export/README.md",
-      "sha256": "ea93164783352546ed356008090b6beed6c75d134bc82ed9bfbe4b4e482bf54a",
+      "sha256": "043006cfd0ff26f34b8a8a00d35534be2343e9fcc2841f0855468657cf50e489",
       "source": "Original Bureau four-cue excerpt and actual official SeConv5.2.0 balance-lines export, October12; source/version/arguments and local acceptance evidence retained.",
-      "change": "Versioned editor-export interoperability and offline return evidence. No customer, media assessment, current-issue reproduction or live Case."
+      "change": "Add exact portable result and verified cold-return instructions for the same retained editor observation; no editor rerun, outside requester or live Case.",
+      "preceding_sha256": "ea93164783352546ed356008090b6beed6c75d134bc82ed9bfbe4b4e482bf54a",
+      "bytes": 5590
     },
     {
       "path": "deliverables/subtitle-reflow/editor-export/evidence.json",
@@ -907,6 +909,20 @@
       "sha256": "aed0724d7dc1468e73e429b594d776576a76c613824bec7a596880a56e0fafa6",
       "source": "Existing original catalogue atc62472dd and independently reviewed ordinary Packet cold restoration on2026-10-12.",
       "change": "Exact original return and factual receipt; no live Case, new workbook, runtime or customer use."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/editor-export/result-packet.json",
+      "sha256": "366122a7d855e553dde6bc6740705a5ab8b60846ad93d6b8079215b817253394",
+      "bytes": 7052,
+      "source": "Original Bureau four-cue SeConv5.2.0 demonstration, retained source/export/report and independent local cold return; original editor execution unchanged.",
+      "change": "Portable exact-byte result component and actual verification observation; no customer material, binary, new tool or Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/editor-export/return-verification.json",
+      "sha256": "02418a6dd15a0a00a2ab16ac562e8606e942f73c00198c67576eb8b7a0ab0a6d",
+      "bytes": 2935,
+      "source": "Original Bureau four-cue SeConv5.2.0 demonstration, retained source/export/report and independent local cold return; original editor execution unchanged.",
+      "change": "Portable exact-byte result component and actual verification observation; no customer material, binary, new tool or Case."
     }
   ],
   "limitations": [
@@ -917,11 +933,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "e4abcc582146ff6f659517e8e52901eaa6102346",
+    "parent_commit": "c2bd999e7a9df8e89e797885a78b34a81dee8dec",
     "date_utc": "2026-10-12",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Add one dated entrance pointer to a public requester Case and its submitted-result workflow; no copied requester brief or research."
+    "description": "Add the exact portable result Packet and cold-return receipt to the existing four-cue editor-export handoff; no new offer or editor execution."
   },
   "public_case_briefs": [
     {

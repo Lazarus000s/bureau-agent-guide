@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "kind": "offline-return-observation",
+  "observed_date_utc": "2026-10-12",
+  "scope": "Recovery of the exact existing four-cue Bureau demonstration; no outside requester or live Case.",
+  "packet": {
+    "file": "result-packet.json",
+    "bytes": 7052,
+    "sha256": "366122a7d855e553dde6bc6740705a5ab8b60846ad93d6b8079215b817253394",
+    "ordinary_input_status": "VALID_INPUT",
+    "canonical_digest": "ee5371d58741fb5d7e90be3506c95df4a10e8b9b8fb2d487a3ed00bc3f49e652",
+    "canonical_content_utf16_units": 4847,
+    "canonical_content_limit": 10000,
+    "request_byte_limit": 16384
+  },
+  "recovery_inputs": [
+    "result-packet.json",
+    "Separately inspected existing reflow_audit.py whose SHA256 matches the Packet"
+  ],
+  "checker_sha256": "5f5d723da1ef96a519634cbadee69e841110094b13a307ea2f5d083c14df80f1",
+  "restored_files": {
+    "before": {
+      "bytes": 264,
+      "sha256": "c85673ffeb2cc109c3165dd064c47fc7afb6e8fdccd46b8d5987dee5e38d2c82",
+      "utf8_bom": false
+    },
+    "after": {
+      "bytes": 267,
+      "sha256": "40c25534e5d14cfbc4989ee6e27d8040d9d7ff20c78955c7f9dd45ae9366c420",
+      "utf8_bom": true
+    }
+  },
+  "regenerated_report": {
+    "bytes": 5912,
+    "sha256": "3b936023c1175a0ae461a0edf8b8f454ff73646a63e6a9a6f33c32fb146a315b",
+    "checks": {
+      "counter_sequence_preserved": true,
+      "cue_count_preserved": true,
+      "normalized_text_sequence_preserved": true,
+      "timecode_sequence_preserved": true
+    },
+    "changed_wrapping_ordinals": [
+      1,
+      2,
+      4
+    ],
+    "positional_differences": [],
+    "review_queue": []
+  },
+  "exercises": [
+    {
+      "performed_by": "Bureau packager",
+      "observed_utc": "2026-10-12T21:01:07.218312+00:00",
+      "result": "PASS",
+      "compare_exit": 0,
+      "separate_process_verify_exit": 0
+    },
+    {
+      "performed_by": "Bureau Engineering Clerk, separate from packager; not an outside participant",
+      "observed_utc": "2026-10-12T21:02:55.512487+00:00",
+      "result": "PASS",
+      "compare_exit": 0,
+      "separate_process_verify_exit": 0,
+      "original_files_and_report_used_as_recovery_inputs": false,
+      "retained_lineage_compared_after_recovery": true
+    }
+  ],
+  "historical_editor_evidence": "evidence.json",
+  "historical_report": "report.json",
+  "new_editor_executions": 0,
+  "new_network_requests_in_recovery": 0,
+  "live_case_operations": 0,
+  "limits": [
+    "Two local Bureau exercises with original fictional captions; not independent adoption, customer delivery or editorial acceptance.",
+    "The exact hashes establish consistency with retained bytes, not author identity, permission or source truth.",
+    "The original editor operation is retained evidence; no current release availability or reproducible-build attestation is claimed.",
+    "No media synchronization, readability, styling, translation, accessibility or all-editor-version validation."
+  ]
+}

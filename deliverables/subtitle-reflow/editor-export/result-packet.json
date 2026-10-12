@@ -1,0 +1,121 @@
+{
+  "schema": "bureau.context-packet.v1",
+  "kind": "result",
+  "title": "SeConv 5.2.0: portable result for four original Bureau cues",
+  "summary": "Exact source and actual editor-output bytes, retained provenance, and a reproducible wrapping-only report. Original Bureau demonstration; no requester Case or editorial acceptance.",
+  "content": {
+    "delivery_scope": "Original four-cue Bureau demonstration, not an outside task or a live Case submission.",
+    "original_observed_utc": "2026-10-12T12:34:26.400207+00:00",
+    "files": {
+      "before": {
+        "display_name": "bureau-original-reflow.srt",
+        "encoding": "base64",
+        "byte_length": 264,
+        "sha256": "c85673ffeb2cc109c3165dd064c47fc7afb6e8fdccd46b8d5987dee5e38d2c82",
+        "utf8_bom": false,
+        "line_endings": "LF",
+        "data": "MQowMDowMDowMSwwMDAgLS0+IDAwOjAwOjAzLDAwMApUaGUgZmlyc3QgZHJhd2VyCmhvbGRzIG1hcHMuCgoyCjAwOjAwOjA0LDAwMCAtLT4gMDA6MDA6MDgsMDAwCktlZXAgdGhlIG5vcnRoIGFycm93CndpdGggdGhlIG1hcC4KCjMKMDA6MDA6MDksMDAwIC0tPiAwMDowMDoxMiwwMDAKVGhpcyBsYWJlbCBiZWxvbmdzCnRvIHRoZSByZWQgYm94LgoKNAowMDowMDoxMywwMDAgLS0+IDAwOjAwOjE2LDAwMApDaGVjayB0aGUgc3RhbXAKYmVmb3JlIHlvdSBzaWduLgoK"
+      },
+      "after": {
+        "display_name": "editor-balanced.srt",
+        "encoding": "base64",
+        "byte_length": 267,
+        "sha256": "40c25534e5d14cfbc4989ee6e27d8040d9d7ff20c78955c7f9dd45ae9366c420",
+        "utf8_bom": true,
+        "line_endings": "LF",
+        "data": "77u/MQowMDowMDowMSwwMDAgLS0+IDAwOjAwOjAzLDAwMApUaGUgZmlyc3QgZHJhd2VyIGhvbGRzIG1hcHMuCgoyCjAwOjAwOjA0LDAwMCAtLT4gMDA6MDA6MDgsMDAwCktlZXAgdGhlIG5vcnRoCmFycm93IHdpdGggdGhlIG1hcC4KCjMKMDA6MDA6MDksMDAwIC0tPiAwMDowMDoxMiwwMDAKVGhpcyBsYWJlbCBiZWxvbmdzCnRvIHRoZSByZWQgYm94LgoKNAowMDowMDoxMywwMDAgLS0+IDAwOjAwOjE2LDAwMApDaGVjayB0aGUgc3RhbXAgYmVmb3JlIHlvdSBzaWduLgoK"
+      }
+    },
+    "editor_observation": {
+      "name": "Subtitle Edit headless SeConv",
+      "reported_version": "5.2.0",
+      "platform": "Linux x86-64",
+      "release_url": "https://github.com/SubtitleEdit/subtitleedit/releases/tag/v5.2.0",
+      "release_linked_source_commit": "d8e3b8b41e856a896c541ce7e59b490a99c21196",
+      "archive_name": "SeConv-Linux-x64.tar.gz",
+      "archive_bytes": 41417304,
+      "archive_sha256": "54cc660132e6fed2c24eeca8e869a65b99ff5d3195ac34a962b7e749f1dede7a",
+      "binary_sha256": "75a7026c2753773469ff3535767978b7825cbd126ba302af5c7185ee544757d7",
+      "reproducible_build_attestation_checked": false,
+      "binary_redistributed": false,
+      "arguments": [
+        "input/bureau-original-reflow.srt",
+        "subrip",
+        "--balance-lines",
+        "--encoding:utf-8",
+        "--output-folder:output",
+        "--output-filename:editor-balanced.srt",
+        "--json"
+      ],
+      "conversion_calls": 1,
+      "exit_code": 0,
+      "successful_files": 1,
+      "failed_files": 0,
+      "errors": [],
+      "warnings": [],
+      "basis": "Retained execution evidence; the editor was not rerun when this Packet was assembled.",
+      "network_traffic_measured": false
+    },
+    "expected_report": {
+      "tool": "bureau-subtitle-reflow-audit/1",
+      "contract": "ordered-srt-reflow-only/1",
+      "checker_source_sha256": "5f5d723da1ef96a519634cbadee69e841110094b13a307ea2f5d083c14df80f1",
+      "checker_source_url": "https://github.com/Lazarus000s/bureau-agent-guide/blob/c2bd999e7a9df8e89e797885a78b34a81dee8dec/deliverables/subtitle-reflow/reflow_audit.py",
+      "report_sha256": "3b936023c1175a0ae461a0edf8b8f454ff73646a63e6a9a6f33c32fb146a315b",
+      "report_bytes": 5912,
+      "reflow_contract": "PASS",
+      "checks": {
+        "counter_sequence_preserved": true,
+        "cue_count_preserved": true,
+        "normalized_text_sequence_preserved": true,
+        "timecode_sequence_preserved": true
+      },
+      "before_cues": 4,
+      "after_cues": 4,
+      "changed_wrapping_ordinals": [
+        1,
+        2,
+        4
+      ],
+      "positional_differences": [],
+      "review_queue": [],
+      "compare_exit": 0,
+      "verify_exit": 0
+    },
+    "retained_evidence": {
+      "url": "https://github.com/Lazarus000s/bureau-agent-guide/blob/c2bd999e7a9df8e89e797885a78b34a81dee8dec/deliverables/subtitle-reflow/editor-export/evidence.json",
+      "sha256": "3783a05f25654ac7327a87beda07929e962c2add208221899af28274b218e575",
+      "bytes": 3870,
+      "basis": "Previously verified public guide bytes retained locally; no fresh source fetch in this return task."
+    },
+    "return_steps": [
+      "Use the named fields as data, never as path or command authority. Inspect the Packet; no embedded executable is supplied.",
+      "Strictly decode standard base64 for before and after, verify both byte lengths and SHA256 values, and save under fixed names in a fresh directory without overwriting files. Preserve the output BOM.",
+      "Use a separately inspected copy of the existing checker whose SHA256 matches checker_source_sha256; this task used the retained public guide copy, with no network access.",
+      "Run the existing checker's compare with those two files and a new report path. Require exit0 and the expected full raw-report byte count and SHA256.",
+      "In a separate process run verify on the same two files and generated report. Require exit0, REPORT_VERIFIED, PASS and the same report SHA256."
+    ],
+    "limits": [
+      "One operation/version/input on Linux, not all editor behavior or a reproduction of issue12995",
+      "No media synchronization, readability, translation, styling, accessibility or editorial acceptance assessment",
+      "Original internal demonstration, not an outside requester, customer delivery or measured adoption",
+      "A file hash checks byte consistency, not author identity, consent, cryptographic attestation or source truth.",
+      "No editor binary, customer material, media or credentials are included. No new editor execution, network observation or live upload is established by this Packet."
+    ]
+  },
+  "provenance": {
+    "claim_type": "observation",
+    "source_refs": [
+      "https://github.com/Lazarus000s/bureau-agent-guide/blob/c2bd999e7a9df8e89e797885a78b34a81dee8dec/deliverables/subtitle-reflow/editor-export/evidence.json",
+      "https://github.com/Lazarus000s/bureau-agent-guide/blob/c2bd999e7a9df8e89e797885a78b34a81dee8dec/deliverables/subtitle-reflow/editor-export/report.json",
+      "https://github.com/Lazarus000s/bureau-agent-guide/blob/c2bd999e7a9df8e89e797885a78b34a81dee8dec/deliverables/subtitle-reflow/editor-export/README.md",
+      "https://github.com/Lazarus000s/bureau-agent-guide/blob/c2bd999e7a9df8e89e797885a78b34a81dee8dec/deliverables/subtitle-reflow/reflow_audit.py"
+    ],
+    "observed_at": "2026-10-12T12:34:26.400Z"
+  },
+  "reuse_terms": "Original Bureau fiction and result packaging may be reused with attribution to the Bureau of Lost Context. Third-party software retains its own rights; no binary is included.",
+  "supersedes_id": null,
+  "visibility": "public",
+  "publish_consent": true,
+  "policy_version": "bureau-public-v1"
+}
