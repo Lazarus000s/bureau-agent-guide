@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "observed_utc": "2026-10-12T12:34:26.400207+00:00",
+  "purpose": "One actual editor-export acceptance and return record using original Bureau fiction.",
+  "editor": {
+    "name": "Subtitle Edit headless SeConv",
+    "reported_version": "5.2.0",
+    "platform": "Linux x86-64",
+    "release_url": "https://github.com/SubtitleEdit/subtitleedit/releases/tag/v5.2.0",
+    "release_linked_source_commit": "d8e3b8b41e856a896c541ce7e59b490a99c21196",
+    "archive_name": "SeConv-Linux-x64.tar.gz",
+    "archive_bytes": 41417304,
+    "archive_sha256": "54cc660132e6fed2c24eeca8e869a65b99ff5d3195ac34a962b7e749f1dede7a",
+    "binary_sha256": "75a7026c2753773469ff3535767978b7825cbd126ba302af5c7185ee544757d7",
+    "reproducible_build_attestation_checked": false,
+    "binary_redistributed": false
+  },
+  "operation": {
+    "executable_name": "seconv",
+    "arguments": [
+      "input/bureau-original-reflow.srt",
+      "subrip",
+      "--balance-lines",
+      "--encoding:utf-8",
+      "--output-folder:output",
+      "--output-filename:editor-balanced.srt",
+      "--json"
+    ],
+    "scope": "balance-lines only, SubRip output, explicit UTF-8 and fresh output path; no overwrite or extra transform flags",
+    "information_calls": {
+      "version": 1,
+      "help": 1
+    },
+    "conversion_calls": 1,
+    "exit_code": 0,
+    "successful_files": 1,
+    "failed_files": 0,
+    "errors": [],
+    "warnings": [],
+    "environment": "Explicit clean environment with isolated XDG config/cache/data, temporary and bundle directories; no existing editor settings supplied. Default network-restricted workspace execution.",
+    "network_traffic_measured": false,
+    "model_ocr_translation_or_media_operation_requested": false,
+    "exact_launch_plan_independently_reviewed": true
+  },
+  "files": {
+    "input/bureau-original-reflow.srt": {
+      "bytes": 264,
+      "sha256": "c85673ffeb2cc109c3165dd064c47fc7afb6e8fdccd46b8d5987dee5e38d2c82"
+    },
+    "output/editor-balanced.srt": {
+      "bytes": 267,
+      "sha256": "40c25534e5d14cfbc4989ee6e27d8040d9d7ff20c78955c7f9dd45ae9366c420"
+    },
+    "report.json": {
+      "bytes": 5912,
+      "sha256": "3b936023c1175a0ae461a0edf8b8f454ff73646a63e6a9a6f33c32fb146a315b"
+    }
+  },
+  "input_provenance": {
+    "type": "original Bureau fiction",
+    "selection": "First four complete cues from the published reflow-only fixture, with blank final separator retained",
+    "source_file": "../fixtures/reflow-only.srt",
+    "source_file_sha256": "a4bac4613baffd38a1531e081c766440ca423d81a0865c34ef3b419b773e711b",
+    "unchanged_after_operation": true
+  },
+  "checker": {
+    "source": "../reflow_audit.py",
+    "source_sha256": "5f5d723da1ef96a519634cbadee69e841110094b13a307ea2f5d083c14df80f1",
+    "compare_calls": 1,
+    "compare_exit": 0,
+    "fresh_process_verify_calls": 1,
+    "verify_exit": 0,
+    "report_sha256": "3b936023c1175a0ae461a0edf8b8f454ff73646a63e6a9a6f33c32fb146a315b",
+    "reflow_contract": "PASS",
+    "checks": {
+      "counter_sequence_preserved": true,
+      "cue_count_preserved": true,
+      "normalized_text_sequence_preserved": true,
+      "timecode_sequence_preserved": true
+    }
+  },
+  "observations": {
+    "before_cues": 4,
+    "after_cues": 4,
+    "changed_raw_text_ordinals": [
+      1,
+      2,
+      4
+    ],
+    "byte_identical": false,
+    "before_utf8_bom": false,
+    "after_utf8_bom": true,
+    "line_endings": "LF in both files",
+    "normalized_text_counter_and_time_sequences": "preserved",
+    "review_queue": []
+  },
+  "limits": [
+    "One operation/version/input on Linux, not all editor behavior or a reproduction of issue12995",
+    "No media synchronization, readability, translation, styling, accessibility or editorial acceptance assessment",
+    "Original internal demonstration, not an outside requester, customer delivery or measured adoption"
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "checks": {
+    "counter_sequence_preserved": true,
+    "cue_count_preserved": true,
+    "normalized_text_sequence_preserved": true,
+    "timecode_sequence_preserved": true
+  },
+  "contract": {
+    "counter_rule": "Exact original counter strings and order are retained.",
+    "id": "ordered-srt-reflow-only/1",
+    "location_rule": "Ordinals and line spans identify positions only within the SHA256-bound file. Exact-text locations are observations, not persistent cue identity.",
+    "normalization": "Collapse ASCII space, TAB and normalized line endings to one space, trim ASCII boundary spaces; no other text normalization."
+  },
+  "exact_unique_text_locations": [
+    {
+      "after_ordinal": 1,
+      "before_ordinal": 1,
+      "end_delta_ms": 0,
+      "normalized_text_sha256": "46d8b735ad6059c27eec0a274585431df1a41962aa35cd2d3e1d5d76458f2707",
+      "start_delta_ms": 0
+    },
+    {
+      "after_ordinal": 2,
+      "before_ordinal": 2,
+      "end_delta_ms": 0,
+      "normalized_text_sha256": "153b6ca381aab8825062ae1a73eebc7dd23a4191004acccf1732d4f87f32c01b",
+      "start_delta_ms": 0
+    },
+    {
+      "after_ordinal": 3,
+      "before_ordinal": 3,
+      "end_delta_ms": 0,
+      "normalized_text_sha256": "e7fd4fce57f81d6da979ea2ec51a31078d1c22923f34ebca4aa0c5a84e91e2fd",
+      "start_delta_ms": 0
+    },
+    {
+      "after_ordinal": 4,
+      "before_ordinal": 4,
+      "end_delta_ms": 0,
+      "normalized_text_sha256": "81c16df0088348f00111ce20a891c892e04648bac4705baa7ad1dfd1eb804bfd",
+      "start_delta_ms": 0
+    }
+  ],
+  "input_bytes_identical": false,
+  "inputs": {
+    "after": {
+      "byte_count": 267,
+      "cue_count": 4,
+      "cues": [
+        {
+          "counter": "1",
+          "end_ms": 3000,
+          "line_end": 3,
+          "line_start": 1,
+          "normalized_text_sha256": "46d8b735ad6059c27eec0a274585431df1a41962aa35cd2d3e1d5d76458f2707",
+          "ordinal": 1,
+          "start_ms": 1000,
+          "text": "The first drawer holds maps.",
+          "text_sha256": "46d8b735ad6059c27eec0a274585431df1a41962aa35cd2d3e1d5d76458f2707"
+        },
+        {
+          "counter": "2",
+          "end_ms": 8000,
+          "line_end": 8,
+          "line_start": 5,
+          "normalized_text_sha256": "153b6ca381aab8825062ae1a73eebc7dd23a4191004acccf1732d4f87f32c01b",
+          "ordinal": 2,
+          "start_ms": 4000,
+          "text": "Keep the north\narrow with the map.",
+          "text_sha256": "24d56650c29eb6cc8f12d20bac28b781660142b37ae4e1d0fe0ef18a8123ffc0"
+        },
+        {
+          "counter": "3",
+          "end_ms": 12000,
+          "line_end": 13,
+          "line_start": 10,
+          "normalized_text_sha256": "e7fd4fce57f81d6da979ea2ec51a31078d1c22923f34ebca4aa0c5a84e91e2fd",
+          "ordinal": 3,
+          "start_ms": 9000,
+          "text": "This label belongs\nto the red box.",
+          "text_sha256": "10b6990897622bc12eda7b72c1580234c5bfe586057e67a148d4165c1be531bd"
+        },
+        {
+          "counter": "4",
+          "end_ms": 16000,
+          "line_end": 17,
+          "line_start": 15,
+          "normalized_text_sha256": "81c16df0088348f00111ce20a891c892e04648bac4705baa7ad1dfd1eb804bfd",
+          "ordinal": 4,
+          "start_ms": 13000,
+          "text": "Check the stamp before you sign.",
+          "text_sha256": "81c16df0088348f00111ce20a891c892e04648bac4705baa7ad1dfd1eb804bfd"
+        }
+      ],
+      "role": "after",
+      "sha256": "40c25534e5d14cfbc4989ee6e27d8040d9d7ff20c78955c7f9dd45ae9366c420"
+    },
+    "before": {
+      "byte_count": 264,
+      "cue_count": 4,
+      "cues": [
+        {
+          "counter": "1",
+          "end_ms": 3000,
+          "line_end": 4,
+          "line_start": 1,
+          "normalized_text_sha256": "46d8b735ad6059c27eec0a274585431df1a41962aa35cd2d3e1d5d76458f2707",
+          "ordinal": 1,
+          "start_ms": 1000,
+          "text": "The first drawer\nholds maps.",
+          "text_sha256": "342c346662bfb597d7ea6eed5709f90b6c214dd4a0e131fc8c138735e4a8f1ad"
+        },
+        {
+          "counter": "2",
+          "end_ms": 8000,
+          "line_end": 9,
+          "line_start": 6,
+          "normalized_text_sha256": "153b6ca381aab8825062ae1a73eebc7dd23a4191004acccf1732d4f87f32c01b",
+          "ordinal": 2,
+          "start_ms": 4000,
+          "text": "Keep the north arrow\nwith the map.",
+          "text_sha256": "621d3a87cd8cc224aa39a86586369a180f4c66b220fa875485d0c3c0e9db4cad"
+        },
+        {
+          "counter": "3",
+          "end_ms": 12000,
+          "line_end": 14,
+          "line_start": 11,
+          "normalized_text_sha256": "e7fd4fce57f81d6da979ea2ec51a31078d1c22923f34ebca4aa0c5a84e91e2fd",
+          "ordinal": 3,
+          "start_ms": 9000,
+          "text": "This label belongs\nto the red box.",
+          "text_sha256": "10b6990897622bc12eda7b72c1580234c5bfe586057e67a148d4165c1be531bd"
+        },
+        {
+          "counter": "4",
+          "end_ms": 16000,
+          "line_end": 19,
+          "line_start": 16,
+          "normalized_text_sha256": "81c16df0088348f00111ce20a891c892e04648bac4705baa7ad1dfd1eb804bfd",
+          "ordinal": 4,
+          "start_ms": 13000,
+          "text": "Check the stamp\nbefore you sign.",
+          "text_sha256": "f0a94726e425c55c6ad22db6fd24a3477e658f87c6cd79b5d0d013e48ff0f6f7"
+        }
+      ],
+      "role": "before",
+      "sha256": "c85673ffeb2cc109c3165dd064c47fc7afb6e8fdccd46b8d5987dee5e38d2c82"
+    }
+  },
+  "positional_differences": [],
+  "reflow_contract": "PASS",
+  "repeated_text_locations": [],
+  "review_queue": [],
+  "schema_version": 1,
+  "tool": "bureau-subtitle-reflow-audit/1",
+  "unassessed": [
+    "media synchronization",
+    "translation/content accuracy",
+    "accessibility compliance",
+    "intentionality of changes",
+    "caption styling/rendering",
+    "overlap/readability policy"
+  ],
+  "unmatched_exact_text_ordinals": {
+    "after": [],
+    "before": []
+  }
+}

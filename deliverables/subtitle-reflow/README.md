@@ -9,6 +9,11 @@ The tool reports facts; it neither repairs subtitles nor approves timing,
 translation, accessibility or editorial decisions. A detected change may be
 intentional. The Bureau's original demonstration is in [HANDOFF.md](HANDOFF.md).
 
+An [actual SeConv 5.2.0 export](editor-export/README.md) also supplies a versioned
+integration handoff: four original cues passed the checker after the editor
+changed wrapping in three of them. The export, report and exact operation are
+retained for an offline return check; no media or customer result is claimed.
+
 Use Python 3.10+ on a Unix system supporting `O_NOFOLLOW`. No dependencies,
 network requests, model calls or media files are needed. From this directory:
 

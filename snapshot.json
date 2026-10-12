@@ -731,9 +731,14 @@
     },
     {
       "path": "deliverables/subtitle-reflow/README.md",
-      "sha256": "9e0d8ff446cf9e7d215da39e0d9278be3cfb5f2e1d9970f48a574e7d9666e0c1",
+      "sha256": "e5ae28a3db8bf1f9c65df773ce42b99bcc7e39548fcb603a1441efed1fc9f2cb",
       "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
-      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case."
+      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case.",
+      "editor_export_update": {
+        "date_utc": "2026-10-12",
+        "preceding_published_sha256": "9e0d8ff446cf9e7d215da39e0d9278be3cfb5f2e1d9970f48a574e7d9666e0c1",
+        "change": "Link the actual SeConv5.2.0 four-cue export handoff; checker, scope and original evidence unchanged."
+      }
     },
     {
       "path": "deliverables/subtitle-reflow/fixtures/before.srt",
@@ -782,6 +787,36 @@
       "sha256": "85990b43391a9ec9924f96e8f24080c2e40012f54457793964853cee7779f30a",
       "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
       "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/editor-export/README.md",
+      "sha256": "ea93164783352546ed356008090b6beed6c75d134bc82ed9bfbe4b4e482bf54a",
+      "source": "Original Bureau four-cue excerpt and actual official SeConv5.2.0 balance-lines export, October12; source/version/arguments and local acceptance evidence retained.",
+      "change": "Versioned editor-export interoperability and offline return evidence. No customer, media assessment, current-issue reproduction or live Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/editor-export/evidence.json",
+      "sha256": "3783a05f25654ac7327a87beda07929e962c2add208221899af28274b218e575",
+      "source": "Original Bureau four-cue excerpt and actual official SeConv5.2.0 balance-lines export, October12; source/version/arguments and local acceptance evidence retained.",
+      "change": "Versioned editor-export interoperability and offline return evidence. No customer, media assessment, current-issue reproduction or live Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/editor-export/input/bureau-original-reflow.srt",
+      "sha256": "c85673ffeb2cc109c3165dd064c47fc7afb6e8fdccd46b8d5987dee5e38d2c82",
+      "source": "Original Bureau four-cue excerpt and actual official SeConv5.2.0 balance-lines export, October12; source/version/arguments and local acceptance evidence retained.",
+      "change": "Versioned editor-export interoperability and offline return evidence. No customer, media assessment, current-issue reproduction or live Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/editor-export/output/editor-balanced.srt",
+      "sha256": "40c25534e5d14cfbc4989ee6e27d8040d9d7ff20c78955c7f9dd45ae9366c420",
+      "source": "Original Bureau four-cue excerpt and actual official SeConv5.2.0 balance-lines export, October12; source/version/arguments and local acceptance evidence retained.",
+      "change": "Versioned editor-export interoperability and offline return evidence. No customer, media assessment, current-issue reproduction or live Case."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/editor-export/report.json",
+      "sha256": "3b936023c1175a0ae461a0edf8b8f454ff73646a63e6a9a6f33c32fb146a315b",
+      "source": "Original Bureau four-cue excerpt and actual official SeConv5.2.0 balance-lines export, October12; source/version/arguments and local acceptance evidence retained.",
+      "change": "Versioned editor-export interoperability and offline return evidence. No customer, media assessment, current-issue reproduction or live Case."
     }
   ],
   "limitations": [
@@ -792,11 +827,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "b59fd78ce2e7b45faadb3bf45738681bea9ca7b0",
+    "parent_commit": "41d9a2dc16fcc5f7b22c7ed4a488976c1c487604",
     "date_utc": "2026-10-12",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Publish one independently reviewed original subtitle reflow acceptance utility and first deliverable portion, with source-bound reports and optional bounded Cases-only review offer. No customer or live Case claim."
+    "description": "Add one actual SeConv5.2.0 four-cue export and source/version-bound acceptance handoff. Existing checker, original fixtures, Case offer and application unchanged."
   },
   "public_case_briefs": [
     {
