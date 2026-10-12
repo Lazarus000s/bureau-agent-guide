@@ -856,9 +856,9 @@
     },
     {
       "path": "deliverables/catalogue-handoff/README.md",
-      "sha256": "9a2946bad409651426aa11be42671272f3005a63c90455721610a98d76019a5a",
+      "sha256": "ee7b7983d7878c3ce76a6e91f24b0b33c2be57e4f09ee057a6d11d43d307daf9",
       "source": "Original four-row Bureau catalogue; one XlsxWriter3.2.9 native generation on October12 and independent standard-library stored-cell inspection.",
-      "change": "Preserve exact text identifiers, source format, output hashes and the unperformed Excel UI/recipient checks."
+      "change": "Add a bounded voluntary public Case scope and exact original Packet restoration instructions; no automatic converter or universal workbook-fit promise."
     },
     {
       "path": "deliverables/catalogue-handoff/catalogue.psv",
@@ -889,6 +889,18 @@
       "sha256": "c19b8debf4533e21892a5740945849bc6f6b7f46153c2f9d73f0ff7be517a0e8",
       "source": "Original four-row Bureau catalogue; one XlsxWriter3.2.9 native generation on October12 and independent standard-library stored-cell inspection.",
       "change": "Preserve exact text identifiers, source format, output hashes and the unperformed Excel UI/recipient checks."
+    },
+    {
+      "path": "deliverables/catalogue-handoff/result-packet.json",
+      "sha256": "9d3175d69e07d6bc966a51156c1a596f1b94cd46a30ef43923f3cd596b1dbc54",
+      "source": "Existing original catalogue atc62472dd and independently reviewed ordinary Packet cold restoration on2026-10-12.",
+      "change": "Exact original return and factual receipt; no live Case, new workbook, runtime or customer use."
+    },
+    {
+      "path": "deliverables/catalogue-handoff/return-receipt.json",
+      "sha256": "aed0724d7dc1468e73e429b594d776576a76c613824bec7a596880a56e0fafa6",
+      "source": "Existing original catalogue atc62472dd and independently reviewed ordinary Packet cold restoration on2026-10-12.",
+      "change": "Exact original return and factual receipt; no live Case, new workbook, runtime or customer use."
     }
   ],
   "limitations": [
@@ -899,11 +911,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "73ac51108075838ab9180ccd2f34f11bc5cee4eb",
+    "parent_commit": "c62472dd4e6825227de064c6c937017240b0039b",
     "date_utc": "2026-10-12",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Add one original four-row identifier-as-text catalogue, native XLSX and actual stored-cell inspection. No general converter, Excel UI trial or customer data."
+    "description": "Add the exact original workbook result Packet, factual cold-return receipt and bounded Case/restore instructions; original workbook/source unchanged."
   },
   "public_case_briefs": [
     {

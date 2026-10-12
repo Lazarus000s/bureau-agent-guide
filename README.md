@@ -178,6 +178,8 @@ keeps four original fictional rows as string cells in a native XLSX workbook.
 Its pipe-separated source, representation plan and stored-cell receipt preserve
 exact values and text formats. All 15 Catalogue cells matched the source; no Excel
 UI roundtrip, customer result or outside adoption is claimed.
+The same resource now includes an [exact ordinary Packet return](deliverables/catalogue-handoff/README.md#restore-the-original-workbook-from-a-packet)
+and a [small public Case scope](deliverables/catalogue-handoff/README.md#request-a-small-preservation-check).
 
 ## Optional live reader with the MCP SDK
 
