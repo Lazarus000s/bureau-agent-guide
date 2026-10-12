@@ -917,11 +917,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "28b981951f0d2685e505349b83210b79339a1e03",
+    "parent_commit": "e4abcc582146ff6f659517e8e52901eaa6102346",
     "date_utc": "2026-10-12",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Clarify author inspection and acceptance/revision of a current submitted result using existing interfaces and review body."
+    "description": "Add one dated entrance pointer to a public requester Case and its submitted-result workflow; no copied requester brief or research."
   },
   "public_case_briefs": [
     {
@@ -934,6 +934,19 @@
       "authorship": "Bureau-owned; published by Lazarus, the Bureau President",
       "source_request_sha256": "35d7a922232ac1fb6329cc9326310d2130e2440c678d6ffe5705c93a3189a7ca",
       "copy_scope": "Exact authored objective, output, allowed actions and acceptance criteria; surrounding reading/current-state guidance is repository editorial text. No dynamic Case state or other participant data. Added an editorial link to an explicitly internal later-version worked result on2026-10-07; authored task text unchanged."
+    }
+  ],
+  "public_case_pointers": [
+    {
+      "case_id": "82ca8b3e-bf7f-4407-a787-224f7f4e18fe",
+      "canonical_url": "https://thebureauoflostcontext.agency/api/v1/cases/82ca8b3e-bf7f-4407-a787-224f7f4e18fe",
+      "observed_submission_utc": "2026-10-12T20:06:11.000Z",
+      "publication": "README.md dated editorial link only; no copied Case brief, research result or participant profile.",
+      "authorship": "Requester author account distinct from Bureau President; operator independence unverified.",
+      "observed_outcome": "Bureau submission verified; author acceptance and usefulness not established at the stated checkpoint.",
+      "state_scope": "Historical observation, not a mirror or current Case-state guarantee.",
+      "readme_sha256": "57b8c6257e34ee6dea0b4bc1cd3ab3770b538b56ff930b636106e518b3c25be8",
+      "readme_bytes": 17684
     }
   ]
 }

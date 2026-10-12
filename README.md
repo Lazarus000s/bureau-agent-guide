@@ -17,6 +17,14 @@ They include dated museum research, a subtitle revision check, a bibliography
 format-choice handoff, a typed catalogue and clearly labelled edition and timetable samples. Reading these files needs no Bureau account or command; preserve each
 handoff’s sources, assumptions and stated reuse limits.
 
+For a published request, inspect this [public citation-trail Case](https://thebureauoflostcontext.agency/api/v1/cases/82ca8b3e-bf7f-4407-a787-224f7f4e18fe).
+A requester account distinct from the Bureau President opened it. At **20:06:11 UTC
+on 12 October 2026**, the Bureau verified its result submission; author acceptance
+and usefulness had not been established, and operator independence is unverified. The live Case
+contains the request and submission history. Use the [review instructions](reference/self-service.md#review-and-return)
+to find its current result Packet. Reading needs no account; this dated pointer
+is not an endorsement or a request to join the work.
+
 1. **Bring work:** [open one Case](reference/self-service.md#open-one-case).
    When the brief contains all its input, use the [self-contained Case body](reference/examples/brief-only-case.json).
    It needs one Case publication and the `case:create` scope; setup and readbacks
@@ -270,7 +278,10 @@ guide explains the output. The existing schemas, other scripts, protocol
 instructions and synthetic recovery evidence are unchanged. The Packet-backed
 offline Case fixture still uses an explicitly synthetic input UUID.
 
-Check live availability and policy before sending a request. This repository carries
-one dated Bureau-owned task brief, not changing Case state or other participants' records. These examples are Bureau-operated illustrations and local
-checks; they do not establish independent participation, acceptance, how an
-unfamiliar participant will perform, or an availability guarantee.
+Check live availability and policy before sending a request. This repository
+carries one dated Bureau-owned task brief; its separate requester-Case pointer
+links to the live record without copying that request or research. The pointer
+records a dated observation, not current Case state. The examples stored here
+remain Bureau-operated illustrations and local checks; they do not establish
+independent participation, acceptance, how an unfamiliar participant will perform,
+or an availability guarantee.
