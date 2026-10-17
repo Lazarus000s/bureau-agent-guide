@@ -19,6 +19,9 @@ import sys
 MAX_INPUT_BYTES = 1024 * 1024
 MAX_CUES = 5000
 MAX_REPORT_BYTES = 32 * 1024 * 1024
+MAX_TOOL_BYTES = 256 * 1024
+TOOL = "bureau-subtitle-reflow-audit/2"
+HEX_DIGEST = re.compile(r"[0-9a-f]{64}\Z")
 STAMP = r"[0-9]{2}:[0-5][0-9]:[0-5][0-9],[0-9]{3}"
 TIMING = re.compile(rf"({STAMP}) --> ({STAMP})")
 COUNTER = re.compile(r"[0-9]{1,9}")
@@ -26,6 +29,10 @@ COUNTER = re.compile(r"[0-9]{1,9}")
 
 class AuditError(Exception):
     """A bounded, content-free error suitable for CLI display."""
+
+    def __init__(self, code: str, *, mismatches: list[str] | None = None):
+        super().__init__(code)
+        self.mismatches = mismatches
 
 
 def sha256(data: bytes) -> str:
@@ -45,6 +52,71 @@ def read_regular(path: Path, limit: int) -> bytes:
     if len(data) > limit:
         raise AuditError("input_size_limit")
     return data
+
+
+def tool_source_digest() -> str:
+    """Identify this on-disk script, not its environment or trusted authorship."""
+    try:
+        return sha256(read_regular(Path(__file__).resolve(), MAX_TOOL_BYTES))
+    except (AuditError, OSError, RuntimeError):
+        raise AuditError("tool_source_unavailable") from None
+
+
+def report_identity(actual: bytes, before: bytes, after: bytes, tool_digest: str) -> bool:
+    """Check recorded identities before SRT parsing; return whether report is v1.
+
+    These are comparisons with untrusted recorded claims, not authentication.
+    Even when identities match, verification must rebuild and compare all bytes.
+    """
+    def unique(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError()
+            result[key] = value
+        return result
+
+    try:
+        value = json.loads(actual.decode("utf-8"), object_pairs_hook=unique,
+                           parse_constant=lambda _: (_ for _ in ()).throw(ValueError()))
+        if type(value) is not dict or type(value.get("schema_version")) is not int:
+            raise ValueError()
+        version = value["schema_version"]
+        if version not in (1, 2):
+            raise AuditError("unsupported_report_schema")
+        if type(value.get("tool")) is not str:
+            raise ValueError()
+        inputs = value["inputs"]
+        if type(inputs) is not dict:
+            raise ValueError()
+        digests = []
+        for role in ("before", "after"):
+            item = inputs[role]
+            if type(item) is not dict:
+                raise ValueError()
+            digest = item["sha256"]
+            if type(digest) is not str or not HEX_DIGEST.fullmatch(digest):
+                raise ValueError()
+            digests.append(digest)
+        if version == 2:
+            digest = value["tool_source_sha256"]
+            if type(digest) is not str or not HEX_DIGEST.fullmatch(digest):
+                raise ValueError()
+    except (UnicodeError, ValueError, KeyError, TypeError, RecursionError):
+        raise AuditError("invalid_report_metadata") from None
+    mismatches = []
+    for role, recorded, current in zip(("before_input", "after_input"),
+                                       digests, (sha256(before), sha256(after))):
+        if recorded != current:
+            mismatches.append(role)
+    expected_tool = "bureau-subtitle-reflow-audit/1" if version == 1 else TOOL
+    if value["tool"] != expected_tool:
+        mismatches.append("tool_version")
+    if version == 2 and value["tool_source_sha256"] != tool_digest:
+        mismatches.append("tool_source")
+    if mismatches:
+        raise AuditError("report_identity_mismatch", mismatches=mismatches)
+    return version == 1
 
 
 def milliseconds(value: str) -> int:
@@ -112,7 +184,10 @@ def parse_srt(data: bytes, role: str) -> dict:
             "cue_count": len(cues), "cues": cues}
 
 
-def compare(before: bytes, after: bytes) -> dict:
+def compare(before: bytes, after: bytes, *, tool_digest: str | None = None) -> dict:
+    # CLI captures this once before work. Library use identifies the same source.
+    if tool_digest is None:
+        tool_digest = tool_source_digest()
     left, right = parse_srt(before, "before"), parse_srt(after, "after")
     a, b = left["cues"], right["cues"]
     checks = {
@@ -185,8 +260,9 @@ def compare(before: bytes, after: bytes) -> dict:
         queue.append({"kind": "repeated_text", "next_action":
                       "Resolve repeated-text correspondence manually when investigating changes; no unique cue match is asserted."})
     return {
-        "schema_version": 1,
-        "tool": "bureau-subtitle-reflow-audit/1",
+        "schema_version": 2,
+        "tool": TOOL,
+        "tool_source_sha256": tool_digest,
         "contract": {
             "id": "ordered-srt-reflow-only/1",
             "normalization": "Collapse ASCII space, TAB and normalized line endings to one space, trim ASCII boundary spaces; no other text normalization.",
@@ -237,21 +313,38 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--report", required=True, type=Path)
     args = parser.parse_args(argv)
     try:
-        report = compare(read_regular(args.before, MAX_INPUT_BYTES), read_regular(args.after, MAX_INPUT_BYTES))
+        before = read_regular(args.before, MAX_INPUT_BYTES)
+        after = read_regular(args.after, MAX_INPUT_BYTES)
+        tool_digest = tool_source_digest()
+        actual = None
+        legacy = False
+        if args.operation == "verify":
+            actual = read_regular(args.report, MAX_REPORT_BYTES)
+            legacy = report_identity(actual, before, after, tool_digest)
+        report = compare(before, after, tool_digest=tool_digest)
+        if legacy:
+            # Preserve old report bytes without inventing the missing provenance.
+            report["schema_version"] = 1
+            report["tool"] = "bureau-subtitle-reflow-audit/1"
+            del report["tool_source_sha256"]
         data = encode_report(report)
         if args.operation == "compare":
             create_output(args.report, data)
             print(json.dumps({"status": "REPORT_WRITTEN", "reflow_contract": report["reflow_contract"],
                               "report_sha256": sha256(data)}))
             return 0 if report["reflow_contract"] == "PASS" else 1
-        actual = read_regular(args.report, MAX_REPORT_BYTES)
         if actual != data:
-            raise AuditError("report_does_not_match_current_inputs_or_tool")
-        print(json.dumps({"status": "REPORT_VERIFIED", "reflow_contract": report["reflow_contract"],
+            raise AuditError("report_recomputed_content_mismatch")
+        print(json.dumps({"status": "LEGACY_REPORT_REPRODUCED" if legacy else "REPORT_VERIFIED",
+                          "tool_identity": "UNRECORDED" if legacy else "SOURCE_DIGEST_MATCHES",
+                          "reflow_contract": report["reflow_contract"],
                           "report_sha256": sha256(data)}))
         return 0 if report["reflow_contract"] == "PASS" else 1
     except AuditError as error:
-        print(json.dumps({"status": "ERROR", "code": str(error)}), file=sys.stderr)
+        result = {"status": "ERROR", "code": str(error)}
+        if error.mismatches is not None:
+            result["mismatches"] = error.mismatches
+        print(json.dumps(result), file=sys.stderr)
         return 2
 
 

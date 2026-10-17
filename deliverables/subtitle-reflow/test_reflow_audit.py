@@ -1,3 +1,4 @@
+import hashlib
 import json
 from pathlib import Path
 import subprocess
@@ -127,8 +128,8 @@ class CliTests(unittest.TestCase):
         self.before.write_bytes(ONE)
         self.after.write_bytes(ONE.replace(b"the paper", b"the\npaper"))
 
-    def run_cli(self, operation="compare"):
-        return subprocess.run([sys.executable, str(Path(audit.__file__).resolve()), operation,
+    def run_cli(self, operation="compare", *, script=None):
+        return subprocess.run([sys.executable, str(script or Path(audit.__file__).resolve()), operation,
                                "--before", str(self.before), "--after", str(self.after),
                                "--report", str(self.report)], capture_output=True, text=True, timeout=5)
 
@@ -182,6 +183,89 @@ class CliTests(unittest.TestCase):
         self.before = link
         self.assertEqual(self.run_cli().returncode, 2)
         self.assertFalse(self.report.exists())
+
+    def test_new_report_records_exact_script_source(self):
+        self.assertEqual(self.run_cli().returncode, 0)
+        report = json.loads(self.report.read_bytes())
+        self.assertEqual(report["schema_version"], 2)
+        self.assertEqual(report["tool"], "bureau-subtitle-reflow-audit/2")
+        self.assertEqual(report["tool_source_sha256"],
+                         hashlib.sha256(Path(audit.__file__).read_bytes()).hexdigest())
+        self.assertEqual(json.loads(self.run_cli("verify").stdout)["tool_identity"],
+                         "SOURCE_DIGEST_MATCHES")
+
+    def test_output_preserving_source_change_is_identified(self):
+        self.assertEqual(self.run_cli().returncode, 0)
+        changed = self.root / "comment-only.py"
+        changed.write_bytes(Path(audit.__file__).read_bytes() + b"\n# Synthetic source change.\n")
+        checked = self.run_cli("verify", script=changed)
+        self.assertEqual(checked.returncode, 2)
+        self.assertEqual(json.loads(checked.stderr), {
+            "status": "ERROR", "code": "report_identity_mismatch",
+            "mismatches": ["tool_source"]})
+
+    def test_all_identity_changes_reported_before_subtitle_rebuild(self):
+        self.assertEqual(self.run_cli().returncode, 0)
+        changed = self.root / "other-source.py"
+        changed.write_bytes(Path(audit.__file__).read_bytes() + b"\n# Synthetic new build.\n")
+        # A fresh parse would reject this; identity diagnostics must happen first.
+        self.after.write_bytes(b"no longer a subtitle file")
+        checked = self.run_cli("verify", script=changed)
+        self.assertEqual(checked.returncode, 2)
+        self.assertEqual(json.loads(checked.stderr)["mismatches"],
+                         ["after_input", "tool_source"])
+        self.assertEqual(json.loads(checked.stderr)["code"], "report_identity_mismatch")
+
+    def test_tool_label_mismatch_is_distinct_and_does_not_echo_values(self):
+        self.assertEqual(self.run_cli().returncode, 0)
+        report = json.loads(self.report.read_bytes())
+        report["tool"] = "UNTRUSTED_SENTINEL"
+        self.report.write_text(json.dumps(report))
+        checked = self.run_cli("verify")
+        self.assertEqual(checked.returncode, 2)
+        self.assertEqual(json.loads(checked.stderr)["mismatches"], ["tool_version"])
+        self.assertNotIn("UNTRUSTED_SENTINEL", checked.stderr)
+
+    def test_matching_identities_do_not_skip_full_report_check(self):
+        self.assertEqual(self.run_cli().returncode, 0)
+        # Even a whitespace-only report edit violates byte-exact reproduction.
+        self.report.write_bytes(self.report.read_bytes() + b"\n")
+        checked = self.run_cli("verify")
+        self.assertEqual(checked.returncode, 2)
+        self.assertEqual(json.loads(checked.stderr)["code"],
+                         "report_recomputed_content_mismatch")
+
+    def test_existing_v1_fixtures_reproduce_without_inventing_tool_identity(self):
+        base = Path(audit.__file__).parent
+        for filename, after, code in [("reflow-only", "reflow-only", 0),
+                                      ("structural-change", "structural-change", 1)]:
+            with self.subTest(report=filename):
+                self.before = base / "fixtures/before.srt"
+                self.after = base / f"fixtures/{after}.srt"
+                self.report = base / f"reports/{filename}.json"
+                original = self.report.read_bytes()
+                checked = self.run_cli("verify")
+                self.assertEqual(checked.returncode, code, checked.stderr)
+                result = json.loads(checked.stdout)
+                self.assertEqual(result["status"], "LEGACY_REPORT_REPRODUCED")
+                self.assertEqual(result["tool_identity"], "UNRECORDED")
+                self.assertEqual(self.report.read_bytes(), original)
+
+    def test_invalid_or_missing_provenance_is_not_silently_accepted(self):
+        self.assertEqual(self.run_cli().returncode, 0)
+        original = self.report.read_bytes()
+        variants = [b"not JSON", b'{}', b'{"schema_version":2,"schema_version":2}']
+        for key, value in [("tool_source_sha256", None), ("tool_source_sha256", "bad"),
+                           ("schema_version", True)]:
+            report = json.loads(original)
+            report[key] = value
+            variants.append(json.dumps(report).encode())
+        for variant in variants:
+            with self.subTest(size=len(variant)):
+                self.report.write_bytes(variant)
+                checked = self.run_cli("verify")
+                self.assertEqual(checked.returncode, 2)
+                self.assertEqual(json.loads(checked.stderr)["code"], "invalid_report_metadata")
 
 
 if __name__ == "__main__":

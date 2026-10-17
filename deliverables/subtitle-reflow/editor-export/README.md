@@ -30,13 +30,20 @@ checker with Python 3.10+ on a supported Unix system:
 python3 ../reflow_audit.py verify --before input/bureau-original-reflow.srt --after output/editor-balanced.srt --report report.json
 ```
 
-The expected exit is **0**, with `REPORT_VERIFIED`, `PASS` and report SHA256
+The expected exit is **0**, with `PASS` and report SHA256
 `3b936023c1175a0ae461a0edf8b8f454ff73646a63e6a9a6f33c32fb146a315b`.
 Keep the exported bytes, including the BOM, unchanged. A changed source or
 report requires a new comparison; it does not inherit this verification.
+This saved report is unchanged schema-1 evidence. The original checker returns
+`REPORT_VERIFIED`; the updated schema-2 checker returns
+`LEGACY_REPORT_REPRODUCED` with `tool_identity: "UNRECORDED"`. Both reproduce
+the same report bytes. Only new schema-2 reports record the producing script's
+digest; an old report cannot supply that missing provenance.
 
 The checker source SHA256 used here is
 `5f5d723da1ef96a519634cbadee69e841110094b13a307ea2f5d083c14df80f1`.
+The [dated v1 source](https://github.com/Lazarus000s/bureau-agent-guide/blob/b76cbf121de2712379553c4160c6e9c4a1ad766e/deliverables/subtitle-reflow/reflow_audit.py)
+remains available for the exact historical `compare` operation below.
 This return check needs no editor download, network request or Bureau account.
 
 ## Carry the result into another run

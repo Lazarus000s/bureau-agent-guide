@@ -22,16 +22,41 @@ python3 reflow_audit.py compare --before fixtures/before.srt --after fixtures/re
 python3 reflow_audit.py verify --before fixtures/before.srt --after fixtures/reflow-only.srt --report my-check.json
 ```
 
-`compare` creates a new report and refuses existing output paths. `verify`
-recomputes the entire report in a fresh process and requires byte-exact equality.
-Changed source bytes invalidate a saved report even when the new comparison
-would still satisfy the reflow contract. It does not carry review decisions
-forward or silently replace the report.
+`compare` creates a new report and refuses existing output paths. New reports
+use schema 2 and `bureau-subtitle-reflow-audit/2`. They record both input hashes
+and `tool_source_sha256`, the SHA-256 of the local `reflow_audit.py` source file.
+
+`verify` checks those recorded identities **before parsing or rebuilding the
+subtitles**, then recomputes the entire report and requires byte-exact equality.
+An identity mismatch exits 2 with `code: "report_identity_mismatch"` and a
+`mismatches` list naming `before_input`, `after_input`, `tool_version` and/or
+`tool_source`. It reports every detected mismatch, without echoing file paths or
+submitted values. For example, adding a comment to the script produces
+`mismatches: ["tool_source"]`; changing an input as well names both changes.
+Matching identities alone never accept a report: any remaining byte difference
+returns `report_recomputed_content_mismatch`.
+
+The digest identifies source bytes, including comments. It is not a signature,
+proof of who produced the report, an attestation of code loaded in memory, or a
+Python/interpreter/environment fingerprint. It compares the report's recorded
+claim with the current on-disk script. Preserve a trusted source copy or pinned
+revision separately when provenance matters; never run an unknown script merely
+because a report names its digest.
+
+The original reports in `reports/` and `editor-export/` remain unchanged schema-1
+evidence. They contain the static `/1` tool label but **no script digest**. The
+updated verifier can still reproduce their exact bytes with the supplied inputs;
+it explicitly returns `LEGACY_REPORT_REPRODUCED` and `tool_identity: "UNRECORDED"`.
+It cannot recover or verify their producing script's identity. New schema-2
+verification returns `REPORT_VERIFIED` and `tool_identity: "SOURCE_DIGEST_MATCHES"`.
+Neither path carries review decisions forward or silently replaces a report.
+The [new schema-2 report](reports/reflow-only-v2.json) uses the same original
+fictional before/reflow fixtures, so its source digest can be inspected directly.
 
 | Exit | Meaning |
 | --- | --- |
-| 0 | Report written/verified and the declared reflow contract passes |
-| 1 | Report written/verified; changed invariants require review |
+| 0 | Report written/verified (or legacy report reproduced) and the declared reflow contract passes |
+| 1 | Report written/verified (or legacy report reproduced); changed invariants require review |
 | 2 | Unsupported input, unavailable file, existing output or report mismatch |
 
 The JSON includes source text. Keep it local unless you have permission to
@@ -86,7 +111,9 @@ The useful result is one compact Context Packet with the four invariant checks,
 input/tool hashes, changed locations, unresolved correspondence and up to three
 next-review questions, plus rerun directions. The full raw report is not promised
 as a Packet. Timing against media, translation and repair are outside this offer.
-Assistance and follow-up belong in that Case. This is a voluntary request, not
+You may also ask a small public question where this tool is being discussed;
+a Case is an optional place to preserve a result and continue the review.
+This is a voluntary request, not
 guaranteed acceptance or immediate review. You can use the local tool without an
 account or opening a Case.
 

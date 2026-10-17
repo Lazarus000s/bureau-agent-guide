@@ -738,13 +738,19 @@
     },
     {
       "path": "deliverables/subtitle-reflow/README.md",
-      "sha256": "e5ae28a3db8bf1f9c65df773ce42b99bcc7e39548fcb603a1441efed1fc9f2cb",
+      "sha256": "1a03241b4c2d3a09f8c453cc12455a93e4ac8dd59cfff862c978d8203fcf635f",
       "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
       "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case.",
       "editor_export_update": {
         "date_utc": "2026-10-12",
         "preceding_published_sha256": "9e0d8ff446cf9e7d215da39e0d9278be3cfb5f2e1d9970f48a574e7d9666e0c1",
         "change": "Link the actual SeConv5.2.0 four-cue export handoff; checker, scope and original evidence unchanged."
+      },
+      "bytes": 7411,
+      "provenance_update": {
+        "date_utc": "2026-10-17",
+        "preceding_sha256": "e5ae28a3db8bf1f9c65df773ce42b99bcc7e39548fcb603a1441efed1fc9f2cb",
+        "description": "Reviewed schema2 source digest and distinct identity diagnostics; schema1 reports remain historical evidence with explicit unrecorded tool identity."
       }
     },
     {
@@ -767,9 +773,15 @@
     },
     {
       "path": "deliverables/subtitle-reflow/reflow_audit.py",
-      "sha256": "5f5d723da1ef96a519634cbadee69e841110094b13a307ea2f5d083c14df80f1",
+      "sha256": "d4698bd8f451732a9c8809b89ff69973989e9562d1e45eea60e2356afd77e42d",
       "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
-      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case."
+      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case.",
+      "bytes": 15603,
+      "provenance_update": {
+        "date_utc": "2026-10-17",
+        "preceding_sha256": "5f5d723da1ef96a519634cbadee69e841110094b13a307ea2f5d083c14df80f1",
+        "description": "Reviewed schema2 source digest and distinct identity diagnostics; schema1 reports remain historical evidence with explicit unrecorded tool identity."
+      }
     },
     {
       "path": "deliverables/subtitle-reflow/reports/reflow-only.json",
@@ -785,9 +797,15 @@
     },
     {
       "path": "deliverables/subtitle-reflow/test_reflow_audit.py",
-      "sha256": "2d819ade1e4dae2fd29316f3d429de39a31b89ff70464dfd77d5568c99722e53",
+      "sha256": "bf3393963d6811c9b2ed900d0510f4215d70621f45663a46b377772231b557b6",
       "source": "Original Bureau subtitle reflow acceptance portion, October12; independent review completed on exact implementation and fixtures.",
-      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case."
+      "change": "Local reflow-only acceptance facts and return handoff; no media check, upstream fix, customer result or live Case.",
+      "bytes": 13972,
+      "provenance_update": {
+        "date_utc": "2026-10-17",
+        "preceding_sha256": "2d819ade1e4dae2fd29316f3d429de39a31b89ff70464dfd77d5568c99722e53",
+        "description": "Reviewed schema2 source digest and distinct identity diagnostics; schema1 reports remain historical evidence with explicit unrecorded tool identity."
+      }
     },
     {
       "path": "deliverables/subtitle-reflow/validation.json",
@@ -797,11 +815,16 @@
     },
     {
       "path": "deliverables/subtitle-reflow/editor-export/README.md",
-      "sha256": "043006cfd0ff26f34b8a8a00d35534be2343e9fcc2841f0855468657cf50e489",
+      "sha256": "f056e6c560f4face466d29ff75369d5fb9c09030459d1c229945fbd5a010c4cf",
       "source": "Original Bureau four-cue excerpt and actual official SeConv5.2.0 balance-lines export, October12; source/version/arguments and local acceptance evidence retained.",
       "change": "Add exact portable result and verified cold-return instructions for the same retained editor observation; no editor rerun, outside requester or live Case.",
       "preceding_sha256": "ea93164783352546ed356008090b6beed6c75d134bc82ed9bfbe4b4e482bf54a",
-      "bytes": 5590
+      "bytes": 6158,
+      "provenance_update": {
+        "date_utc": "2026-10-17",
+        "preceding_sha256": "043006cfd0ff26f34b8a8a00d35534be2343e9fcc2841f0855468657cf50e489",
+        "description": "Reviewed schema2 source digest and distinct identity diagnostics; schema1 reports remain historical evidence with explicit unrecorded tool identity."
+      }
     },
     {
       "path": "deliverables/subtitle-reflow/editor-export/evidence.json",
@@ -1023,6 +1046,13 @@
       "bytes": 3148,
       "source": "Met object 45734 small image captured on 2026-10-12 at 22:56:13.092234 UTC; exact image, source, identity and credit bundle, with final independent saved-file association checked at 23:08:28.371060 UTC.",
       "change": "One existing selected asset, unedited, with dated source and return receipts. No new object, current API response, historical image-byte equality, outside participant or main-site action."
+    },
+    {
+      "path": "deliverables/subtitle-reflow/reports/reflow-only-v2.json",
+      "sha256": "571d0279bd952003e3ed3bccc8f28d9921daded754d049fdd1b36f2ab1e2215f",
+      "bytes": 10010,
+      "source": "Original Bureau four-cue fictional fixture, recomputed with the reviewed schema2 tool on October17.",
+      "change": "New report records the exact producing script SHA256; previous reports and source fixtures are unchanged."
     }
   ],
   "limitations": [
@@ -1033,11 +1063,11 @@
   ],
   "base_snapshot_date_utc": "2026-10-04",
   "repository_update": {
-    "parent_commit": "2ea20c99787e7bb4ab5b55272745ccd2e601c5bc",
-    "date_utc": "2026-10-12",
+    "parent_commit": "b76cbf121de2712379553c4160c6e9c4a1ad766e",
+    "date_utc": "2026-10-17",
     "canonical_site_updated": false,
     "application_changes": false,
-    "description": "Complete the existing museum handoff with its already selected small image, dated provenance and independent saved-file return. Original October7 data/Packet and metadata-only decisions remain unchanged."
+    "description": "Answer a concrete public tool-provenance question: schema2 reports record source SHA256 and verify distinguishes input/version/source changes before rebuilding. Legacy reports remain reproducible with unrecorded producer identity."
   },
   "public_case_briefs": [
     {
